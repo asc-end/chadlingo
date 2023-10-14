@@ -4,7 +4,7 @@ import connectWallet from "../../lib/solana/connectWallet";
 import useStore from "../../lib/state";
 import { Text, View } from "react-native";
 
-export default function ConnectButton({ onConnected }: { onConnected: (address: string) => void }) {
+export default function ConnectButton({ onConnected, text = "Connect Wallet" }: { onConnected: (address: string) => void, text?: string }) {
 
   const [connexionState, setConnexionState] = useState<"Not connected" | "Loading" | "Connected">("Not connected");
   const [resp, setResp] = useState<Creds>();
@@ -29,10 +29,6 @@ export default function ConnectButton({ onConnected }: { onConnected: (address: 
   }
 
   return (
-    <View className="flex flex-col items-center">
-      <Text className="text-white">{resp ? resp?.account?.address : "resp not defined"}</Text>
-      <Text className="text-white">{resp ? resp.authToken : "resp not defined"}</Text>
-      <MainButton text="Connect wallet" onPress={onConnect} disabled={connexionState == "Loading"} />
-    </View>
+    <MainButton text={text} onPress={onConnect} disabled={connexionState == "Loading"} />
   );
 }

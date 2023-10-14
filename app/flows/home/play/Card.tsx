@@ -3,7 +3,7 @@ import React, { SetStateAction, useEffect, useState } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import WordInput from "./WordInput";
 import * as Haptics from "expo-haptics";
-import { getValueFor } from "../../lib/secure-store/secureStore";
+import { getValueFor } from "../../../lib/secure-store/secureStore";
 
 import Animated, {
   Extrapolate,
@@ -13,11 +13,11 @@ import Animated, {
   withTiming,
   Easing,
 } from "react-native-reanimated";
-import { hsvToRgb } from "../../lib/colors/hsvToRgb";
-import { l, s } from "../../config/colors";
+import { hsvToRgb } from "../../../lib/colors/hsvToRgb";
+import { l, s } from "../../../config/colors";
 import { GestureResponderEvent, NativeSyntheticEvent, TextInputSubmitEditingEventData } from "react-native";
-import useStore from "../../lib/state";
-import updateChallenge from "../../lib/firebase/updateChallenge";
+import useStore from "../../../lib/state";
+import updateChallenge from "../../../lib/firebase/updateChallenge";
 const duration = 200;
 const maxVisibleItems = 20;
 const cardsGap = 20;
@@ -30,6 +30,7 @@ export default function Card({
   activeIndex,
   progression,
   setSwipable,
+  navigation
 }: // setAnimQueueBusy,
   {
     data: Flashcard
@@ -37,6 +38,7 @@ export default function Card({
     activeIndex: SharedValue<number>;
     progression: SharedValue<number>;
     setSwipable: React.Dispatch<React.SetStateAction<boolean>>;
+    navigation: any
     // setAnimQueueBusy?: React.Dispatch<React.SetStateAction<boolean>>;
   }) {
   const { updateFlow, setChallenge, challenge } = useStore();
@@ -83,9 +85,18 @@ export default function Card({
 
     console.log(activeIndex.value);
     if (isValid) {
-      progression.value = withTiming(progression.value + (1 / nbCards))
+      progression.value = withTiming(progression.value + (1 / nbCards), { duration: duration });
+      
       if (progression.value == 1 - (1 / nbCards)) {
-        updateFlow("play_sign")
+        setTimeout(() => {
+          navigation.reset({
+            index: 0,
+            routes: [{ name: 'signDay' }],
+          });
+
+        }, (duration + 100));
+        // navigation.reset()
+        // navigation.replace("signDay")
       }
       setState("input");
     } else {

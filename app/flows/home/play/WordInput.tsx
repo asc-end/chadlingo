@@ -9,7 +9,7 @@ import {
   NativeSyntheticEvent,
   Alert,
 } from "react-native";
-import SendIcon from "../../components/icons/SendIcon";
+import SendIcon from "../../../components/icons/SendIcon";
 
 export default function WordInput({
   onSubmit,
