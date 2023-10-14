@@ -1,0 +1,434 @@
+[
+  {
+    "english": "by",
+    "portuguese": "por",
+    "french": "par",
+    "spanish": "por",
+    "italian": "da",
+    "german": "von"
+  },
+  {
+    "english": "down",
+    "portuguese": "para baixo",
+    "french": "bas",
+    "spanish": "abajo",
+    "italian": "gi\u00f9",
+    "german": "abw\u00e4rts"
+  },
+  {
+    "english": "inside",
+    "portuguese": "dentro",
+    "french": "\u00e0 l'int\u00e9rieur",
+    "spanish": "dentro",
+    "italian": "dentro",
+    "german": "innen"
+  },
+  {
+    "english": "after",
+    "portuguese": "depois",
+    "french": "apr\u00e8s",
+    "spanish": "despu\u00e9s",
+    "italian": "dopo",
+    "german": "nach"
+  },
+  {
+    "english": "on",
+    "portuguese": "em",
+    "french": "sur",
+    "spanish": "sobre",
+    "italian": "su",
+    "german": "auf"
+  },
+  {
+    "english": "during",
+    "portuguese": "durante",
+    "french": "pendant",
+    "spanish": "durante",
+    "italian": "durante",
+    "german": "w\u00e4hrend"
+  },
+  {
+    "english": "out",
+    "portuguese": "fora",
+    "french": "dehors",
+    "spanish": "fuera",
+    "italian": "fuori",
+    "german": "aus"
+  },
+  {
+    "english": "beyond",
+    "portuguese": "al\u00e9m",
+    "french": "au-del\u00e0",
+    "spanish": "m\u00e1s all\u00e1",
+    "italian": "oltre",
+    "german": "jenseits"
+  },
+  {
+    "english": "to",
+    "portuguese": "para",
+    "french": "\u00e0",
+    "spanish": "a",
+    "italian": "a",
+    "german": "zu"
+  },
+  {
+    "english": "like",
+    "portuguese": "gostar",
+    "french": "aimer",
+    "spanish": "gustar",
+    "italian": "piacere",
+    "german": "m\u00f6gen"
+  },
+  {
+    "english": "off",
+    "portuguese": "fora",
+    "french": "hors",
+    "spanish": "apagado",
+    "italian": "fuori",
+    "german": "aus"
+  },
+  {
+    "english": "beside",
+    "portuguese": "ao lado",
+    "french": "\u00e0 c\u00f4t\u00e9",
+    "spanish": "junto a",
+    "italian": "accanto a",
+    "german": "neben"
+  },
+  {
+    "english": "beneath",
+    "portuguese": "debaixo",
+    "french": "dessous",
+    "spanish": "debajo",
+    "italian": "sotto",
+    "german": "unter"
+  },
+  {
+    "english": "despite",
+    "portuguese": "apesar de",
+    "french": "malgr\u00e9",
+    "spanish": "a pesar de",
+    "italian": "nonostante",
+    "german": "trotzdem"
+  },
+  {
+    "english": "above",
+    "portuguese": "acima",
+    "french": "au-dessus",
+    "spanish": "encima",
+    "italian": "sopra",
+    "german": "\u00fcber"
+  },
+  {
+    "english": "among",
+    "portuguese": "entre",
+    "french": "parmi",
+    "spanish": "entre",
+    "italian": "tra",
+    "german": "unter"
+  },
+  {
+    "english": "between",
+    "portuguese": "entre",
+    "french": "entre",
+    "spanish": "entre",
+    "italian": "tra",
+    "german": "zwischen"
+  },
+  {
+    "english": "upon",
+    "portuguese": "sobre",
+    "french": "sur",
+    "spanish": "sobre",
+    "italian": "su",
+    "german": "auf"
+  },
+  {
+    "english": "against",
+    "portuguese": "contra",
+    "french": "contre",
+    "spanish": "en contra de",
+    "italian": "contro",
+    "german": "gegen"
+  },
+  {
+    "english": "from",
+    "portuguese": "de",
+    "french": "de",
+    "spanish": "de",
+    "italian": "da",
+    "german": "von"
+  },
+  {
+    "english": "around",
+    "portuguese": "ao redor",
+    "french": "autour",
+    "spanish": "alrededor",
+    "italian": "intorno",
+    "german": "herum"
+  },
+  {
+    "english": "before",
+    "portuguese": "antes",
+    "french": "avant",
+    "spanish": "antes",
+    "italian": "prima",
+    "german": "vor"
+  },
+  {
+    "english": "below",
+    "portuguese": "abaixo",
+    "french": "ci-dessous",
+    "spanish": "debajo",
+    "italian": "sotto",
+    "german": "unten"
+  },
+  {
+    "english": "over",
+    "portuguese": "sobre",
+    "french": "au-dessus",
+    "spanish": "sobre",
+    "italian": "sopra",
+    "german": "\u00fcber"
+  },
+  {
+    "english": "outside",
+    "portuguese": "fora",
+    "french": "dehors",
+    "spanish": "afuera",
+    "italian": "fuori",
+    "german": "au\u00dfen"
+  },
+  {
+    "english": "onto",
+    "portuguese": "em cima de",
+    "french": "sur",
+    "spanish": "sobre",
+    "italian": "sopra",
+    "german": "auf"
+  },
+  {
+    "english": "without",
+    "portuguese": "sem",
+    "french": "sans",
+    "spanish": "sin",
+    "italian": "senza",
+    "german": "ohne"
+  },
+  {
+    "english": "for",
+    "portuguese": "para",
+    "french": "pour",
+    "spanish": "para",
+    "italian": "per",
+    "german": "f\u00fcr"
+  },
+  {
+    "english": "near",
+    "portuguese": "perto",
+    "french": "pr\u00e8s",
+    "spanish": "cerca",
+    "italian": "vicino",
+    "german": "in der N\u00e4he"
+  },
+  {
+    "english": "except",
+    "portuguese": "exceto",
+    "french": "sauf",
+    "spanish": "excepto",
+    "italian": "eccetto",
+    "german": "au\u00dfer"
+  },
+  {
+    "english": "concerning",
+    "portuguese": "relativo a",
+    "french": "concernant",
+    "spanish": "respecto a",
+    "italian": "riguardo a",
+    "german": "bez\u00fcglich"
+  },
+  {
+    "english": "through",
+    "portuguese": "atrav\u00e9s",
+    "french": "\u00e0 travers",
+    "spanish": "a trav\u00e9s",
+    "italian": "attraverso",
+    "german": "durch"
+  },
+  {
+    "english": "round",
+    "portuguese": "redondo",
+    "french": "rond",
+    "spanish": "redondo",
+    "italian": "rotondo",
+    "german": "rund"
+  },
+  {
+    "english": "toward",
+    "portuguese": "para",
+    "french": "vers",
+    "spanish": "hacia",
+    "italian": "verso",
+    "german": "gegen\u00fcber"
+  },
+  {
+    "english": "as",
+    "portuguese": "como",
+    "french": "comme",
+    "spanish": "como",
+    "italian": "come",
+    "german": "wie"
+  },
+  {
+    "english": "past",
+    "portuguese": "passado",
+    "french": "pass\u00e9",
+    "spanish": "pasado",
+    "italian": "passato",
+    "german": "vergangenheit"
+  },
+  {
+    "english": "along",
+    "portuguese": "ao longo de",
+    "french": "le long de",
+    "spanish": "junto",
+    "italian": "lungo",
+    "german": "entlang"
+  },
+  {
+    "english": "across",
+    "portuguese": "atrav\u00e9s",
+    "french": "\u00e0 travers",
+    "spanish": "a trav\u00e9s",
+    "italian": "attraverso",
+    "german": "\u00fcber"
+  },
+  {
+    "english": "regarding",
+    "portuguese": "relativo a",
+    "french": "concernant",
+    "spanish": "respecto a",
+    "italian": "riguardo a",
+    "german": "in Bezug auf"
+  },
+  {
+    "english": "underneath",
+    "portuguese": "por baixo",
+    "french": "dessous",
+    "spanish": "debajo",
+    "italian": "sotto",
+    "german": "unterhalb"
+  },
+  {
+    "english": "up",
+    "portuguese": "acima",
+    "french": "haut",
+    "spanish": "arriba",
+    "italian": "su",
+    "german": "auf"
+  },
+  {
+    "english": "with",
+    "portuguese": "com",
+    "french": "avec",
+    "spanish": "con",
+    "italian": "con",
+    "german": "mit"
+  },
+  {
+    "english": "throughout",
+    "portuguese": "durante",
+    "french": "tout au long de",
+    "spanish": "a lo largo de",
+    "italian": "in tutto",
+    "german": "durch"
+  },
+  {
+    "english": "considering",
+    "portuguese": "considerando",
+    "french": "consid\u00e9rant",
+    "spanish": "considerando",
+    "italian": "considerando",
+    "german": "inbetracht"
+  },
+  {
+    "english": "at",
+    "portuguese": "em",
+    "french": "\u00e0",
+    "spanish": "en",
+    "italian": "a",
+    "german": "bei"
+  },
+  {
+    "english": "behind",
+    "portuguese": "atr\u00e1s",
+    "french": "derri\u00e8re",
+    "spanish": "detr\u00e1s",
+    "italian": "dietro",
+    "german": "hinter"
+  },
+  {
+    "english": "in",
+    "portuguese": "em",
+    "french": "en",
+    "spanish": "en",
+    "italian": "in",
+    "german": "in"
+  },
+  {
+    "english": "about",
+    "portuguese": "sobre",
+    "french": "environ",
+    "spanish": "acerca de",
+    "italian": "circa",
+    "german": "ungef\u00e4hr"
+  },
+  {
+    "english": "of",
+    "portuguese": "de",
+    "french": "de",
+    "spanish": "de",
+    "italian": "di",
+    "german": "von"
+  },
+  {
+    "english": "under",
+    "portuguese": "debaixo",
+    "french": "sous",
+    "spanish": "bajo",
+    "italian": "sotto",
+    "german": "unter"
+  },
+  {
+    "english": "until",
+    "portuguese": "at\u00e9",
+    "french": "jusqu'\u00e0",
+    "spanish": "hasta",
+    "italian": "fino a",
+    "german": "bis"
+  },
+  {
+    "english": "within",
+    "portuguese": "dentro",
+    "french": "dans",
+    "spanish": "dentro",
+    "italian": "dentro",
+    "german": "innerhalb"
+  },
+  {
+    "english": "since",
+    "portuguese": "desde",
+    "french": "depuis",
+    "spanish": "desde",
+    "italian": "da",
+    "german": "seit"
+  },
+  {
+    "english": "into",
+    "portuguese": "em",
+    "french": "dans",
+    "spanish": "en",
+    "italian": "in",
+    "german": "in"
+  }
+]

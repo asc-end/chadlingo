@@ -1,0 +1,3226 @@
+[
+  {
+    "english": "able",
+    "portuguese": "capaz",
+    "french": "capable",
+    "spanish": "capaz",
+    "italian": "capace",
+    "german": "f\u00e4hig"
+  },
+  {
+    "english": "bad",
+    "portuguese": "mau",
+    "french": "mauvais",
+    "spanish": "malo",
+    "italian": "cattivo",
+    "german": "schlecht"
+  },
+  {
+    "english": "best",
+    "portuguese": "melhor",
+    "french": "meilleur",
+    "spanish": "mejor",
+    "italian": "migliore",
+    "german": "beste"
+  },
+  {
+    "english": "better",
+    "portuguese": "melhor",
+    "french": "mieux",
+    "spanish": "mejor",
+    "italian": "migliore",
+    "german": "besser"
+  },
+  {
+    "english": "big",
+    "portuguese": "grande",
+    "french": "grand",
+    "spanish": "grande",
+    "italian": "grande",
+    "german": "gro\u00df"
+  },
+  {
+    "english": "black",
+    "portuguese": "preto",
+    "french": "noir",
+    "spanish": "negro",
+    "italian": "nero",
+    "german": "schwarz"
+  },
+  {
+    "english": "certain",
+    "portuguese": "certa",
+    "french": "certain",
+    "spanish": "cierta",
+    "italian": "certa",
+    "german": "sicher"
+  },
+  {
+    "english": "clear",
+    "portuguese": "claro",
+    "french": "clair",
+    "spanish": "claro",
+    "italian": "chiaro",
+    "german": "klar"
+  },
+  {
+    "english": "different",
+    "portuguese": "diferente",
+    "french": "diff\u00e9rent",
+    "spanish": "diferente",
+    "italian": "diverso",
+    "german": "verschieden"
+  },
+  {
+    "english": "early",
+    "portuguese": "cedo",
+    "french": "t\u00f4t",
+    "spanish": "temprano",
+    "italian": "presto",
+    "german": "fr\u00fch"
+  },
+  {
+    "english": "easy",
+    "portuguese": "f\u00e1cil",
+    "french": "facile",
+    "spanish": "f\u00e1cil",
+    "italian": "facile",
+    "german": "einfach"
+  },
+  {
+    "english": "few",
+    "portuguese": "poucos",
+    "french": "peu",
+    "spanish": "pocos",
+    "italian": "pochi",
+    "german": "wenige"
+  },
+  {
+    "english": "first",
+    "portuguese": "primeiro",
+    "french": "premier",
+    "spanish": "primero",
+    "italian": "primo",
+    "german": "erste"
+  },
+  {
+    "english": "good",
+    "portuguese": "bom",
+    "french": "bon",
+    "spanish": "bueno",
+    "italian": "buono",
+    "german": "gut"
+  },
+  {
+    "english": "great",
+    "portuguese": "grande",
+    "french": "grand",
+    "spanish": "gran",
+    "italian": "grande",
+    "german": "gro\u00df"
+  },
+  {
+    "english": "high",
+    "portuguese": "alto",
+    "french": "haut",
+    "spanish": "alto",
+    "italian": "alto",
+    "german": "hoch"
+  },
+  {
+    "english": "important",
+    "portuguese": "importante",
+    "french": "important",
+    "spanish": "importante",
+    "italian": "importante",
+    "german": "wichtig"
+  },
+  {
+    "english": "large",
+    "portuguese": "grande",
+    "french": "grand",
+    "spanish": "grande",
+    "italian": "grande",
+    "german": "gro\u00df"
+  },
+  {
+    "english": "little",
+    "portuguese": "pequeno",
+    "french": "petit",
+    "spanish": "peque\u00f1o",
+    "italian": "piccolo",
+    "german": "klein"
+  },
+  {
+    "english": "long",
+    "portuguese": "longo",
+    "french": "long",
+    "spanish": "largo",
+    "italian": "lungo",
+    "german": "lang"
+  },
+  {
+    "english": "new",
+    "portuguese": "novo",
+    "french": "nouveau",
+    "spanish": "nuevo",
+    "italian": "nuovo",
+    "german": "neu"
+  },
+  {
+    "english": "old",
+    "portuguese": "velho",
+    "french": "vieux",
+    "spanish": "viejo",
+    "italian": "vecchio",
+    "german": "alt"
+  },
+  {
+    "english": "other",
+    "portuguese": "outro",
+    "french": "autre",
+    "spanish": "otro",
+    "italian": "altro",
+    "german": "andere"
+  },
+  {
+    "english": "own",
+    "portuguese": "pr\u00f3prio",
+    "french": "propre",
+    "spanish": "propio",
+    "italian": "proprio",
+    "german": "eigen"
+  },
+  {
+    "english": "public",
+    "portuguese": "p\u00fablico",
+    "french": "public",
+    "spanish": "p\u00fablico",
+    "italian": "pubblico",
+    "german": "\u00f6ffentlich"
+  },
+  {
+    "english": "right",
+    "portuguese": "direito",
+    "french": "droit",
+    "spanish": "derecho",
+    "italian": "destra",
+    "german": "recht"
+  },
+  {
+    "english": "small",
+    "portuguese": "pequeno",
+    "french": "petit",
+    "spanish": "peque\u00f1o",
+    "italian": "piccolo",
+    "german": "klein"
+  },
+  {
+    "english": "social",
+    "portuguese": "social",
+    "french": "social",
+    "spanish": "social",
+    "italian": "sociale",
+    "german": "sozial"
+  },
+  {
+    "english": "young",
+    "portuguese": "jovem",
+    "french": "jeune",
+    "spanish": "joven",
+    "italian": "giovane",
+    "german": "jung"
+  },
+  {
+    "english": "used",
+    "portuguese": "usado",
+    "french": "utilis\u00e9",
+    "spanish": "usado",
+    "italian": "usato",
+    "german": "gebraucht"
+  },
+  {
+    "english": "every",
+    "portuguese": "cada",
+    "french": "chaque",
+    "spanish": "cada",
+    "italian": "ogni",
+    "german": "jeder"
+  },
+  {
+    "english": "available",
+    "portuguese": "dispon\u00edvel",
+    "french": "disponible",
+    "spanish": "disponible",
+    "italian": "disponibile",
+    "german": "verf\u00fcgbar"
+  },
+  {
+    "english": "popular",
+    "portuguese": "popular",
+    "french": "populaire",
+    "spanish": "popular",
+    "italian": "popolare",
+    "german": "beliebt"
+  },
+  {
+    "english": "basic",
+    "portuguese": "b\u00e1sico",
+    "french": "basique",
+    "spanish": "b\u00e1sico",
+    "italian": "base",
+    "german": "grundlegend"
+  },
+  {
+    "english": "known",
+    "portuguese": "conhecido",
+    "french": "connu",
+    "spanish": "conocido",
+    "italian": "noto",
+    "german": "bekannt"
+  },
+  {
+    "english": "various",
+    "portuguese": "v\u00e1rios",
+    "french": "divers",
+    "spanish": "varios",
+    "italian": "vari",
+    "german": "verschieden"
+  },
+  {
+    "english": "difficult",
+    "portuguese": "dif\u00edcil",
+    "french": "difficile",
+    "spanish": "dif\u00edcil",
+    "italian": "difficile",
+    "german": "schwierig"
+  },
+  {
+    "english": "several",
+    "portuguese": "v\u00e1rios",
+    "french": "plusieurs",
+    "spanish": "varios",
+    "italian": "diversi",
+    "german": "mehrere"
+  },
+  {
+    "english": "united",
+    "portuguese": "unido",
+    "french": "unis",
+    "spanish": "unido",
+    "italian": "unito",
+    "german": "vereint"
+  },
+  {
+    "english": "historical",
+    "portuguese": "hist\u00f3rico",
+    "french": "historique",
+    "spanish": "hist\u00f3rico",
+    "italian": "storico",
+    "german": "historisch"
+  },
+  {
+    "english": "hot",
+    "portuguese": "quente",
+    "french": "chaud",
+    "spanish": "caliente",
+    "italian": "caldo",
+    "german": "hei\u00df"
+  },
+  {
+    "english": "useful",
+    "portuguese": "\u00fatil",
+    "french": "utile",
+    "spanish": "\u00fatil",
+    "italian": "utile",
+    "german": "n\u00fctzlich"
+  },
+  {
+    "english": "mental",
+    "portuguese": "mental",
+    "french": "mentale",
+    "spanish": "mental",
+    "italian": "mentale",
+    "german": "mental"
+  },
+  {
+    "english": "scared",
+    "portuguese": "assustado",
+    "french": "effray\u00e9",
+    "spanish": "asustado",
+    "italian": "spaventato",
+    "german": "erschrocken"
+  },
+  {
+    "english": "additional",
+    "portuguese": "adicional",
+    "french": "suppl\u00e9mentaire",
+    "spanish": "adicional",
+    "italian": "aggiuntivo",
+    "german": "zus\u00e4tzlich"
+  },
+  {
+    "english": "emotional",
+    "portuguese": "emocional",
+    "french": "\u00e9motionnel",
+    "spanish": "emocional",
+    "italian": "emotivo",
+    "german": "emotional"
+  },
+  {
+    "english": "political",
+    "portuguese": "pol\u00edtico",
+    "french": "politique",
+    "spanish": "pol\u00edtico",
+    "italian": "politico",
+    "german": "politisch"
+  },
+  {
+    "english": "similar",
+    "portuguese": "similar",
+    "french": "similaire",
+    "spanish": "similar",
+    "italian": "simile",
+    "german": "\u00e4hnlich"
+  },
+  {
+    "english": "healthy",
+    "portuguese": "sa\u00fade",
+    "french": "sain",
+    "spanish": "saludable",
+    "italian": "san",
+    "german": "gesund"
+  },
+  {
+    "english": "financial",
+    "portuguese": "financeiro",
+    "french": "financier",
+    "spanish": "financiero",
+    "italian": "finanziario",
+    "german": "finanziell"
+  },
+  {
+    "english": "medical",
+    "portuguese": "m\u00e9dico",
+    "french": "m\u00e9dical",
+    "spanish": "m\u00e9dico",
+    "italian": "medico",
+    "german": "medizinisch"
+  },
+  {
+    "english": "traditional",
+    "portuguese": "tradicional",
+    "french": "traditionnel",
+    "spanish": "tradicional",
+    "italian": "tradizionale",
+    "german": "traditionell"
+  },
+  {
+    "english": "federal",
+    "portuguese": "federal",
+    "french": "f\u00e9d\u00e9ral",
+    "spanish": "federal",
+    "italian": "federale",
+    "german": "f\u00f6deral"
+  },
+  {
+    "english": "entire",
+    "portuguese": "inteiro",
+    "french": "entier",
+    "spanish": "entero",
+    "italian": "intero",
+    "german": "ganz"
+  },
+  {
+    "english": "strong",
+    "portuguese": "forte",
+    "french": "fort",
+    "spanish": "fuerte",
+    "italian": "forte",
+    "german": "stark"
+  },
+  {
+    "english": "actual",
+    "portuguese": "atual",
+    "french": "actuel",
+    "spanish": "actual",
+    "italian": "attuale",
+    "german": "aktuell"
+  },
+  {
+    "english": "significant",
+    "portuguese": "significativo",
+    "french": "significatif",
+    "spanish": "significativo",
+    "italian": "significativo",
+    "german": "bedeutsam"
+  },
+  {
+    "english": "successful",
+    "portuguese": "bem-sucedido",
+    "french": "r\u00e9ussi",
+    "spanish": "exitoso",
+    "italian": "di successo",
+    "german": "erfolgreich"
+  },
+  {
+    "english": "electrical",
+    "portuguese": "el\u00e9trico",
+    "french": "\u00e9lectrique",
+    "spanish": "el\u00e9ctrico",
+    "italian": "elettrico",
+    "german": "elektrisch"
+  },
+  {
+    "english": "expensive",
+    "portuguese": "caro",
+    "french": "cher",
+    "spanish": "caro",
+    "italian": "costoso",
+    "german": "teuer"
+  },
+  {
+    "english": "pregnant",
+    "portuguese": "gr\u00e1vida",
+    "french": "enceinte",
+    "spanish": "embarazada",
+    "italian": "incinta",
+    "german": "schwanger"
+  },
+  {
+    "english": "intelligent",
+    "portuguese": "inteligente",
+    "french": "intelligent",
+    "spanish": "inteligente",
+    "italian": "intelligente",
+    "german": "intelligent"
+  },
+  {
+    "english": "interesting",
+    "portuguese": "interessante",
+    "french": "int\u00e9ressant",
+    "spanish": "interesante",
+    "italian": "interessante",
+    "german": "interessant"
+  },
+  {
+    "english": "poor",
+    "portuguese": "pobre",
+    "french": "pauvre",
+    "spanish": "pobre",
+    "italian": "povero",
+    "german": "arm"
+  },
+  {
+    "english": "happy",
+    "portuguese": "Feliz",
+    "french": "Heureux",
+    "spanish": "Feliz",
+    "italian": "Felice",
+    "german": "Gl\u00fccklich"
+  },
+  {
+    "english": "responsible",
+    "portuguese": "respons\u00e1vel",
+    "french": "responsable",
+    "spanish": "responsable",
+    "italian": "responsabile",
+    "german": "verantwortlich"
+  },
+  {
+    "english": "cute",
+    "portuguese": "fofo",
+    "french": "mignon",
+    "spanish": "lindo",
+    "italian": "carino",
+    "german": "niedlich"
+  },
+  {
+    "english": "helpful",
+    "portuguese": "\u00fatil",
+    "french": "utile",
+    "spanish": "\u00fatil",
+    "italian": "utile",
+    "german": "hilfreich"
+  },
+  {
+    "english": "recent",
+    "portuguese": "recente",
+    "french": "r\u00e9cent",
+    "spanish": "reciente",
+    "italian": "recente",
+    "german": "neu"
+  },
+  {
+    "english": "willing",
+    "portuguese": "disposto",
+    "french": "volontaire",
+    "spanish": "dispuesto",
+    "italian": "disponibile",
+    "german": "bereit"
+  },
+  {
+    "english": "nice",
+    "portuguese": "bom",
+    "french": "gentil",
+    "spanish": "agradable",
+    "italian": "bello",
+    "german": "nett"
+  },
+  {
+    "english": "wonderful",
+    "portuguese": "maravilhoso",
+    "french": "magnifique",
+    "spanish": "maravilloso",
+    "italian": "meraviglioso",
+    "german": "wundervoll"
+  },
+  {
+    "english": "impossible",
+    "portuguese": "imposs\u00edvel",
+    "french": "impossible",
+    "spanish": "imposible",
+    "italian": "impossibile",
+    "german": "unm\u00f6glich"
+  },
+  {
+    "english": "serious",
+    "portuguese": "s\u00e9rio",
+    "french": "s\u00e9rieux",
+    "spanish": "serio",
+    "italian": "serio",
+    "german": "ernst"
+  },
+  {
+    "english": "huge",
+    "portuguese": "enorme",
+    "french": "\u00e9norme",
+    "spanish": "enorme",
+    "italian": "enorme",
+    "german": "riesig"
+  },
+  {
+    "english": "rare",
+    "portuguese": "raros",
+    "french": "rare",
+    "spanish": "raro",
+    "italian": "raro",
+    "german": "selten"
+  },
+  {
+    "english": "technical",
+    "portuguese": "t\u00e9cnico",
+    "french": "technique",
+    "spanish": "t\u00e9cnico",
+    "italian": "tecnico",
+    "german": "technisch"
+  },
+  {
+    "english": "typical",
+    "portuguese": "t\u00edpico",
+    "french": "typique",
+    "spanish": "t\u00edpico",
+    "italian": "tipico",
+    "german": "typisch"
+  },
+  {
+    "english": "competitive",
+    "portuguese": "competitivo",
+    "french": "comp\u00e9titif",
+    "spanish": "competitivo",
+    "italian": "competitivo",
+    "german": "wettbewerbsf\u00e4hig"
+  },
+  {
+    "english": "critical",
+    "portuguese": "cr\u00edtico",
+    "french": "critique",
+    "spanish": "cr\u00edtico",
+    "italian": "critico",
+    "german": "kritisch"
+  },
+  {
+    "english": "electronic",
+    "portuguese": "eletr\u00f4nico",
+    "french": "\u00e9lectronique",
+    "spanish": "electr\u00f3nico",
+    "italian": "elettronico",
+    "german": "elektronisch"
+  },
+  {
+    "english": "immediate",
+    "portuguese": "imediato",
+    "french": "imm\u00e9diat",
+    "spanish": "inmediato",
+    "italian": "immediato",
+    "german": "sofort"
+  },
+  {
+    "english": "aware",
+    "portuguese": "consciente",
+    "french": "conscient",
+    "spanish": "consciente",
+    "italian": "consapevole",
+    "german": "bewusst"
+  },
+  {
+    "english": "educational",
+    "portuguese": "educacional",
+    "french": "\u00e9ducatif",
+    "spanish": "educativo",
+    "italian": "educativo",
+    "german": "bildend"
+  },
+  {
+    "english": "environmental",
+    "portuguese": "ambiental",
+    "french": "environnemental",
+    "spanish": "ambiental",
+    "italian": "ambientale",
+    "german": "umweltfreundlich"
+  },
+  {
+    "english": "global",
+    "portuguese": "Global",
+    "french": "Global",
+    "spanish": "Global",
+    "italian": "Globale",
+    "german": "Global"
+  },
+  {
+    "english": "legal",
+    "portuguese": "legal",
+    "french": "l\u00e9gal",
+    "spanish": "legal",
+    "italian": "legale",
+    "german": "legal"
+  },
+  {
+    "english": "relevant",
+    "portuguese": "relevantes",
+    "french": "pertinent",
+    "spanish": "relevantes",
+    "italian": "rilevante",
+    "german": "relevant"
+  },
+  {
+    "english": "accurate",
+    "portuguese": "preciso",
+    "french": "pr\u00e9cis",
+    "spanish": "exacto",
+    "italian": "preciso",
+    "german": "genau"
+  },
+  {
+    "english": "capable",
+    "portuguese": "capaz",
+    "french": "capable",
+    "spanish": "capaz",
+    "italian": "capace",
+    "german": "f\u00e4hig"
+  },
+  {
+    "english": "dangerous",
+    "portuguese": "perigoso",
+    "french": "dangereux",
+    "spanish": "peligroso",
+    "italian": "pericoloso",
+    "german": "gef\u00e4hrlich"
+  },
+  {
+    "english": "dramatic",
+    "portuguese": "dram\u00e1tico",
+    "french": "dramatique",
+    "spanish": "dram\u00e1tico",
+    "italian": "drammatico",
+    "german": "dramatisch"
+  },
+  {
+    "english": "efficient",
+    "portuguese": "eficiente",
+    "french": "efficace",
+    "spanish": "eficiente",
+    "italian": "efficiente",
+    "german": "effizient"
+  },
+  {
+    "english": "powerful",
+    "portuguese": "poderoso",
+    "french": "puissant",
+    "spanish": "poderoso",
+    "italian": "potente",
+    "german": "m\u00e4chtig"
+  },
+  {
+    "english": "foreign",
+    "portuguese": "estrangeiro",
+    "french": "\u00e9tranger",
+    "spanish": "extranjero",
+    "italian": "straniero",
+    "german": "fremd"
+  },
+  {
+    "english": "hungry",
+    "portuguese": "Faminto",
+    "french": "Faim",
+    "spanish": "Hambre",
+    "italian": "Fame",
+    "german": "Hunger"
+  },
+  {
+    "english": "practical",
+    "portuguese": "pr\u00e1tico",
+    "french": "pratique",
+    "spanish": "pr\u00e1ctico",
+    "italian": "pratico",
+    "german": "praktisch"
+  },
+  {
+    "english": "psychological",
+    "portuguese": "psicol\u00f3gico",
+    "french": "psychologique",
+    "spanish": "psicol\u00f3gico",
+    "italian": "psicologico",
+    "german": "psychologisch"
+  },
+  {
+    "english": "severe",
+    "portuguese": "severo",
+    "french": "s\u00e9v\u00e8re",
+    "spanish": "severo",
+    "italian": "severo",
+    "german": "streng"
+  },
+  {
+    "english": "suitable",
+    "portuguese": "adequado",
+    "french": "convenable",
+    "spanish": "adecuado",
+    "italian": "adeguato",
+    "german": "angemessen"
+  },
+  {
+    "english": "numerous",
+    "portuguese": "numerosos",
+    "french": "nombreux",
+    "spanish": "numerosos",
+    "italian": "numerosi",
+    "german": "zahlreich"
+  },
+  {
+    "english": "sufficient",
+    "portuguese": "suficiente",
+    "french": "suffisant",
+    "spanish": "suficiente",
+    "italian": "sufficiente",
+    "german": "ausreichend"
+  },
+  {
+    "english": "unusual",
+    "portuguese": "inusitado",
+    "french": "inhabituel",
+    "spanish": "inusual",
+    "italian": "insolito",
+    "german": "ungew\u00f6hnlich"
+  },
+  {
+    "english": "consistent",
+    "portuguese": "consistente",
+    "french": "coh\u00e9rent",
+    "spanish": "coherente",
+    "italian": "coerente",
+    "german": "konsistent"
+  },
+  {
+    "english": "cultural",
+    "portuguese": "cultural",
+    "french": "culturel",
+    "spanish": "cultural",
+    "italian": "culturale",
+    "german": "kulturell"
+  },
+  {
+    "english": "existing",
+    "portuguese": "existente",
+    "french": "existant",
+    "spanish": "existente",
+    "italian": "esistente",
+    "german": "bestehend"
+  },
+  {
+    "english": "famous",
+    "portuguese": "famoso",
+    "french": "c\u00e9l\u00e8bre",
+    "spanish": "famoso",
+    "italian": "famoso",
+    "german": "ber\u00fchmt"
+  },
+  {
+    "english": "pure",
+    "portuguese": "puro",
+    "french": "pur",
+    "spanish": "puro",
+    "italian": "puro",
+    "german": "rein"
+  },
+  {
+    "english": "afraid",
+    "portuguese": "medo",
+    "french": "effray\u00e9",
+    "spanish": "aterrorizado",
+    "italian": "spaventato",
+    "german": "\u00e4ngstlich"
+  },
+  {
+    "english": "obvious",
+    "portuguese": "\u00f3bvio",
+    "french": "\u00e9vident",
+    "spanish": "obvio",
+    "italian": "ovvio",
+    "german": "offensichtlich"
+  },
+  {
+    "english": "careful",
+    "portuguese": "cuidadoso",
+    "french": "prudent",
+    "spanish": "cuidadoso",
+    "italian": "accorto",
+    "german": "vorsichtig"
+  },
+  {
+    "english": "latter",
+    "portuguese": "\u00faltimo",
+    "french": "dernier",
+    "spanish": "\u00faltimo",
+    "italian": "ultimo",
+    "german": "letzte"
+  },
+  {
+    "english": "unhappy",
+    "portuguese": "infeliz",
+    "french": "malheureux",
+    "spanish": "infeliz",
+    "italian": "infelice",
+    "german": "ungl\u00fccklich"
+  },
+  {
+    "english": "acceptable",
+    "portuguese": "aceit\u00e1vel",
+    "french": "acceptable",
+    "spanish": "aceptable",
+    "italian": "accettabile",
+    "german": "annehmbar"
+  },
+  {
+    "english": "aggressive",
+    "portuguese": "agressivo",
+    "french": "agressif",
+    "spanish": "agresivo",
+    "italian": "aggressivo",
+    "german": "aggressiv"
+  },
+  {
+    "english": "boring",
+    "portuguese": "chato",
+    "french": "ennuyeux",
+    "spanish": "aburrido",
+    "italian": "noioso",
+    "german": "langweilig"
+  },
+  {
+    "english": "distinct",
+    "portuguese": "distinto",
+    "french": "distinct",
+    "spanish": "distinto",
+    "italian": "distinto",
+    "german": "unterschiedlich"
+  },
+  {
+    "english": "eastern",
+    "portuguese": "oriental",
+    "french": "oriental",
+    "spanish": "oriental",
+    "italian": "orientale",
+    "german": "\u00f6stlich"
+  },
+  {
+    "english": "logical",
+    "portuguese": "l\u00f3gico",
+    "french": "logique",
+    "spanish": "l\u00f3gico",
+    "italian": "logico",
+    "german": "logisch"
+  },
+  {
+    "english": "reasonable",
+    "portuguese": "razo\u00e1vel",
+    "french": "raisonnable",
+    "spanish": "razonable",
+    "italian": "ragionevole",
+    "german": "vern\u00fcnftig"
+  },
+  {
+    "english": "strict",
+    "portuguese": "rigoroso",
+    "french": "stricte",
+    "spanish": "estricto",
+    "italian": "severo",
+    "german": "streng"
+  },
+  {
+    "english": "administrative",
+    "portuguese": "administrativo",
+    "french": "administratif",
+    "spanish": "administrativo",
+    "italian": "amministrativo",
+    "german": "verwaltungstechnisch"
+  },
+  {
+    "english": "automatic",
+    "portuguese": "autom\u00e1tico",
+    "french": "automatique",
+    "spanish": "autom\u00e1tico",
+    "italian": "automatico",
+    "german": "automatisch"
+  },
+  {
+    "english": "civil",
+    "portuguese": "civil",
+    "french": "civile",
+    "spanish": "civil",
+    "italian": "civile",
+    "german": "zivil"
+  },
+  {
+    "english": "former",
+    "portuguese": "anterior",
+    "french": "ancien",
+    "spanish": "anterior",
+    "italian": "ex",
+    "german": "fr\u00fcher"
+  },
+  {
+    "english": "massive",
+    "portuguese": "massivo",
+    "french": "massif",
+    "spanish": "masivo",
+    "italian": "massiccio",
+    "german": "massiv"
+  },
+  {
+    "english": "southern",
+    "portuguese": "sul",
+    "french": "sud",
+    "spanish": "sur",
+    "italian": "sud",
+    "german": "s\u00fcdlich"
+  },
+  {
+    "english": "unfair",
+    "portuguese": "injusto",
+    "french": "injuste",
+    "spanish": "injusto",
+    "italian": "ingiusto",
+    "german": "ungerecht"
+  },
+  {
+    "english": "visible",
+    "portuguese": "vis\u00edvel",
+    "french": "visible",
+    "spanish": "visible",
+    "italian": "visibile",
+    "german": "sichtbar"
+  },
+  {
+    "english": "alive",
+    "portuguese": "vivo",
+    "french": "vivant",
+    "spanish": "vivo",
+    "italian": "vivo",
+    "german": "lebendig"
+  },
+  {
+    "english": "angry",
+    "portuguese": "irritado",
+    "french": "f\u00e2ch\u00e9",
+    "spanish": "enfadado",
+    "italian": "arrabbiato",
+    "german": "w\u00fctend"
+  },
+  {
+    "english": "desperate",
+    "portuguese": "desesperado",
+    "french": "d\u00e9sesp\u00e9r\u00e9",
+    "spanish": "desesperado",
+    "italian": "disperato",
+    "german": "verzweifelt"
+  },
+  {
+    "english": "exciting",
+    "portuguese": "emocionante",
+    "french": "excitant",
+    "spanish": "emocionante",
+    "italian": "eccitante",
+    "german": "aufregend"
+  },
+  {
+    "english": "friendly",
+    "portuguese": "amig\u00e1vel",
+    "french": "amical",
+    "spanish": "amistoso",
+    "italian": "amichevole",
+    "german": "freundlich"
+  },
+  {
+    "english": "lucky",
+    "portuguese": "sortudo",
+    "french": "chanceux",
+    "spanish": "afortunado",
+    "italian": "fortunato",
+    "german": "gl\u00fccklich"
+  },
+  {
+    "english": "realistic",
+    "portuguese": "realista",
+    "french": "r\u00e9aliste",
+    "spanish": "realista",
+    "italian": "realistico",
+    "german": "realistisch"
+  },
+  {
+    "english": "sorry",
+    "portuguese": "desculpa",
+    "french": "d\u00e9sol\u00e9",
+    "spanish": "lo siento",
+    "italian": "mi dispiace",
+    "german": "entschuldigung"
+  },
+  {
+    "english": "ugly",
+    "portuguese": "feio",
+    "french": "laid",
+    "spanish": "feo",
+    "italian": "brutto",
+    "german": "h\u00e4sslich"
+  },
+  {
+    "english": "unlikely",
+    "portuguese": "improvavel",
+    "french": "peu probable",
+    "spanish": "poco probable",
+    "italian": "improbabile",
+    "german": "unwahrscheinlich"
+  },
+  {
+    "english": "anxious",
+    "portuguese": "ansioso",
+    "french": "anxieux",
+    "spanish": "ansioso",
+    "italian": "ansioso",
+    "german": "\u00e4ngstlich"
+  },
+  {
+    "english": "comprehensive",
+    "portuguese": "abrangente",
+    "french": "complet",
+    "spanish": "completo",
+    "italian": "completo",
+    "german": "umfassend"
+  },
+  {
+    "english": "curious",
+    "portuguese": "curioso",
+    "french": "curieux",
+    "spanish": "curioso",
+    "italian": "curioso",
+    "german": "neugierig"
+  },
+  {
+    "english": "impressive",
+    "portuguese": "impressionante",
+    "french": "impressionnant",
+    "spanish": "impresionante",
+    "italian": "impressionante",
+    "german": "beeindruckend"
+  },
+  {
+    "english": "informal",
+    "portuguese": "informal",
+    "french": "informel",
+    "spanish": "informal",
+    "italian": "informale",
+    "german": "informell"
+  },
+  {
+    "english": "inner",
+    "portuguese": "interno",
+    "french": "int\u00e9rieur",
+    "spanish": "interior",
+    "italian": "interno",
+    "german": "innere"
+  },
+  {
+    "english": "pleasant",
+    "portuguese": "agrad\u00e1vel",
+    "french": "agr\u00e9able",
+    "spanish": "agradable",
+    "italian": "piacevole",
+    "german": "angenehm"
+  },
+  {
+    "english": "sexual",
+    "portuguese": "sexual",
+    "french": "sexuel",
+    "spanish": "sexual",
+    "italian": "sessuale",
+    "german": "sexuell"
+  },
+  {
+    "english": "sudden",
+    "portuguese": "s\u00fabito",
+    "french": "soudain",
+    "spanish": "s\u00fabito",
+    "italian": "improvviso",
+    "german": "pl\u00f6tzlich"
+  },
+  {
+    "english": "terrible",
+    "portuguese": "terr\u00edvel",
+    "french": "terrible",
+    "spanish": "terrible",
+    "italian": "terribile",
+    "german": "schrecklich"
+  },
+  {
+    "english": "unable",
+    "portuguese": "incapaz",
+    "french": "incapable",
+    "spanish": "incapaz",
+    "italian": "incapace",
+    "german": "unf\u00e4hig"
+  },
+  {
+    "english": "weak",
+    "portuguese": "fraca",
+    "french": "faible",
+    "spanish": "d\u00e9bil",
+    "italian": "debole",
+    "german": "schwach"
+  },
+  {
+    "english": "wooden",
+    "portuguese": "madeira",
+    "french": "bois",
+    "spanish": "madera",
+    "italian": "legno",
+    "german": "Holz"
+  },
+  {
+    "english": "asleep",
+    "portuguese": "adormecido",
+    "french": "endormi",
+    "spanish": "dormido",
+    "italian": "addormentato",
+    "german": "schlafend"
+  },
+  {
+    "english": "confident",
+    "portuguese": "confiante",
+    "french": "confiant",
+    "spanish": "confiado",
+    "italian": "sicuro",
+    "german": "selbstbewusst"
+  },
+  {
+    "english": "conscious",
+    "portuguese": "consciente",
+    "french": "conscient",
+    "spanish": "consciente",
+    "italian": "cosciente",
+    "german": "bewusst"
+  },
+  {
+    "english": "decent",
+    "portuguese": "decente",
+    "french": "d\u00e9cent",
+    "spanish": "decente",
+    "italian": "decente",
+    "german": "anst\u00e4ndig"
+  },
+  {
+    "english": "embarrassed",
+    "portuguese": "envergonhado",
+    "french": "embarrass\u00e9",
+    "spanish": "avergonzado",
+    "italian": "imbarazzato",
+    "german": "besch\u00e4mt"
+  },
+  {
+    "english": "guilty",
+    "portuguese": "culpado",
+    "french": "coupable",
+    "spanish": "culpable",
+    "italian": "colpevole",
+    "german": "schuldig"
+  },
+  {
+    "english": "lonely",
+    "portuguese": "solit\u00e1rio",
+    "french": "solitaire",
+    "spanish": "solitario",
+    "italian": "solitario",
+    "german": "einsam"
+  },
+  {
+    "english": "mad",
+    "portuguese": "louco",
+    "french": "fou",
+    "spanish": "loco",
+    "italian": "folle",
+    "german": "verr\u00fcckt"
+  },
+  {
+    "english": "nervous",
+    "portuguese": "nervoso",
+    "french": "nerveux",
+    "spanish": "nervioso",
+    "italian": "nervoso",
+    "german": "nerv\u00f6s"
+  },
+  {
+    "english": "odd",
+    "portuguese": "estranho",
+    "french": "\u00e9trange",
+    "spanish": "impar",
+    "italian": "strano",
+    "german": "ungerade"
+  },
+  {
+    "english": "remarkable",
+    "portuguese": "not\u00e1vel",
+    "french": "remarquable",
+    "spanish": "notable",
+    "italian": "notabile",
+    "german": "bemerkenswert"
+  },
+  {
+    "english": "substantial",
+    "portuguese": "substancial",
+    "french": "substantiel",
+    "spanish": "substancial",
+    "italian": "sostanziale",
+    "german": "erheblich"
+  },
+  {
+    "english": "suspicious",
+    "portuguese": "suspeito",
+    "french": "suspect",
+    "spanish": "sospechoso",
+    "italian": "sospetto",
+    "german": "verd\u00e4chtig"
+  },
+  {
+    "english": "tall",
+    "portuguese": "alto",
+    "french": "haut",
+    "spanish": "alto",
+    "italian": "alto",
+    "german": "hoch"
+  },
+  {
+    "english": "tiny",
+    "portuguese": "min\u00fasculo",
+    "french": "minuscule",
+    "spanish": "min\u00fasculo",
+    "italian": "minuscolo",
+    "german": "winzig"
+  },
+  {
+    "english": "more",
+    "portuguese": "mais",
+    "french": "plus",
+    "spanish": "m\u00e1s",
+    "italian": "pi\u00f9",
+    "german": "mehr"
+  },
+  {
+    "english": "some",
+    "portuguese": "alguns",
+    "french": "quelques",
+    "spanish": "algunos",
+    "italian": "alcuni",
+    "german": "einige"
+  },
+  {
+    "english": "one",
+    "portuguese": "um",
+    "french": "un",
+    "spanish": "uno",
+    "italian": "uno",
+    "german": "eins"
+  },
+  {
+    "english": "all",
+    "portuguese": "todos",
+    "french": "tous",
+    "spanish": "todo",
+    "italian": "tutto",
+    "german": "alle"
+  },
+  {
+    "english": "many",
+    "portuguese": "muitos",
+    "french": "beaucoup",
+    "spanish": "muchos",
+    "italian": "molti",
+    "german": "viele"
+  },
+  {
+    "english": "most",
+    "portuguese": "mais",
+    "french": "plus",
+    "spanish": "la mayor\u00eda",
+    "italian": "la maggior parte",
+    "german": "meisten"
+  },
+  {
+    "english": "such",
+    "portuguese": "tal",
+    "french": "tel",
+    "spanish": "tal",
+    "italian": "tale",
+    "german": "solch"
+  },
+  {
+    "english": "even",
+    "portuguese": "mesmo",
+    "french": "m\u00eame",
+    "spanish": "incluso",
+    "italian": "persino",
+    "german": "sogar"
+  },
+  {
+    "english": "just",
+    "portuguese": "apenas",
+    "french": "juste",
+    "spanish": "s\u00f3lo",
+    "italian": "solo",
+    "german": "nur"
+  },
+  {
+    "english": "any",
+    "portuguese": "qualquer",
+    "french": "n'importe",
+    "spanish": "cualquier",
+    "italian": "qualunque",
+    "german": "irgendein"
+  },
+  {
+    "english": "each",
+    "portuguese": "cada",
+    "french": "chaque",
+    "spanish": "cada",
+    "italian": "ogni",
+    "german": "jeder"
+  },
+  {
+    "english": "much",
+    "portuguese": "muito",
+    "french": "beaucoup",
+    "spanish": "mucho",
+    "italian": "molto",
+    "german": "viel"
+  },
+  {
+    "english": "another",
+    "portuguese": "outro",
+    "french": "un autre",
+    "spanish": "otro",
+    "italian": "altro",
+    "german": "ein anderer"
+  },
+  {
+    "english": "same",
+    "portuguese": "mesmo",
+    "french": "m\u00eame",
+    "spanish": "mismo",
+    "italian": "stesso",
+    "german": "gleich"
+  },
+  {
+    "english": "free",
+    "portuguese": "livre",
+    "french": "gratuit",
+    "spanish": "libre",
+    "italian": "libero",
+    "german": "frei"
+  },
+  {
+    "english": "still",
+    "portuguese": "ainda",
+    "french": "encore",
+    "spanish": "todav\u00eda",
+    "italian": "ancora",
+    "german": "immer noch"
+  },
+  {
+    "english": "human",
+    "portuguese": "humano",
+    "french": "humain",
+    "spanish": "humano",
+    "italian": "umano",
+    "german": "menschlich"
+  },
+  {
+    "english": "both",
+    "portuguese": "ambos",
+    "french": "les deux",
+    "spanish": "ambos",
+    "italian": "entrambi",
+    "german": "beide"
+  },
+  {
+    "english": "local",
+    "portuguese": "local",
+    "french": "locale",
+    "spanish": "local",
+    "italian": "locale",
+    "german": "lokal"
+  },
+  {
+    "english": "sure",
+    "portuguese": "certamente",
+    "french": "certain",
+    "spanish": "seguro",
+    "italian": "sicuro",
+    "german": "sicher"
+  },
+  {
+    "english": "general",
+    "portuguese": "geral",
+    "french": "g\u00e9n\u00e9ral",
+    "spanish": "general",
+    "italian": "generale",
+    "german": "allgemein"
+  },
+  {
+    "english": "specific",
+    "portuguese": "espec\u00edfico",
+    "french": "sp\u00e9cifique",
+    "spanish": "espec\u00edfico",
+    "italian": "specifico",
+    "german": "spezifisch"
+  },
+  {
+    "english": "enough",
+    "portuguese": "bastante",
+    "french": "assez",
+    "spanish": "suficiente",
+    "italian": "abbastanza",
+    "german": "genug"
+  },
+  {
+    "english": "less",
+    "portuguese": "menos",
+    "french": "moins",
+    "spanish": "menos",
+    "italian": "meno",
+    "german": "weniger"
+  },
+  {
+    "english": "common",
+    "portuguese": "comum",
+    "french": "commun",
+    "spanish": "com\u00fan",
+    "italian": "comune",
+    "german": "gemeinsam"
+  },
+  {
+    "english": "next",
+    "portuguese": "pr\u00f3ximo",
+    "french": "suivant",
+    "spanish": "siguiente",
+    "italian": "prossimo",
+    "german": "n\u00e4chste"
+  },
+  {
+    "english": "simple",
+    "portuguese": "simples",
+    "french": "simple",
+    "spanish": "sencillo",
+    "italian": "semplice",
+    "german": "einfach"
+  },
+  {
+    "english": "hard",
+    "portuguese": "duro",
+    "french": "dur",
+    "spanish": "duro",
+    "italian": "duro",
+    "german": "hart"
+  },
+  {
+    "english": "past",
+    "portuguese": "passado",
+    "french": "pass\u00e9",
+    "spanish": "pasado",
+    "italian": "passato",
+    "german": "vergangenheit"
+  },
+  {
+    "english": "possible",
+    "portuguese": "poss\u00edvel",
+    "french": "possible",
+    "spanish": "posible",
+    "italian": "possibile",
+    "german": "m\u00f6glich"
+  },
+  {
+    "english": "particular",
+    "portuguese": "particular",
+    "french": "particulier",
+    "spanish": "particular",
+    "italian": "particolare",
+    "german": "besonders"
+  },
+  {
+    "english": "real",
+    "portuguese": "real",
+    "french": "r\u00e9el",
+    "spanish": "real",
+    "italian": "reale",
+    "german": "real"
+  },
+  {
+    "english": "major",
+    "portuguese": "maior",
+    "french": "majeur",
+    "spanish": "mayor",
+    "italian": "maggiore",
+    "german": "Haupt"
+  },
+  {
+    "english": "personal",
+    "portuguese": "pessoal",
+    "french": "personnel",
+    "spanish": "personal",
+    "italian": "personale",
+    "german": "pers\u00f6nlich"
+  },
+  {
+    "english": "current",
+    "portuguese": "atual",
+    "french": "actuel",
+    "spanish": "actual",
+    "italian": "attuale",
+    "german": "aktuell"
+  },
+  {
+    "english": "left",
+    "portuguese": "esquerda",
+    "french": "gauche",
+    "spanish": "izquierda",
+    "italian": "sinistra",
+    "german": "links"
+  },
+  {
+    "english": "national",
+    "portuguese": "nacional",
+    "french": "national",
+    "spanish": "nacional",
+    "italian": "nazionale",
+    "german": "national"
+  },
+  {
+    "english": "least",
+    "portuguese": "menos",
+    "french": "moins",
+    "spanish": "menos",
+    "italian": "meno",
+    "german": "am wenigsten"
+  },
+  {
+    "english": "natural",
+    "portuguese": "natural",
+    "french": "naturel",
+    "spanish": "natural",
+    "italian": "naturale",
+    "german": "nat\u00fcrlich"
+  },
+  {
+    "english": "physical",
+    "portuguese": "f\u00edsico",
+    "french": "physique",
+    "spanish": "f\u00edsico",
+    "italian": "fisico",
+    "german": "physikalisch"
+  },
+  {
+    "english": "short",
+    "portuguese": "curto",
+    "french": "court",
+    "spanish": "corto",
+    "italian": "corto",
+    "german": "kurz"
+  },
+  {
+    "english": "last",
+    "portuguese": "\u00faltimo",
+    "french": "dernier",
+    "spanish": "\u00faltimo",
+    "italian": "ultimo",
+    "german": "letzte"
+  },
+  {
+    "english": "single",
+    "portuguese": "\u00fanico",
+    "french": "c\u00e9libataire",
+    "spanish": "solo",
+    "italian": "singolo",
+    "german": "alleinstehend"
+  },
+  {
+    "english": "individual",
+    "portuguese": "individual",
+    "french": "individuel",
+    "spanish": "individual",
+    "italian": "individuale",
+    "german": "Individuum"
+  },
+  {
+    "english": "main",
+    "portuguese": "principal",
+    "french": "principal",
+    "spanish": "principal",
+    "italian": "principale",
+    "german": "Haupt"
+  },
+  {
+    "english": "potential",
+    "portuguese": "potencial",
+    "french": "potentiel",
+    "spanish": "potencial",
+    "italian": "potenziale",
+    "german": "Potenzial"
+  },
+  {
+    "english": "professional",
+    "portuguese": "profissional",
+    "french": "professionnel",
+    "spanish": "profesional",
+    "italian": "professionale",
+    "german": "professionell"
+  },
+  {
+    "english": "international",
+    "portuguese": "internacional",
+    "french": "international",
+    "spanish": "internacional",
+    "italian": "internazionale",
+    "german": "international"
+  },
+  {
+    "english": "lower",
+    "portuguese": "baixo",
+    "french": "plus bas",
+    "spanish": "inferior",
+    "italian": "basso",
+    "german": "niedriger"
+  },
+  {
+    "english": "open",
+    "portuguese": "aberto",
+    "french": "ouvert",
+    "spanish": "abierto",
+    "italian": "aperto",
+    "german": "offen"
+  },
+  {
+    "english": "according",
+    "portuguese": "de acordo",
+    "french": "selon",
+    "spanish": "seg\u00fan",
+    "italian": "secondo",
+    "german": "gem\u00e4\u00df"
+  },
+  {
+    "english": "alternative",
+    "portuguese": "alternativo",
+    "french": "alternative",
+    "spanish": "alternativa",
+    "italian": "alternativa",
+    "german": "Alternative"
+  },
+  {
+    "english": "special",
+    "portuguese": "especial",
+    "french": "sp\u00e9cial",
+    "spanish": "especial",
+    "italian": "speciale",
+    "german": "besonders"
+  },
+  {
+    "english": "working",
+    "portuguese": "trabalhando",
+    "french": "travailler",
+    "spanish": "trabajando",
+    "italian": "lavorando",
+    "german": "arbeitend"
+  },
+  {
+    "english": "true",
+    "portuguese": "verdadeiro",
+    "french": "vrai",
+    "spanish": "verdadero",
+    "italian": "vero",
+    "german": "wahr"
+  },
+  {
+    "english": "whole",
+    "portuguese": "inteiro",
+    "french": "entier",
+    "spanish": "entero",
+    "italian": "intero",
+    "german": "ganzes"
+  },
+  {
+    "english": "dry",
+    "portuguese": "seco",
+    "french": "sec",
+    "spanish": "seco",
+    "italian": "secco",
+    "german": "trocken"
+  },
+  {
+    "english": "cold",
+    "portuguese": "frio",
+    "french": "froid",
+    "spanish": "fr\u00edo",
+    "italian": "freddo",
+    "german": "kalt"
+  },
+  {
+    "english": "commercial",
+    "portuguese": "comercial",
+    "french": "commercial",
+    "spanish": "comercial",
+    "italian": "commerciale",
+    "german": "kommerziell"
+  },
+  {
+    "english": "full",
+    "portuguese": "cheio",
+    "french": "plein",
+    "spanish": "lleno",
+    "italian": "pieno",
+    "german": "voll"
+  },
+  {
+    "english": "low",
+    "portuguese": "baixo",
+    "french": "bas",
+    "spanish": "bajo",
+    "italian": "basso",
+    "german": "niedrig"
+  },
+  {
+    "english": "primary",
+    "portuguese": "prim\u00e1rio",
+    "french": "primaire",
+    "spanish": "primario",
+    "italian": "primario",
+    "german": "prim\u00e4r"
+  },
+  {
+    "english": "worth",
+    "portuguese": "valor",
+    "french": "valeur",
+    "spanish": "valor",
+    "italian": "valore",
+    "german": "Wert"
+  },
+  {
+    "english": "necessary",
+    "portuguese": "necess\u00e1rio",
+    "french": "n\u00e9cessaire",
+    "spanish": "necesario",
+    "italian": "necessario",
+    "german": "notwendig"
+  },
+  {
+    "english": "positive",
+    "portuguese": "positivo",
+    "french": "positif",
+    "spanish": "positivo",
+    "italian": "positivo",
+    "german": "positiv"
+  },
+  {
+    "english": "present",
+    "portuguese": "presente",
+    "french": "pr\u00e9sent",
+    "spanish": "presente",
+    "italian": "presente",
+    "german": "Gegenwart"
+  },
+  {
+    "english": "close",
+    "portuguese": "fechar",
+    "french": "fermer",
+    "spanish": "cerrar",
+    "italian": "chiudere",
+    "german": "schlie\u00dfen"
+  },
+  {
+    "english": "creative",
+    "portuguese": "criativo",
+    "french": "cr\u00e9atif",
+    "spanish": "creativo",
+    "italian": "creativo",
+    "german": "kreativ"
+  },
+  {
+    "english": "green",
+    "portuguese": "verde",
+    "french": "vert",
+    "spanish": "verde",
+    "italian": "verde",
+    "german": "gr\u00fcn"
+  },
+  {
+    "english": "late",
+    "portuguese": "atrasado",
+    "french": "en retard",
+    "spanish": "tarde",
+    "italian": "in ritardo",
+    "german": "sp\u00e4t"
+  },
+  {
+    "english": "fit",
+    "portuguese": "encaixar",
+    "french": "ajuster",
+    "spanish": "encausar",
+    "italian": "adattare",
+    "german": "passen"
+  },
+  {
+    "english": "glad",
+    "portuguese": "alegre",
+    "french": "heureux",
+    "spanish": "contento",
+    "italian": "felice",
+    "german": "gl\u00fccklich"
+  },
+  {
+    "english": "proper",
+    "portuguese": "adequado",
+    "french": "appropri\u00e9",
+    "spanish": "adecuado",
+    "italian": "corretto",
+    "german": "richtig"
+  },
+  {
+    "english": "complex",
+    "portuguese": "complexo",
+    "french": "complexe",
+    "spanish": "complejo",
+    "italian": "complesso",
+    "german": "komplex"
+  },
+  {
+    "english": "content",
+    "portuguese": "conte\u00fado",
+    "french": "contenu",
+    "spanish": "contenido",
+    "italian": "contenuto",
+    "german": "Inhalt"
+  },
+  {
+    "english": "due",
+    "portuguese": "devido",
+    "french": "d\u00fb",
+    "spanish": "debido",
+    "italian": "dovuto",
+    "german": "f\u00e4llig"
+  },
+  {
+    "english": "effective",
+    "portuguese": "eficaz",
+    "french": "efficace",
+    "spanish": "efectivo",
+    "italian": "efficace",
+    "german": "wirksam"
+  },
+  {
+    "english": "middle",
+    "portuguese": "meio",
+    "french": "milieu",
+    "spanish": "medio",
+    "italian": "mezzo",
+    "german": "Mitte"
+  },
+  {
+    "english": "regular",
+    "portuguese": "regular",
+    "french": "r\u00e9gulier",
+    "spanish": "regular",
+    "italian": "regolare",
+    "german": "regelm\u00e4\u00dfig"
+  },
+  {
+    "english": "fast",
+    "portuguese": "r\u00e1pido",
+    "french": "rapide",
+    "spanish": "r\u00e1pido",
+    "italian": "veloce",
+    "german": "schnell"
+  },
+  {
+    "english": "independent",
+    "portuguese": "independente",
+    "french": "ind\u00e9pendant",
+    "spanish": "independiente",
+    "italian": "indipendente",
+    "german": "unabh\u00e4ngig"
+  },
+  {
+    "english": "original",
+    "portuguese": "original",
+    "french": "original",
+    "spanish": "original",
+    "italian": "originale",
+    "german": "urspr\u00fcnglich"
+  },
+  {
+    "english": "wide",
+    "portuguese": "amplo",
+    "french": "large",
+    "spanish": "ancho",
+    "italian": "ampio",
+    "german": "weit"
+  },
+  {
+    "english": "beautiful",
+    "portuguese": "bonito",
+    "french": "beau",
+    "spanish": "hermoso",
+    "italian": "bello",
+    "german": "sch\u00f6n"
+  },
+  {
+    "english": "complete",
+    "portuguese": "Completo",
+    "french": "Complet",
+    "spanish": "Completo",
+    "italian": "Completo",
+    "german": "Vollst\u00e4ndig"
+  },
+  {
+    "english": "active",
+    "portuguese": "Ativo",
+    "french": "Actif",
+    "spanish": "Activo",
+    "italian": "Attivo",
+    "german": "Aktiv"
+  },
+  {
+    "english": "negative",
+    "portuguese": "negativo",
+    "french": "n\u00e9gatif",
+    "spanish": "negativo",
+    "italian": "negativo",
+    "german": "negativ"
+  },
+  {
+    "english": "safe",
+    "portuguese": "seguro",
+    "french": "s\u00fbr",
+    "spanish": "seguro",
+    "italian": "sicuro",
+    "german": "sicher"
+  },
+  {
+    "english": "visual",
+    "portuguese": "visual",
+    "french": "visuel",
+    "spanish": "visual",
+    "italian": "visivo",
+    "german": "visuell"
+  },
+  {
+    "english": "wrong",
+    "portuguese": "errado",
+    "french": "faux",
+    "spanish": "equivocado",
+    "italian": "sbagliato",
+    "german": "falsch"
+  },
+  {
+    "english": "ago",
+    "portuguese": "atr\u00e1s",
+    "french": "il y a",
+    "spanish": "hace",
+    "italian": "fa",
+    "german": "vor"
+  },
+  {
+    "english": "quick",
+    "portuguese": "r\u00e1pido",
+    "french": "rapide",
+    "spanish": "r\u00e1pido",
+    "italian": "veloce",
+    "german": "schnell"
+  },
+  {
+    "english": "ready",
+    "portuguese": "pronto",
+    "french": "pr\u00eat",
+    "spanish": "listo",
+    "italian": "pronto",
+    "german": "bereit"
+  },
+  {
+    "english": "straight",
+    "portuguese": "direto",
+    "french": "droit",
+    "spanish": "recto",
+    "italian": "diritto",
+    "german": "gerade"
+  },
+  {
+    "english": "white",
+    "portuguese": "branco",
+    "french": "blanc",
+    "spanish": "blanco",
+    "italian": "bianco",
+    "german": "wei\u00df"
+  },
+  {
+    "english": "direct",
+    "portuguese": "direto",
+    "french": "direct",
+    "spanish": "directo",
+    "italian": "diretto",
+    "german": "direkt"
+  },
+  {
+    "english": "excellent",
+    "portuguese": "excelente",
+    "french": "excellent",
+    "spanish": "excelente",
+    "italian": "eccellente",
+    "german": "ausgezeichnet"
+  },
+  {
+    "english": "extra",
+    "portuguese": "extra",
+    "french": "extra",
+    "spanish": "extra",
+    "italian": "extra",
+    "german": "extra"
+  },
+  {
+    "english": "junior",
+    "portuguese": "j\u00fanior",
+    "french": "junior",
+    "spanish": "junior",
+    "italian": "juniore",
+    "german": "Junior"
+  },
+  {
+    "english": "pretty",
+    "portuguese": "bonito/a",
+    "french": "joli",
+    "spanish": "bonito/a",
+    "italian": "bello/a",
+    "german": "h\u00fcbsch"
+  },
+  {
+    "english": "unique",
+    "portuguese": "\u00fanico",
+    "french": "unique",
+    "spanish": "\u00fanico",
+    "italian": "unico",
+    "german": "einzigartig"
+  },
+  {
+    "english": "classic",
+    "portuguese": "cl\u00e1ssico",
+    "french": "classique",
+    "spanish": "cl\u00e1sico",
+    "italian": "classico",
+    "german": "klassik"
+  },
+  {
+    "english": "final",
+    "portuguese": "final",
+    "french": "final",
+    "spanish": "final",
+    "italian": "finale",
+    "german": "endg\u00fcltig"
+  },
+  {
+    "english": "overall",
+    "portuguese": "geral",
+    "french": "global",
+    "spanish": "general",
+    "italian": "generale",
+    "german": "insgesamt"
+  },
+  {
+    "english": "private",
+    "portuguese": "privado",
+    "french": "priv\u00e9",
+    "spanish": "privado",
+    "italian": "privato",
+    "german": "privat"
+  },
+  {
+    "english": "separate",
+    "portuguese": "separar",
+    "french": "s\u00e9parer",
+    "spanish": "separar",
+    "italian": "separare",
+    "german": "trennen"
+  },
+  {
+    "english": "western",
+    "portuguese": "oeste",
+    "french": "ouest",
+    "spanish": "occidental",
+    "italian": "occidentale",
+    "german": "westlich"
+  },
+  {
+    "english": "alone",
+    "portuguese": "s\u00f3",
+    "french": "seul",
+    "spanish": "solo",
+    "italian": "solo",
+    "german": "alleine"
+  },
+  {
+    "english": "familiar",
+    "portuguese": "familiar",
+    "french": "familier",
+    "spanish": "familiar",
+    "italian": "familiare",
+    "german": "vertraut"
+  },
+  {
+    "english": "official",
+    "portuguese": "oficial",
+    "french": "officiel",
+    "spanish": "oficial",
+    "italian": "ufficiale",
+    "german": "offiziell"
+  },
+  {
+    "english": "perfect",
+    "portuguese": "perfeito",
+    "french": "parfait",
+    "spanish": "perfecto",
+    "italian": "perfetto",
+    "german": "perfekt"
+  },
+  {
+    "english": "bright",
+    "portuguese": "brilhante",
+    "french": "brillant",
+    "spanish": "brillante",
+    "italian": "luminoso",
+    "german": "hell"
+  },
+  {
+    "english": "broad",
+    "portuguese": "amplo",
+    "french": "large",
+    "spanish": "amplio",
+    "italian": "ampio",
+    "german": "breit"
+  },
+  {
+    "english": "comfortable",
+    "portuguese": "confort\u00e1vel",
+    "french": "confortable",
+    "spanish": "c\u00f3modo",
+    "italian": "comodo",
+    "german": "bequem"
+  },
+  {
+    "english": "flat",
+    "portuguese": "plano",
+    "french": "plat",
+    "spanish": "plano",
+    "italian": "piatto",
+    "german": "flach"
+  },
+  {
+    "english": "rich",
+    "portuguese": "rico",
+    "french": "riche",
+    "spanish": "rico",
+    "italian": "ricco",
+    "german": "reich"
+  },
+  {
+    "english": "warm",
+    "portuguese": "quente",
+    "french": "chaud",
+    "spanish": "caliente",
+    "italian": "caldo",
+    "german": "warm"
+  },
+  {
+    "english": "heavy",
+    "portuguese": "pesado",
+    "french": "lourd",
+    "spanish": "pesado",
+    "italian": "pesante",
+    "german": "schwer"
+  },
+  {
+    "english": "valuable",
+    "portuguese": "valioso",
+    "french": "pr\u00e9cieux",
+    "spanish": "valioso",
+    "italian": "prezioso",
+    "german": "wertvoll"
+  },
+  {
+    "english": "correct",
+    "portuguese": "correto",
+    "french": "correct",
+    "spanish": "correcto",
+    "italian": "corretto",
+    "german": "richtig"
+  },
+  {
+    "english": "leading",
+    "portuguese": "l\u00edder",
+    "french": "principal",
+    "spanish": "liderar",
+    "italian": "principale",
+    "german": "f\u00fchrend"
+  },
+  {
+    "english": "slow",
+    "portuguese": "lento",
+    "french": "lent",
+    "spanish": "lento",
+    "italian": "lento",
+    "german": "langsam"
+  },
+  {
+    "english": "clean",
+    "portuguese": "limpo",
+    "french": "propre",
+    "spanish": "limpio",
+    "italian": "pulito",
+    "german": "sauber"
+  },
+  {
+    "english": "fresh",
+    "portuguese": "fresco",
+    "french": "frais",
+    "spanish": "fresco",
+    "italian": "fresco",
+    "german": "frisch"
+  },
+  {
+    "english": "normal",
+    "portuguese": "normal",
+    "french": "normal",
+    "spanish": "normal",
+    "italian": "normale",
+    "german": "normal"
+  },
+  {
+    "english": "secret",
+    "portuguese": "segredo",
+    "french": "secret",
+    "spanish": "secreto",
+    "italian": "segreto",
+    "german": "Geheimnis"
+  },
+  {
+    "english": "tough",
+    "portuguese": "dif\u00edcil",
+    "french": "difficile",
+    "spanish": "duro",
+    "italian": "duro",
+    "german": "hart"
+  },
+  {
+    "english": "brown",
+    "portuguese": "marrom",
+    "french": "brun",
+    "spanish": "marr\u00f3n",
+    "italian": "marrone",
+    "german": "braun"
+  },
+  {
+    "english": "cheap",
+    "portuguese": "barato",
+    "french": "bon march\u00e9",
+    "spanish": "barato",
+    "italian": "a buon mercato",
+    "german": "billig"
+  },
+  {
+    "english": "deep",
+    "portuguese": "profundo",
+    "french": "profond",
+    "spanish": "profundo",
+    "italian": "profondo",
+    "german": "tief"
+  },
+  {
+    "english": "objective",
+    "portuguese": "objetivo",
+    "french": "objectif",
+    "spanish": "objetivo",
+    "italian": "obiettivo",
+    "german": "Ziel"
+  },
+  {
+    "english": "secure",
+    "portuguese": "seguro",
+    "french": "s\u00e9curiser",
+    "spanish": "seguro",
+    "italian": "sicuro",
+    "german": "sicher"
+  },
+  {
+    "english": "thin",
+    "portuguese": "fino",
+    "french": "mince",
+    "spanish": "delgado",
+    "italian": "sottile",
+    "german": "d\u00fcnn"
+  },
+  {
+    "english": "chemical",
+    "portuguese": "qu\u00edmico",
+    "french": "chimique",
+    "spanish": "qu\u00edmico",
+    "italian": "chimico",
+    "german": "chemisch"
+  },
+  {
+    "english": "cool",
+    "portuguese": "legal",
+    "french": "cool",
+    "spanish": "genial",
+    "italian": "figo",
+    "german": "cool"
+  },
+  {
+    "english": "extreme",
+    "portuguese": "extremo",
+    "french": "extr\u00eame",
+    "spanish": "extremo",
+    "italian": "estremo",
+    "german": "extrem"
+  },
+  {
+    "english": "exact",
+    "portuguese": "exato",
+    "french": "exact",
+    "spanish": "exacto",
+    "italian": "esatto",
+    "german": "genau"
+  },
+  {
+    "english": "fair",
+    "portuguese": "justo",
+    "french": "juste",
+    "spanish": "justo",
+    "italian": "giusto",
+    "german": "gerecht"
+  },
+  {
+    "english": "fine",
+    "portuguese": "bom",
+    "french": "bien",
+    "spanish": "bien",
+    "italian": "bene",
+    "german": "gut"
+  },
+  {
+    "english": "formal",
+    "portuguese": "formal",
+    "french": "formel",
+    "spanish": "formal",
+    "italian": "formale",
+    "german": "formell"
+  },
+  {
+    "english": "opposite",
+    "portuguese": "oposto",
+    "french": "oppos\u00e9",
+    "spanish": "opuesto",
+    "italian": "opposto",
+    "german": "gegens\u00e4tzlich"
+  },
+  {
+    "english": "remote",
+    "portuguese": "remoto",
+    "french": "\u00e0 distance",
+    "spanish": "remoto",
+    "italian": "remoto",
+    "german": "fern"
+  },
+  {
+    "english": "total",
+    "portuguese": "total",
+    "french": "total",
+    "spanish": "total",
+    "italian": "totale",
+    "german": "gesamt"
+  },
+  {
+    "english": "vast",
+    "portuguese": "vasto",
+    "french": "vaste",
+    "spanish": "vasto",
+    "italian": "vasto",
+    "german": "weit"
+  },
+  {
+    "english": "lost",
+    "portuguese": "perdido",
+    "french": "perdu",
+    "spanish": "perdido",
+    "italian": "perso",
+    "german": "verloren"
+  },
+  {
+    "english": "smooth",
+    "portuguese": "suave",
+    "french": "lisse",
+    "spanish": "suave",
+    "italian": "liscio",
+    "german": "glatt"
+  },
+  {
+    "english": "dark",
+    "portuguese": "escuro",
+    "french": "sombre",
+    "spanish": "oscuro",
+    "italian": "scuro",
+    "german": "dunkel"
+  },
+  {
+    "english": "double",
+    "portuguese": "duplo",
+    "french": "double",
+    "spanish": "doble",
+    "italian": "doppio",
+    "german": "doppelt"
+  },
+  {
+    "english": "equal",
+    "portuguese": "igual",
+    "french": "\u00e9gal",
+    "spanish": "igual",
+    "italian": "uguale",
+    "german": "gleich"
+  },
+  {
+    "english": "firm",
+    "portuguese": "firme",
+    "french": "firme",
+    "spanish": "firme",
+    "italian": "firme",
+    "german": "fest"
+  },
+  {
+    "english": "frequent",
+    "portuguese": "frequente",
+    "french": "fr\u00e9quent",
+    "spanish": "frecuente",
+    "italian": "frequente",
+    "german": "h\u00e4ufig"
+  },
+  {
+    "english": "internal",
+    "portuguese": "interno",
+    "french": "interne",
+    "spanish": "interno",
+    "italian": "interno",
+    "german": "intern"
+  },
+  {
+    "english": "sensitive",
+    "portuguese": "sens\u00edvel",
+    "french": "sensible",
+    "spanish": "sensible",
+    "italian": "sensibile",
+    "german": "empfindlich"
+  },
+  {
+    "english": "constant",
+    "portuguese": "constante",
+    "french": "constant",
+    "spanish": "constante",
+    "italian": "costante",
+    "german": "konstant"
+  },
+  {
+    "english": "minor",
+    "portuguese": "menor",
+    "french": "mineur",
+    "spanish": "menor",
+    "italian": "minore",
+    "german": "geringf\u00fcgig"
+  },
+  {
+    "english": "previous",
+    "portuguese": "anterior",
+    "french": "pr\u00e9c\u00e9dent",
+    "spanish": "anterior",
+    "italian": "precedente",
+    "german": "vorhergehend"
+  },
+  {
+    "english": "raw",
+    "portuguese": "cru",
+    "french": "brut",
+    "spanish": "crudo",
+    "italian": "crudo",
+    "german": "roh"
+  },
+  {
+    "english": "soft",
+    "portuguese": "macio",
+    "french": "doux",
+    "spanish": "suave",
+    "italian": "morbido",
+    "german": "weich"
+  },
+  {
+    "english": "solid",
+    "portuguese": "s\u00f3lido",
+    "french": "solide",
+    "spanish": "s\u00f3lido",
+    "italian": "solido",
+    "german": "solide"
+  },
+  {
+    "english": "weird",
+    "portuguese": "estranho",
+    "french": "\u00e9trange",
+    "spanish": "raro",
+    "italian": "strano",
+    "german": "seltsam"
+  },
+  {
+    "english": "amazing",
+    "portuguese": "incr\u00edvel",
+    "french": "incroyable",
+    "spanish": "incre\u00edble",
+    "italian": "meraviglioso",
+    "german": "erstaunlich"
+  },
+  {
+    "english": "annual",
+    "portuguese": "anual",
+    "french": "annuel",
+    "spanish": "anual",
+    "italian": "annuale",
+    "german": "j\u00e4hrlich"
+  },
+  {
+    "english": "busy",
+    "portuguese": "ocupado",
+    "french": "occup\u00e9",
+    "spanish": "ocupado",
+    "italian": "occupato",
+    "german": "besch\u00e4ftigt"
+  },
+  {
+    "english": "dead",
+    "portuguese": "morto",
+    "french": "mort",
+    "spanish": "muerto",
+    "italian": "morto",
+    "german": "tot"
+  },
+  {
+    "english": "false",
+    "portuguese": "falso",
+    "french": "faux",
+    "spanish": "falso",
+    "italian": "falso",
+    "german": "falsch"
+  },
+  {
+    "english": "round",
+    "portuguese": "redondo",
+    "french": "rond",
+    "spanish": "redondo",
+    "italian": "rotondo",
+    "german": "rund"
+  },
+  {
+    "english": "sharp",
+    "portuguese": "agudo",
+    "french": "aigu\u00eb",
+    "spanish": "agudo",
+    "italian": "acuto",
+    "german": "scharf"
+  },
+  {
+    "english": "thick",
+    "portuguese": "espesso",
+    "french": "\u00e9pais",
+    "spanish": "grueso",
+    "italian": "spesso",
+    "german": "dick"
+  },
+  {
+    "english": "wise",
+    "portuguese": "s\u00e1bio",
+    "french": "sage",
+    "spanish": "sabio",
+    "italian": "saggio",
+    "german": "weise"
+  },
+  {
+    "english": "equivalent",
+    "portuguese": "equivalente",
+    "french": "\u00e9quivalent",
+    "spanish": "equivalente",
+    "italian": "equivalente",
+    "german": "gleichwertig"
+  },
+  {
+    "english": "initial",
+    "portuguese": "inicial",
+    "french": "initial",
+    "spanish": "inicial",
+    "italian": "iniziale",
+    "german": "Anfangs"
+  },
+  {
+    "english": "narrow",
+    "portuguese": "estreito",
+    "french": "\u00e9troit",
+    "spanish": "estrecho",
+    "italian": "stretto",
+    "german": "eng"
+  },
+  {
+    "english": "nearby",
+    "portuguese": "pr\u00f3ximo",
+    "french": "\u00e0 proximit\u00e9",
+    "spanish": "cerca",
+    "italian": "vicino",
+    "german": "in der N\u00e4he"
+  },
+  {
+    "english": "proud",
+    "portuguese": "orgulhoso",
+    "french": "fier",
+    "spanish": "orgulloso",
+    "italian": "fiero",
+    "german": "stolz"
+  },
+  {
+    "english": "spiritual",
+    "portuguese": "espiritual",
+    "french": "spirituel",
+    "spanish": "espiritual",
+    "italian": "spirituale",
+    "german": "geistig"
+  },
+  {
+    "english": "wild",
+    "portuguese": "selvagem",
+    "french": "sauvage",
+    "spanish": "salvaje",
+    "italian": "selvaggio",
+    "german": "wild"
+  },
+  {
+    "english": "adult",
+    "portuguese": "adulto",
+    "french": "adulte",
+    "spanish": "adulto",
+    "italian": "adulto",
+    "german": "Erwachsener"
+  },
+  {
+    "english": "apart",
+    "portuguese": "separado",
+    "french": "\u00e0 part",
+    "spanish": "aparte",
+    "italian": "separato",
+    "german": "getrennt"
+  },
+  {
+    "english": "brief",
+    "portuguese": "breve",
+    "french": "bref",
+    "spanish": "breve",
+    "italian": "breve",
+    "german": "kurz"
+  },
+  {
+    "english": "crazy",
+    "portuguese": "louco",
+    "french": "fou",
+    "spanish": "loco",
+    "italian": "pazzo",
+    "german": "verr\u00fcckt"
+  },
+  {
+    "english": "prior",
+    "portuguese": "anterior",
+    "french": "pr\u00e9c\u00e9dent",
+    "spanish": "anterior",
+    "italian": "precedente",
+    "german": "vorherige"
+  },
+  {
+    "english": "rough",
+    "portuguese": "\u00e1spero",
+    "french": "rugueux",
+    "spanish": "rugoso",
+    "italian": "ruvido",
+    "german": "rau"
+  },
+  {
+    "english": "sad",
+    "portuguese": "triste",
+    "french": "triste",
+    "spanish": "triste",
+    "italian": "triste",
+    "german": "traurig"
+  },
+  {
+    "english": "sick",
+    "portuguese": "doente",
+    "french": "malade",
+    "spanish": "enfermo",
+    "italian": "malato",
+    "german": "krank"
+  },
+  {
+    "english": "strange",
+    "portuguese": "estranho",
+    "french": "\u00e9trange",
+    "spanish": "extra\u00f1o",
+    "italian": "strano",
+    "german": "seltsam"
+  },
+  {
+    "english": "external",
+    "portuguese": "externo",
+    "french": "externe",
+    "spanish": "externo",
+    "italian": "esterno",
+    "german": "extern"
+  },
+  {
+    "english": "illegal",
+    "portuguese": "ilegal",
+    "french": "ill\u00e9gal",
+    "spanish": "ilegal",
+    "italian": "illegale",
+    "german": "illegal"
+  },
+  {
+    "english": "loud",
+    "portuguese": "alto",
+    "french": "fort",
+    "spanish": "ruidoso",
+    "italian": "forte",
+    "german": "laut"
+  },
+  {
+    "english": "mobile",
+    "portuguese": "m\u00f3vel",
+    "french": "mobile",
+    "spanish": "m\u00f3vil",
+    "italian": "mobile",
+    "german": "mobil"
+  },
+  {
+    "english": "nasty",
+    "portuguese": "repulsivo",
+    "french": "d\u00e9go\u00fbtant",
+    "spanish": "desagradable",
+    "italian": "ripugnante",
+    "german": "ekelhaft"
+  },
+  {
+    "english": "ordinary",
+    "portuguese": "ordin\u00e1rio",
+    "french": "ordinaire",
+    "spanish": "ordinario",
+    "italian": "ordinario",
+    "german": "gew\u00f6hnlich"
+  },
+  {
+    "english": "royal",
+    "portuguese": "real",
+    "french": "royal",
+    "spanish": "real",
+    "italian": "reale",
+    "german": "k\u00f6niglich"
+  },
+  {
+    "english": "senior",
+    "portuguese": "S\u00eanior",
+    "french": "A\u00een\u00e9",
+    "spanish": "Senior",
+    "italian": "Anziano",
+    "german": "Senior"
+  },
+  {
+    "english": "super",
+    "portuguese": "super",
+    "french": "super",
+    "spanish": "super",
+    "italian": "super",
+    "german": "super"
+  },
+  {
+    "english": "tight",
+    "portuguese": "aperto",
+    "french": "serr\u00e9",
+    "spanish": "apretado",
+    "italian": "stretto",
+    "german": "eng"
+  },
+  {
+    "english": "upper",
+    "portuguese": "superior",
+    "french": "sup\u00e9rieur",
+    "spanish": "superior",
+    "italian": "superiore",
+    "german": "obere"
+  },
+  {
+    "english": "yellow",
+    "portuguese": "amarelo",
+    "french": "jaune",
+    "spanish": "amarillo",
+    "italian": "giallo",
+    "german": "gelb"
+  },
+  {
+    "english": "dependent",
+    "portuguese": "dependente",
+    "french": "d\u00e9pendant",
+    "spanish": "dependiente",
+    "italian": "dipendente",
+    "german": "abh\u00e4ngig"
+  },
+  {
+    "english": "funny",
+    "portuguese": "engra\u00e7ado",
+    "french": "dr\u00f4le",
+    "spanish": "gracioso",
+    "italian": "divertente",
+    "german": "lustig"
+  },
+  {
+    "english": "gross",
+    "portuguese": "bruto",
+    "french": "grossier",
+    "spanish": "bruto",
+    "italian": "brutto",
+    "german": "brutto"
+  },
+  {
+    "english": "ill",
+    "portuguese": "doente",
+    "french": "malade",
+    "spanish": "enfermo",
+    "italian": "malato",
+    "german": "krank"
+  },
+  {
+    "english": "spare",
+    "portuguese": "sobra",
+    "french": "\u00e9pargne",
+    "spanish": "ahorrar",
+    "italian": "risparmiare",
+    "german": "ersetzen"
+  },
+  {
+    "english": "sweet",
+    "portuguese": "doce",
+    "french": "doux",
+    "spanish": "dulce",
+    "italian": "dolce",
+    "german": "s\u00fc\u00df"
+  },
+  {
+    "english": "upstairs",
+    "portuguese": "acima",
+    "french": "\u00e0 l'\u00e9tage",
+    "spanish": "arriba",
+    "italian": "al piano di sopra",
+    "german": "oben"
+  },
+  {
+    "english": "usual",
+    "portuguese": "habitual",
+    "french": "habituel",
+    "spanish": "habitual",
+    "italian": "usuale",
+    "german": "gew\u00f6hnlich"
+  },
+  {
+    "english": "brave",
+    "portuguese": "corajoso",
+    "french": "brave",
+    "spanish": "valiente",
+    "italian": "coraggioso",
+    "german": "mutig"
+  },
+  {
+    "english": "calm",
+    "portuguese": "calmo",
+    "french": "calme",
+    "spanish": "calma",
+    "italian": "calmo",
+    "german": "ruhig"
+  },
+  {
+    "english": "dirty",
+    "portuguese": "sujo",
+    "french": "sale",
+    "spanish": "sucio",
+    "italian": "sporco",
+    "german": "schmutzig"
+  },
+  {
+    "english": "downtown",
+    "portuguese": "centro da cidade",
+    "french": "centre-ville",
+    "spanish": "centro de la ciudad",
+    "italian": "centro della citt\u00e0",
+    "german": "Stadtzentrum"
+  },
+  {
+    "english": "grand",
+    "portuguese": "grande",
+    "french": "grand",
+    "spanish": "grande",
+    "italian": "grande",
+    "german": "gro\u00df"
+  },
+  {
+    "english": "honest",
+    "portuguese": "honesto",
+    "french": "honn\u00eate",
+    "spanish": "honesto",
+    "italian": "onesto",
+    "german": "ehrlich"
+  },
+  {
+    "english": "loose",
+    "portuguese": "solto",
+    "french": "l\u00e2che",
+    "spanish": "suelto",
+    "italian": "sciolto",
+    "german": "locker"
+  },
+  {
+    "english": "male",
+    "portuguese": "macho",
+    "french": "m\u00e2le",
+    "spanish": "masculino",
+    "italian": "maschio",
+    "german": "m\u00e4nnlich"
+  },
+  {
+    "english": "quiet",
+    "portuguese": "calmo",
+    "french": "calme",
+    "spanish": "tranquilo",
+    "italian": "calmo",
+    "german": "ruhig"
+  },
+  {
+    "english": "brilliant",
+    "portuguese": "brilhante",
+    "french": "brillant",
+    "spanish": "brillante",
+    "italian": "brillante",
+    "german": "brillant"
+  },
+  {
+    "english": "dear",
+    "portuguese": "querido",
+    "french": "cher",
+    "spanish": "querido",
+    "italian": "caro",
+    "german": "lieb"
+  },
+  {
+    "english": "drunk",
+    "portuguese": "borracho",
+    "french": "ivre",
+    "spanish": "borracho",
+    "italian": "ubriaco",
+    "german": "betrunken"
+  },
+  {
+    "english": "empty",
+    "portuguese": "vazio",
+    "french": "vide",
+    "spanish": "vac\u00edo",
+    "italian": "vuoto",
+    "german": "leer"
+  },
+  {
+    "english": "inevitable",
+    "portuguese": "inevit\u00e1vel",
+    "french": "in\u00e9vitable",
+    "spanish": "inevitable",
+    "italian": "inevitabile",
+    "german": "unvermeidlich"
+  },
+  {
+    "english": "neat",
+    "portuguese": "limpo",
+    "french": "propre",
+    "spanish": "ordenado",
+    "italian": "ordinato",
+    "german": "ordentlich"
+  },
+  {
+    "english": "ok",
+    "portuguese": "OK",
+    "french": "d'accord",
+    "spanish": "OK",
+    "italian": "OK",
+    "german": "OK"
+  },
+  {
+    "english": "representative",
+    "portuguese": "representante",
+    "french": "repr\u00e9sentant",
+    "spanish": "representante",
+    "italian": "rappresentante",
+    "german": "Vertreter"
+  },
+  {
+    "english": "silly",
+    "portuguese": "tolo",
+    "french": "stupide",
+    "spanish": "tonto",
+    "italian": "sciocco",
+    "german": "albern"
+  },
+  {
+    "english": "slight",
+    "portuguese": "leve",
+    "french": "l\u00e9ger",
+    "spanish": "leve",
+    "italian": "leggero",
+    "german": "leicht"
+  },
+  {
+    "english": "smart",
+    "portuguese": "esperto",
+    "french": "intelligent",
+    "spanish": "inteligente",
+    "italian": "intelligente",
+    "german": "klug"
+  },
+  {
+    "english": "stupid",
+    "portuguese": "est\u00fapido",
+    "french": "stupide",
+    "spanish": "est\u00fapido",
+    "italian": "stupido",
+    "german": "dumm"
+  },
+  {
+    "english": "temporary",
+    "portuguese": "tempor\u00e1rio",
+    "french": "temporaire",
+    "spanish": "temporal",
+    "italian": "temporaneo",
+    "german": "vor\u00fcbergehend"
+  },
+  {
+    "english": "weekly",
+    "portuguese": "semanalmente",
+    "french": "hebdomadaire",
+    "spanish": "semanalmente",
+    "italian": "settimanalmente",
+    "german": "w\u00f6chentlich"
+  },
+  {
+    "english": "orange",
+    "portuguese": "laranja",
+    "french": "orange",
+    "spanish": "naranja",
+    "italian": "arancia",
+    "german": "orange"
+  },
+  {
+    "english": "gold",
+    "portuguese": "ouro",
+    "french": "or",
+    "spanish": "oro",
+    "italian": "oro",
+    "german": "Gold"
+  },
+  {
+    "english": "silver",
+    "portuguese": "prata",
+    "french": "argent",
+    "spanish": "plata",
+    "italian": "argento",
+    "german": "Silber"
+  },
+  {
+    "english": "red",
+    "portuguese": "vermelho",
+    "french": "rouge",
+    "spanish": "rojo",
+    "italian": "rosso",
+    "german": "rot"
+  },
+  {
+    "english": "purple",
+    "portuguese": "roxo",
+    "french": "violet",
+    "spanish": "morado",
+    "italian": "viola",
+    "german": "lila"
+  },
+  {
+    "english": "pink",
+    "portuguese": "rosa",
+    "french": "rose",
+    "spanish": "rosa",
+    "italian": "rosa",
+    "german": "rosa"
+  },
+  {
+    "english": "gray",
+    "portuguese": "cinza",
+    "french": "gris",
+    "spanish": "gris",
+    "italian": "grigio",
+    "german": "grau"
+  },
+  {
+    "english": "violet",
+    "portuguese": "violeta",
+    "french": "violet",
+    "spanish": "violeta",
+    "italian": "viola",
+    "german": "violett"
+  }
+]

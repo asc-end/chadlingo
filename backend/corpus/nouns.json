@@ -1,0 +1,3370 @@
+[
+  {
+    "english": "Time",
+    "portuguese": "Tempo",
+    "french": "Temps",
+    "spanish": "Tiempo",
+    "italian": "Tempo",
+    "german": "Zeit"
+  },
+  {
+    "english": "Year",
+    "portuguese": "Ano",
+    "french": "An",
+    "spanish": "A\u00f1o",
+    "italian": "Anno",
+    "german": "Jahr"
+  },
+  {
+    "english": "People",
+    "portuguese": "Pessoas",
+    "french": "Gens",
+    "spanish": "Gente",
+    "italian": "Persone",
+    "german": "Leute"
+  },
+  {
+    "english": "Way",
+    "portuguese": "Caminho",
+    "french": "Chemin",
+    "spanish": "Camino",
+    "italian": "Strada",
+    "german": "Weg"
+  },
+  {
+    "english": "Day",
+    "portuguese": "Dia",
+    "french": "Jour",
+    "spanish": "D\u00eda",
+    "italian": "Giorno",
+    "german": "Tag"
+  },
+  {
+    "english": "Man",
+    "portuguese": "Homem",
+    "french": "Homme",
+    "spanish": "Hombre",
+    "italian": "Uomo",
+    "german": "Mann"
+  },
+  {
+    "english": "Thing",
+    "portuguese": "Coisa",
+    "french": "Chose",
+    "spanish": "Cosa",
+    "italian": "Cosa",
+    "german": "Sache"
+  },
+  {
+    "english": "Woman",
+    "portuguese": "Mulher",
+    "french": "Femme",
+    "spanish": "Mujer",
+    "italian": "Donna",
+    "german": "Frau"
+  },
+  {
+    "english": "Life",
+    "portuguese": "Vida",
+    "french": "Vie",
+    "spanish": "Vida",
+    "italian": "Vita",
+    "german": "Leben"
+  },
+  {
+    "english": "Child",
+    "portuguese": "Crian\u00e7a",
+    "french": "Enfant",
+    "spanish": "Ni\u00f1o",
+    "italian": "Bambino",
+    "german": "Kind"
+  },
+  {
+    "english": "World",
+    "portuguese": "Mundo",
+    "french": "Monde",
+    "spanish": "Mundo",
+    "italian": "Mondo",
+    "german": "Welt"
+  },
+  {
+    "english": "School",
+    "portuguese": "Escola",
+    "french": "\u00c9cole",
+    "spanish": "Escuela",
+    "italian": "Scuola",
+    "german": "Schule"
+  },
+  {
+    "english": "State",
+    "portuguese": "Estado",
+    "french": "\u00c9tat",
+    "spanish": "Estado",
+    "italian": "Stato",
+    "german": "Staat"
+  },
+  {
+    "english": "Family",
+    "portuguese": "Fam\u00edlia",
+    "french": "Famille",
+    "spanish": "Familia",
+    "italian": "Famiglia",
+    "german": "Familie"
+  },
+  {
+    "english": "Student",
+    "portuguese": "Estudante",
+    "french": "\u00c9tudiant",
+    "spanish": "Estudiante",
+    "italian": "Studente",
+    "german": "Student"
+  },
+  {
+    "english": "Group",
+    "portuguese": "Grupo",
+    "french": "Groupe",
+    "spanish": "Grupo",
+    "italian": "Gruppo",
+    "german": "Gruppe"
+  },
+  {
+    "english": "Country",
+    "portuguese": "Pa\u00eds",
+    "french": "Pays",
+    "spanish": "Pa\u00eds",
+    "italian": "Paese",
+    "german": "Land"
+  },
+  {
+    "english": "Problem",
+    "portuguese": "Problema",
+    "french": "Probl\u00e8me",
+    "spanish": "Problema",
+    "italian": "Problema",
+    "german": "Problem"
+  },
+  {
+    "english": "Hand",
+    "portuguese": "M\u00e3o",
+    "french": "Main",
+    "spanish": "Mano",
+    "italian": "Mano",
+    "german": "Hand"
+  },
+  {
+    "english": "Part",
+    "portuguese": "parte",
+    "french": "partie",
+    "spanish": "parte",
+    "italian": "parte",
+    "german": "Teil"
+  },
+  {
+    "english": "Place",
+    "portuguese": "Lugar",
+    "french": "Lieu",
+    "spanish": "Lugar",
+    "italian": "Posto",
+    "german": "Ort"
+  },
+  {
+    "english": "Case",
+    "portuguese": "Caso",
+    "french": "Cas",
+    "spanish": "Caso",
+    "italian": "Causa",
+    "german": "Fall"
+  },
+  {
+    "english": "Fact",
+    "portuguese": "Fatos",
+    "french": "Fait",
+    "spanish": "Hecho",
+    "italian": "Fatto",
+    "german": "Tatsache"
+  },
+  {
+    "english": "Eye",
+    "portuguese": "Olho",
+    "french": "Oeil",
+    "spanish": "Ojo",
+    "italian": "Occhio",
+    "german": "Auge"
+  },
+  {
+    "english": "Friend",
+    "portuguese": "Amigo",
+    "french": "Ami",
+    "spanish": "Amigo",
+    "italian": "Amico",
+    "german": "Freund"
+  },
+  {
+    "english": "Month",
+    "portuguese": "M\u00eas",
+    "french": "Mois",
+    "spanish": "Mes",
+    "italian": "Mese",
+    "german": "Monat"
+  },
+  {
+    "english": "Truth",
+    "portuguese": "Verdade",
+    "french": "V\u00e9rit\u00e9",
+    "spanish": "Verdad",
+    "italian": "Verit\u00e0",
+    "german": "Wahrheit"
+  },
+  {
+    "english": "Marketing",
+    "portuguese": "Marketing",
+    "french": "Marketing",
+    "spanish": "Marketing",
+    "italian": "Marketing",
+    "german": "Marketing"
+  },
+  {
+    "english": "Company",
+    "portuguese": "Empresa",
+    "french": "Compagnie",
+    "spanish": "Compa\u00f1\u00eda",
+    "italian": "Compagnia",
+    "german": "Unternehmen"
+  },
+  {
+    "english": "Story",
+    "portuguese": "hist\u00f3ria",
+    "french": "histoire",
+    "spanish": "historia",
+    "italian": "storia",
+    "german": "Geschichte"
+  },
+  {
+    "english": "Industry",
+    "portuguese": "Ind\u00fastria",
+    "french": "Industrie",
+    "spanish": "Industria",
+    "italian": "Industria",
+    "german": "Industrie"
+  },
+  {
+    "english": "Night",
+    "portuguese": "Noite",
+    "french": "Nuit",
+    "spanish": "Noche",
+    "italian": "Notte",
+    "german": "Nacht"
+  },
+  {
+    "english": "Quality",
+    "portuguese": "Qualidade",
+    "french": "Qualit\u00e9",
+    "spanish": "Calidad",
+    "italian": "Qualit\u00e0",
+    "german": "Qualit\u00e4t"
+  },
+  {
+    "english": "Quantity",
+    "portuguese": "Quantidade",
+    "french": "Quantit\u00e9",
+    "spanish": "Cantidad",
+    "italian": "Quantit\u00e0",
+    "german": "Menge"
+  },
+  {
+    "english": "Water",
+    "portuguese": "\u00c1gua",
+    "french": "Eau",
+    "spanish": "Agua",
+    "italian": "Acqua",
+    "german": "Wasser"
+  },
+  {
+    "english": "Side",
+    "portuguese": "Lado",
+    "french": "C\u00f4t\u00e9",
+    "spanish": "Lado",
+    "italian": "Lato",
+    "german": "Seite"
+  },
+  {
+    "english": "Home",
+    "portuguese": "Casa",
+    "french": "Maison",
+    "spanish": "Casa",
+    "italian": "Casa",
+    "german": "Zuhause"
+  },
+  {
+    "english": "Picture",
+    "portuguese": "Imagem",
+    "french": "Image",
+    "spanish": "Imagen",
+    "italian": "Immagine",
+    "german": "Bild"
+  },
+  {
+    "english": "Product",
+    "portuguese": "Produto",
+    "french": "Produit",
+    "spanish": "Producto",
+    "italian": "Prodotto",
+    "german": "Produkt"
+  },
+  {
+    "english": "Book",
+    "portuguese": "Livro",
+    "french": "Livre",
+    "spanish": "Libro",
+    "italian": "Libro",
+    "german": "Buch"
+  },
+  {
+    "english": "Job",
+    "portuguese": "Emprego",
+    "french": "Travail",
+    "spanish": "Trabajo",
+    "italian": "Lavoro",
+    "german": "Job"
+  },
+  {
+    "english": "Word",
+    "portuguese": "Palavra",
+    "french": "Mot",
+    "spanish": "Palabra",
+    "italian": "Parola",
+    "german": "Wort"
+  },
+  {
+    "english": "Business",
+    "portuguese": "Neg\u00f3cio",
+    "french": "Affaires",
+    "spanish": "Negocio",
+    "italian": "Affari",
+    "german": "Gesch\u00e4ft"
+  },
+  {
+    "english": "Issue",
+    "portuguese": "Quest\u00e3o",
+    "french": "Probl\u00e8me",
+    "spanish": "Problema",
+    "italian": "Problema",
+    "german": "Problem"
+  },
+  {
+    "english": "Kind",
+    "portuguese": "Bom",
+    "french": "Gentil",
+    "spanish": "Amable",
+    "italian": "Gentile",
+    "german": "Freundlich"
+  },
+  {
+    "english": "Head",
+    "portuguese": "Cabe\u00e7a",
+    "french": "T\u00eate",
+    "spanish": "Cabeza",
+    "italian": "Testa",
+    "german": "Kopf"
+  },
+  {
+    "english": "House",
+    "portuguese": "Casa",
+    "french": "Maison",
+    "spanish": "Casa",
+    "italian": "Casa",
+    "german": "Haus"
+  },
+  {
+    "english": "Service",
+    "portuguese": "Servi\u00e7o",
+    "french": "Service",
+    "spanish": "Servicio",
+    "italian": "Servizio",
+    "german": "Dienst"
+  },
+  {
+    "english": "Father",
+    "portuguese": "Pai",
+    "french": "P\u00e8re",
+    "spanish": "Padre",
+    "italian": "Padre",
+    "german": "Vater"
+  },
+  {
+    "english": "Power",
+    "portuguese": "Poder",
+    "french": "Pouvoir",
+    "spanish": "Poder",
+    "italian": "Potere",
+    "german": "Macht"
+  },
+  {
+    "english": "Hour",
+    "portuguese": "Hora",
+    "french": "Heure",
+    "spanish": "Hora",
+    "italian": "Ora",
+    "german": "Stunde"
+  },
+  {
+    "english": "Game",
+    "portuguese": "Jogo",
+    "french": "Jeu",
+    "spanish": "Juego",
+    "italian": "Gioco",
+    "german": "Spiel"
+  },
+  {
+    "english": "Line",
+    "portuguese": "Linha",
+    "french": "Ligne",
+    "spanish": "L\u00ednea",
+    "italian": "Linea",
+    "german": "Linie"
+  },
+  {
+    "english": "End",
+    "portuguese": "Fim",
+    "french": "Fin",
+    "spanish": "Fin",
+    "italian": "Fine",
+    "german": "Ende"
+  },
+  {
+    "english": "Member",
+    "portuguese": "Membro",
+    "french": "Membre",
+    "spanish": "Miembro",
+    "italian": "Membro",
+    "german": "Mitglied"
+  },
+  {
+    "english": "Law",
+    "portuguese": "Lei",
+    "french": "Loi",
+    "spanish": "Ley",
+    "italian": "Legge",
+    "german": "Gesetz"
+  },
+  {
+    "english": "Car",
+    "portuguese": "Carro",
+    "french": "Voiture",
+    "spanish": "Coche",
+    "italian": "Auto",
+    "german": "Auto"
+  },
+  {
+    "english": "City",
+    "portuguese": "Cidade",
+    "french": "Ville",
+    "spanish": "Ciudad",
+    "italian": "Citt\u00e0",
+    "german": "Stadt"
+  },
+  {
+    "english": "Community",
+    "portuguese": "Comunidade",
+    "french": "Communaut\u00e9",
+    "spanish": "Comunidad",
+    "italian": "Comunit\u00e0",
+    "german": "Gemeinschaft"
+  },
+  {
+    "english": "Name",
+    "portuguese": "Nome",
+    "french": "Nom",
+    "spanish": "Nombre",
+    "italian": "Nome",
+    "german": "Name"
+  },
+  {
+    "english": "President",
+    "portuguese": "Presidente",
+    "french": "Pr\u00e9sident",
+    "spanish": "Presidente",
+    "italian": "Presidente",
+    "german": "Pr\u00e4sident"
+  },
+  {
+    "english": "Team",
+    "portuguese": "Equipe",
+    "french": "\u00c9quipe",
+    "spanish": "Equipo",
+    "italian": "Squadra",
+    "german": "Team"
+  },
+  {
+    "english": "Minute",
+    "portuguese": "Minuto",
+    "french": "Minute",
+    "spanish": "Minuto",
+    "italian": "Minuto",
+    "german": "Minute"
+  },
+  {
+    "english": "Idea",
+    "portuguese": "Ideia",
+    "french": "Id\u00e9e",
+    "spanish": "Idea",
+    "italian": "Idea",
+    "german": "Idee"
+  },
+  {
+    "english": "Kid",
+    "portuguese": "Crian\u00e7a",
+    "french": "Enfant",
+    "spanish": "Ni\u00f1o",
+    "italian": "Bambino",
+    "german": "Kind"
+  },
+  {
+    "english": "Body",
+    "portuguese": "Corpo",
+    "french": "Corps",
+    "spanish": "Cuerpo",
+    "italian": "Corpo",
+    "german": "K\u00f6rper"
+  },
+  {
+    "english": "Information",
+    "portuguese": "Informa\u00e7\u00e3o",
+    "french": "Information",
+    "spanish": "Informaci\u00f3n",
+    "italian": "Informazione",
+    "german": "Information"
+  },
+  {
+    "english": "Back",
+    "portuguese": "Voltar",
+    "french": "Retour",
+    "spanish": "Espalda",
+    "italian": "Indietro",
+    "german": "Zur\u00fcck"
+  },
+  {
+    "english": "Parent",
+    "portuguese": "Pais",
+    "french": "Parent",
+    "spanish": "Padre/Madre",
+    "italian": "Genitore",
+    "german": "Eltern"
+  },
+  {
+    "english": "Face",
+    "portuguese": "Rosto",
+    "french": "Visage",
+    "spanish": "Cara",
+    "italian": "Faccia",
+    "german": "Gesicht"
+  },
+  {
+    "english": "Others",
+    "portuguese": "Outros",
+    "french": "Autres",
+    "spanish": "Otros",
+    "italian": "Altri",
+    "german": "Andere"
+  },
+  {
+    "english": "Level",
+    "portuguese": "N\u00edvel",
+    "french": "Niveau",
+    "spanish": "Nivel",
+    "italian": "Livello",
+    "german": "Level"
+  },
+  {
+    "english": "Office",
+    "portuguese": "Escrit\u00f3rio",
+    "french": "Bureau",
+    "spanish": "Oficina",
+    "italian": "Ufficio",
+    "german": "B\u00fcro"
+  },
+  {
+    "english": "Door",
+    "portuguese": "Porta",
+    "french": "Porte",
+    "spanish": "Puerta",
+    "italian": "Porta",
+    "german": "T\u00fcr"
+  },
+  {
+    "english": "Health",
+    "portuguese": "Sa\u00fade",
+    "french": "Sant\u00e9",
+    "spanish": "Salud",
+    "italian": "Salute",
+    "german": "Gesundheit"
+  },
+  {
+    "english": "Person",
+    "portuguese": "Pessoa",
+    "french": "Personne",
+    "spanish": "Persona",
+    "italian": "Persona",
+    "german": "Person"
+  },
+  {
+    "english": "Art",
+    "portuguese": "Arte",
+    "french": "Art",
+    "spanish": "Arte",
+    "italian": "Arte",
+    "german": "Kunst"
+  },
+  {
+    "english": "War",
+    "portuguese": "Guerra",
+    "french": "Guerre",
+    "spanish": "Guerra",
+    "italian": "Guerra",
+    "german": "Krieg"
+  },
+  {
+    "english": "History",
+    "portuguese": "Hist\u00f3ria",
+    "french": "Histoire",
+    "spanish": "Historia",
+    "italian": "Storia",
+    "german": "Geschichte"
+  },
+  {
+    "english": "Party",
+    "portuguese": "Partido",
+    "french": "Parti",
+    "spanish": "Fiesta",
+    "italian": "Festa",
+    "german": "Party"
+  },
+  {
+    "english": "Result",
+    "portuguese": "Resultado",
+    "french": "R\u00e9sultat",
+    "spanish": "Resultado",
+    "italian": "Risultato",
+    "german": "Ergebnis"
+  },
+  {
+    "english": "Change",
+    "portuguese": "Mudan\u00e7a",
+    "french": "Changement",
+    "spanish": "Cambio",
+    "italian": "Cambiamento",
+    "german": "\u00c4nderung"
+  },
+  {
+    "english": "Morning",
+    "portuguese": "Manh\u00e3",
+    "french": "Matin",
+    "spanish": "Ma\u00f1ana",
+    "italian": "Mattina",
+    "german": "Morgen"
+  },
+  {
+    "english": "Reason",
+    "portuguese": "Raz\u00e3o",
+    "french": "Raison",
+    "spanish": "Raz\u00f3n",
+    "italian": "Ragione",
+    "german": "Grund"
+  },
+  {
+    "english": "Research",
+    "portuguese": "Pesquisa",
+    "french": "Recherche",
+    "spanish": "Investigaci\u00f3n",
+    "italian": "Ricerca",
+    "german": "Forschung"
+  },
+  {
+    "english": "Girl",
+    "portuguese": "Menina",
+    "french": "Fille",
+    "spanish": "Ni\u00f1a",
+    "italian": "Ragazza",
+    "german": "M\u00e4dchen"
+  },
+  {
+    "english": "Guy",
+    "portuguese": "Cara",
+    "french": "Mec",
+    "spanish": "Chico",
+    "italian": "Ragazzo",
+    "german": "Typ"
+  },
+  {
+    "english": "Moment",
+    "portuguese": "Momento",
+    "french": "Moment",
+    "spanish": "Momento",
+    "italian": "Momento",
+    "german": "Moment"
+  },
+  {
+    "english": "Air",
+    "portuguese": "Ar",
+    "french": "Air",
+    "spanish": "Aire",
+    "italian": "Aria",
+    "german": "Luft"
+  },
+  {
+    "english": "Teacher",
+    "portuguese": "Professor",
+    "french": "Professeur",
+    "spanish": "Profesor",
+    "italian": "Insegnante",
+    "german": "Lehrer"
+  },
+  {
+    "english": "Force",
+    "portuguese": "For\u00e7a",
+    "french": "Force",
+    "spanish": "Fuerza",
+    "italian": "Forza",
+    "german": "Kraft"
+  },
+  {
+    "english": "Education",
+    "portuguese": "Educa\u00e7\u00e3o",
+    "french": "\u00c9ducation",
+    "spanish": "Educaci\u00f3n",
+    "italian": "Educazione",
+    "german": "Bildung"
+  },
+  {
+    "english": "Foot",
+    "portuguese": "P\u00e9",
+    "french": "Pied",
+    "spanish": "Pie",
+    "italian": "Piede",
+    "german": "Fu\u00df"
+  },
+  {
+    "english": "Boy",
+    "portuguese": "garoto",
+    "french": "gar\u00e7on",
+    "spanish": "ni\u00f1o",
+    "italian": "ragazzo",
+    "german": "Junge"
+  },
+  {
+    "english": "Age",
+    "portuguese": "Idade",
+    "french": "\u00c2ge",
+    "spanish": "Edad",
+    "italian": "Et\u00e0",
+    "german": "Alter"
+  },
+  {
+    "english": "Policy",
+    "portuguese": "Pol\u00edtica",
+    "french": "Politique",
+    "spanish": "Pol\u00edtica",
+    "italian": "Politica",
+    "german": "Politik"
+  },
+  {
+    "english": "Music",
+    "portuguese": "M\u00fasica",
+    "french": "Musique",
+    "spanish": "M\u00fasica",
+    "italian": "Musica",
+    "german": "Musik"
+  },
+  {
+    "english": "Food",
+    "portuguese": "Comida",
+    "french": "Alimentation",
+    "spanish": "Comida",
+    "italian": "Cibo",
+    "german": "Essen"
+  },
+  {
+    "english": "Reading",
+    "portuguese": "Leitura",
+    "french": "Lecture",
+    "spanish": "Lectura",
+    "italian": "Lettura",
+    "german": "Lesen"
+  },
+  {
+    "english": "Price",
+    "portuguese": "Pre\u00e7o",
+    "french": "Prix",
+    "spanish": "Precio",
+    "italian": "Prezzo",
+    "german": "Preis"
+  },
+  {
+    "english": "Science",
+    "portuguese": "Ci\u00eancia",
+    "french": "Science",
+    "spanish": "Ciencia",
+    "italian": "Scienza",
+    "german": "Wissenschaft"
+  },
+  {
+    "english": "News",
+    "portuguese": "Not\u00edcias",
+    "french": "Nouvelles",
+    "spanish": "Noticias",
+    "italian": "Notizie",
+    "german": "Neuigkeiten"
+  },
+  {
+    "english": "Event",
+    "portuguese": "Evento",
+    "french": "\u00c9v\u00e9nement",
+    "spanish": "Evento",
+    "italian": "Evento",
+    "german": "Ereignis"
+  },
+  {
+    "english": "Process",
+    "portuguese": "Processo",
+    "french": "Processus",
+    "spanish": "Proceso",
+    "italian": "Processo",
+    "german": "Prozess"
+  },
+  {
+    "english": "Market",
+    "portuguese": "Mercado",
+    "french": "March\u00e9",
+    "spanish": "Mercado",
+    "italian": "Mercato",
+    "german": "Markt"
+  },
+  {
+    "english": "Approach",
+    "portuguese": "Aproximar-se",
+    "french": "Approche",
+    "spanish": "Acercarse",
+    "italian": "Avvicinarsi",
+    "german": "Ansatz"
+  },
+  {
+    "english": "Management",
+    "portuguese": "Gest\u00e3o",
+    "french": "Gestion",
+    "spanish": "Gesti\u00f3n",
+    "italian": "Gestione",
+    "german": "Verwaltung"
+  },
+  {
+    "english": "Nature",
+    "portuguese": "Natureza",
+    "french": "Nature",
+    "spanish": "Naturaleza",
+    "italian": "Natura",
+    "german": "Natur"
+  },
+  {
+    "english": "Role",
+    "portuguese": "Papel",
+    "french": "R\u00f4le",
+    "spanish": "Papel",
+    "italian": "Ruolo",
+    "german": "Rolle"
+  },
+  {
+    "english": "Strategy",
+    "portuguese": "Estrat\u00e9gia",
+    "french": "Strat\u00e9gie",
+    "spanish": "Estrategia",
+    "italian": "Strategia",
+    "german": "Strategie"
+  },
+  {
+    "english": "Technology",
+    "portuguese": "Tecnologia",
+    "french": "Technologie",
+    "spanish": "Tecnolog\u00eda",
+    "italian": "Tecnologia",
+    "german": "Technologie"
+  },
+  {
+    "english": "Army",
+    "portuguese": "Ex\u00e9rcito",
+    "french": "Arm\u00e9e",
+    "spanish": "Ej\u00e9rcito",
+    "italian": "Esercito",
+    "german": "Armee"
+  },
+  {
+    "english": "Camera",
+    "portuguese": "C\u00e2mera",
+    "french": "Cam\u00e9ra",
+    "spanish": "C\u00e1mara",
+    "italian": "Macchina fotografica",
+    "german": "Kamera"
+  },
+  {
+    "english": "Freedom",
+    "portuguese": "Liberdade",
+    "french": "Libert\u00e9",
+    "spanish": "Libertad",
+    "italian": "Libert\u00e0",
+    "german": "Freiheit"
+  },
+  {
+    "english": "Paper",
+    "portuguese": "Papel",
+    "french": "Papier",
+    "spanish": "Papel",
+    "italian": "Carta",
+    "german": "Papier"
+  },
+  {
+    "english": "Environment",
+    "portuguese": "Ambiente",
+    "french": "Environnement",
+    "spanish": "Entorno",
+    "italian": "Ambiente",
+    "german": "Umwelt"
+  },
+  {
+    "english": "Instance",
+    "portuguese": "Inst\u00e2ncia",
+    "french": "Instance",
+    "spanish": "Instancia",
+    "italian": "Istanza",
+    "german": "Instanz"
+  },
+  {
+    "english": "University",
+    "portuguese": "Universidade",
+    "french": "Universit\u00e9",
+    "spanish": "Universidad",
+    "italian": "Universit\u00e0",
+    "german": "Universit\u00e4t"
+  },
+  {
+    "english": "Writing",
+    "portuguese": "Escrita",
+    "french": "\u00c9criture",
+    "spanish": "Escritura",
+    "italian": "Scrittura",
+    "german": "Schreiben"
+  },
+  {
+    "english": "Article",
+    "portuguese": "Artigo",
+    "french": "Article",
+    "spanish": "Art\u00edculo",
+    "italian": "Articolo",
+    "german": "Artikel"
+  },
+  {
+    "english": "Department",
+    "portuguese": "Departamento",
+    "french": "D\u00e9partement",
+    "spanish": "Departamento",
+    "italian": "Dipartimento",
+    "german": "Abteilung"
+  },
+  {
+    "english": "Difference",
+    "portuguese": "Diferen\u00e7a",
+    "french": "Diff\u00e9rence",
+    "spanish": "Diferencia",
+    "italian": "Differenza",
+    "german": "Unterschied"
+  },
+  {
+    "english": "Goal",
+    "portuguese": "Meta",
+    "french": "But",
+    "spanish": "Objetivo",
+    "italian": "Obiettivo",
+    "german": "Ziel"
+  },
+  {
+    "english": "Audience",
+    "portuguese": "P\u00fablico",
+    "french": "Public",
+    "spanish": "Audiencia",
+    "italian": "Pubblico",
+    "german": "Publikum"
+  },
+  {
+    "english": "Fishing",
+    "portuguese": "Pesca",
+    "french": "P\u00eache",
+    "spanish": "Pesca",
+    "italian": "Pesca",
+    "german": "Angeln"
+  },
+  {
+    "english": "Growth",
+    "portuguese": "Crescimento",
+    "french": "Croissance",
+    "spanish": "Crecimiento",
+    "italian": "Crescita",
+    "german": "Wachstum"
+  },
+  {
+    "english": "Income",
+    "portuguese": "Renda",
+    "french": "Revenu",
+    "spanish": "Ingresos",
+    "italian": "Reddito",
+    "german": "Einkommen"
+  },
+  {
+    "english": "Marriage",
+    "portuguese": "Casamento",
+    "french": "Mariage",
+    "spanish": "Matrimonio",
+    "italian": "Matrimonio",
+    "german": "Ehe"
+  },
+  {
+    "english": "User",
+    "portuguese": "Usu\u00e1rio",
+    "french": "Utilisateur",
+    "spanish": "Usuario",
+    "italian": "Utente",
+    "german": "Benutzer"
+  },
+  {
+    "english": "Combination",
+    "portuguese": "Combina\u00e7\u00e3o",
+    "french": "Combinaison",
+    "spanish": "Combinaci\u00f3n",
+    "italian": "Combinazione",
+    "german": "Kombination"
+  },
+  {
+    "english": "Failure",
+    "portuguese": "Fracasso",
+    "french": "\u00c9chec",
+    "spanish": "Fracaso",
+    "italian": "Fallimento",
+    "german": "Fehlschlag"
+  },
+  {
+    "english": "Meaning",
+    "portuguese": "Significado",
+    "french": "Sens",
+    "spanish": "Significado",
+    "italian": "Significato",
+    "german": "Bedeutung"
+  },
+  {
+    "english": "Medicine",
+    "portuguese": "Medicina",
+    "french": "M\u00e9dicament",
+    "spanish": "Medicina",
+    "italian": "Medicina",
+    "german": "Medizin"
+  },
+  {
+    "english": "Philosophy",
+    "portuguese": "Filosofia",
+    "french": "Philosophie",
+    "spanish": "Filosof\u00eda",
+    "italian": "Filosofia",
+    "german": "Philosophie"
+  },
+  {
+    "english": "Communication",
+    "portuguese": "Comunica\u00e7\u00e3o",
+    "french": "Communication",
+    "spanish": "Comunicaci\u00f3n",
+    "italian": "Comunicazione",
+    "german": "Kommunikation"
+  },
+  {
+    "english": "Chemistry",
+    "portuguese": "Qu\u00edmica",
+    "french": "Chimie",
+    "spanish": "Qu\u00edmica",
+    "italian": "Chimica",
+    "german": "Chemie"
+  },
+  {
+    "english": "Disease",
+    "portuguese": "Doen\u00e7a",
+    "french": "Maladie",
+    "spanish": "Enfermedad",
+    "italian": "Malattia",
+    "german": "Krankheit"
+  },
+  {
+    "english": "Disk",
+    "portuguese": "Disco",
+    "french": "Disque",
+    "spanish": "Disco",
+    "italian": "Disco",
+    "german": "Disk"
+  },
+  {
+    "english": "Energy",
+    "portuguese": "Energia",
+    "french": "\u00c9nergie",
+    "spanish": "Energ\u00eda",
+    "italian": "Energia",
+    "german": "Energie"
+  },
+  {
+    "english": "Nation",
+    "portuguese": "Na\u00e7\u00e3o",
+    "french": "Nation",
+    "spanish": "Naci\u00f3n",
+    "italian": "Nazione",
+    "german": "Nation"
+  },
+  {
+    "english": "Road",
+    "portuguese": "estrada",
+    "french": "route",
+    "spanish": "camino",
+    "italian": "strada",
+    "german": "Stra\u00dfe"
+  },
+  {
+    "english": "Soup",
+    "portuguese": "Sopa",
+    "french": "Soupe",
+    "spanish": "Sopa",
+    "italian": "Zuppa",
+    "german": "Suppe"
+  },
+  {
+    "english": "Advertising",
+    "portuguese": "Publicidade",
+    "french": "Publicit\u00e9",
+    "spanish": "Publicidad",
+    "italian": "Pubblicit\u00e0",
+    "german": "Werbung"
+  },
+  {
+    "english": "Location",
+    "portuguese": "Localiza\u00e7\u00e3o",
+    "french": "Emplacement",
+    "spanish": "Ubicaci\u00f3n",
+    "italian": "Posizione",
+    "german": "Ort"
+  },
+  {
+    "english": "Success",
+    "portuguese": "Sucesso",
+    "french": "Succ\u00e8s",
+    "spanish": "\u00c9xito",
+    "italian": "Successo",
+    "german": "Erfolg"
+  },
+  {
+    "english": "Addition",
+    "portuguese": "Adi\u00e7\u00e3o",
+    "french": "Addition",
+    "spanish": "Adici\u00f3n",
+    "italian": "Aggiunta",
+    "german": "Addition"
+  },
+  {
+    "english": "Apartment",
+    "portuguese": "Apartamento",
+    "french": "Appartement",
+    "spanish": "Apartamento",
+    "italian": "Appartamento",
+    "german": "Wohnung"
+  },
+  {
+    "english": "Math",
+    "portuguese": "Matem\u00e1tica",
+    "french": "Math\u00e9matiques",
+    "spanish": "Matem\u00e1ticas",
+    "italian": "Matematica",
+    "german": "Mathematik"
+  },
+  {
+    "english": "Painting",
+    "portuguese": "Pintura",
+    "french": "Peinture",
+    "spanish": "Pintura",
+    "italian": "Pittura",
+    "german": "Malerei"
+  },
+  {
+    "english": "Politics",
+    "portuguese": "Pol\u00edtica",
+    "french": "Politique",
+    "spanish": "Pol\u00edtica",
+    "italian": "Politica",
+    "german": "Politik"
+  },
+  {
+    "english": "Attention",
+    "portuguese": "Aten\u00e7\u00e3o",
+    "french": "Attention",
+    "spanish": "Atenci\u00f3n",
+    "italian": "Attenzione",
+    "german": "Aufmerksamkeit"
+  },
+  {
+    "english": "Decision",
+    "portuguese": "Decis\u00e3o",
+    "french": "D\u00e9cision",
+    "spanish": "Decisi\u00f3n",
+    "italian": "Decisione",
+    "german": "Entscheidung"
+  },
+  {
+    "english": "Property",
+    "portuguese": "Propriedade",
+    "french": "Propri\u00e9t\u00e9",
+    "spanish": "Propiedad",
+    "italian": "Propriet\u00e0",
+    "german": "Eigentum"
+  },
+  {
+    "english": "Shopping",
+    "portuguese": "Compras",
+    "french": "Shopping",
+    "spanish": "Compras",
+    "italian": "Shopping",
+    "german": "Einkaufen"
+  },
+  {
+    "english": "Wood",
+    "portuguese": "Madeira",
+    "french": "Bois",
+    "spanish": "Madera",
+    "italian": "Legno",
+    "german": "Holz"
+  },
+  {
+    "english": "Competition",
+    "portuguese": "Competi\u00e7\u00e3o",
+    "french": "Concurrence",
+    "spanish": "Competencia",
+    "italian": "Competizione",
+    "german": "Wettbewerb"
+  },
+  {
+    "english": "Distribution",
+    "portuguese": "Distribui\u00e7\u00e3o",
+    "french": "Distribution",
+    "spanish": "Distribuci\u00f3n",
+    "italian": "Distribuzione",
+    "german": "Verteilung"
+  },
+  {
+    "english": "Entertainment",
+    "portuguese": "Entretenimento",
+    "french": "Divertissement",
+    "spanish": "Entretenimiento",
+    "italian": "Intrattenimento",
+    "german": "Unterhaltung"
+  },
+  {
+    "english": "Population",
+    "portuguese": "Popula\u00e7\u00e3o",
+    "french": "Population",
+    "spanish": "Poblaci\u00f3n",
+    "italian": "Popolazione",
+    "german": "Bev\u00f6lkerung"
+  },
+  {
+    "english": "Unit",
+    "portuguese": "Unidade",
+    "french": "Unit\u00e9",
+    "spanish": "Unidad",
+    "italian": "Unit\u00e0",
+    "german": "Einheit"
+  },
+  {
+    "english": "Category",
+    "portuguese": "Categoria",
+    "french": "Cat\u00e9gorie",
+    "spanish": "Categor\u00eda",
+    "italian": "Categoria",
+    "german": "Kategorie"
+  },
+  {
+    "english": "Cigarette",
+    "portuguese": "Cigarro",
+    "french": "Cigarette",
+    "spanish": "Cigarrillo",
+    "italian": "Sigaretta",
+    "german": "Zigarette"
+  },
+  {
+    "english": "Context",
+    "portuguese": "Contexto",
+    "french": "Contexte",
+    "spanish": "Contexto",
+    "italian": "Contesto",
+    "german": "Kontext"
+  },
+  {
+    "english": "Introduction",
+    "portuguese": "Introdu\u00e7\u00e3o",
+    "french": "Introduction",
+    "spanish": "Introducci\u00f3n",
+    "italian": "Introduzione",
+    "german": "Einf\u00fchrung"
+  },
+  {
+    "english": "Opportunity",
+    "portuguese": "Oportunidade",
+    "french": "Opportunit\u00e9",
+    "spanish": "Oportunidad",
+    "italian": "Opportunit\u00e0",
+    "german": "Gelegenheit"
+  },
+  {
+    "english": "Performance",
+    "portuguese": "Performance",
+    "french": "Performance",
+    "spanish": "Rendimiento",
+    "italian": "Prestazione",
+    "german": "Leistung"
+  },
+  {
+    "english": "Driver",
+    "portuguese": "Condutor",
+    "french": "Conducteur",
+    "spanish": "Conductor",
+    "italian": "Conducente",
+    "german": "Fahrer"
+  },
+  {
+    "english": "Flight",
+    "portuguese": "Voo",
+    "french": "Vol",
+    "spanish": "Vuelo",
+    "italian": "Volo",
+    "german": "Flug"
+  },
+  {
+    "english": "Length",
+    "portuguese": "Comprimento",
+    "french": "Longueur",
+    "spanish": "Longitud",
+    "italian": "Lunghezza",
+    "german": "L\u00e4nge"
+  },
+  {
+    "english": "Magazine",
+    "portuguese": "revista",
+    "french": "magazine",
+    "spanish": "revista",
+    "italian": "rivista",
+    "german": "Zeitschrift"
+  },
+  {
+    "english": "Newspaper",
+    "portuguese": "Jornal",
+    "french": "Journal",
+    "spanish": "Peri\u00f3dico",
+    "italian": "Giornale",
+    "german": "Zeitung"
+  },
+  {
+    "english": "Relationship",
+    "portuguese": "Relacionamento",
+    "french": "Relation",
+    "spanish": "Relaci\u00f3n",
+    "italian": "Relazione",
+    "german": "Beziehung"
+  },
+  {
+    "english": "Teaching",
+    "portuguese": "Ensinar",
+    "french": "Enseignement",
+    "spanish": "Ense\u00f1anza",
+    "italian": "Insegnamento",
+    "german": "Unterrichtung"
+  },
+  {
+    "english": "Cell",
+    "portuguese": "C\u00e9lula",
+    "french": "Cellule",
+    "spanish": "C\u00e9lula",
+    "italian": "Cellula",
+    "german": "Zelle"
+  },
+  {
+    "english": "Dealer",
+    "portuguese": "Revendedor",
+    "french": "Marchand",
+    "spanish": "Distribuidor",
+    "italian": "Rivenditore",
+    "german": "H\u00e4ndler"
+  },
+  {
+    "english": "Debate",
+    "portuguese": "Debate",
+    "french": "D\u00e9bat",
+    "spanish": "Debate",
+    "italian": "Dibattito",
+    "german": "Debatte"
+  },
+  {
+    "english": "Finding",
+    "portuguese": "Encontrar",
+    "french": "Trouver",
+    "spanish": "Encontrar",
+    "italian": "Trovare",
+    "german": "Finden"
+  },
+  {
+    "english": "Lake",
+    "portuguese": "Lago",
+    "french": "Lac",
+    "spanish": "Lago",
+    "italian": "Lago",
+    "german": "See"
+  },
+  {
+    "english": "Message",
+    "portuguese": "Mensagem",
+    "french": "Message",
+    "spanish": "Mensaje",
+    "italian": "Messaggio",
+    "german": "Nachricht"
+  },
+  {
+    "english": "Phone",
+    "portuguese": "Telefone",
+    "french": "T\u00e9l\u00e9phone",
+    "spanish": "Tel\u00e9fono",
+    "italian": "Telefono",
+    "german": "Telefon"
+  },
+  {
+    "english": "Scene",
+    "portuguese": "Cena",
+    "french": "Sc\u00e8ne",
+    "spanish": "Escena",
+    "italian": "Scena",
+    "german": "Szene"
+  },
+  {
+    "english": "Appearance",
+    "portuguese": "Apar\u00eancia",
+    "french": "Apparence",
+    "spanish": "Apariencia",
+    "italian": "Apparenza",
+    "german": "Erscheinung"
+  },
+  {
+    "english": "Association",
+    "portuguese": "Associa\u00e7\u00e3o",
+    "french": "Association",
+    "spanish": "Asociaci\u00f3n",
+    "italian": "Associazione",
+    "german": "Verband"
+  },
+  {
+    "english": "Concept",
+    "portuguese": "Conceito",
+    "french": "Concept",
+    "spanish": "Concepto",
+    "italian": "Concetto",
+    "german": "Konzept"
+  },
+  {
+    "english": "Customer",
+    "portuguese": "Cliente",
+    "french": "Client",
+    "spanish": "Cliente",
+    "italian": "Cliente",
+    "german": "Kunde"
+  },
+  {
+    "english": "Death",
+    "portuguese": "Morte",
+    "french": "Mort",
+    "spanish": "Muerte",
+    "italian": "Morte",
+    "german": "Tod"
+  },
+  {
+    "english": "Discussion",
+    "portuguese": "Discuss\u00e3o",
+    "french": "Discussion",
+    "spanish": "Discusi\u00f3n",
+    "italian": "Discussione",
+    "german": "Diskussion"
+  },
+  {
+    "english": "Housing",
+    "portuguese": "Habita\u00e7\u00e3o",
+    "french": "Logement",
+    "spanish": "Vivienda",
+    "italian": "Alloggio",
+    "german": "Wohnung"
+  },
+  {
+    "english": "Inflation",
+    "portuguese": "infla\u00e7\u00e3o",
+    "french": "inflation",
+    "spanish": "inflaci\u00f3n",
+    "italian": "inflazione",
+    "german": "Inflation"
+  },
+  {
+    "english": "Insurance",
+    "portuguese": "Seguro",
+    "french": "Assurance",
+    "spanish": "Seguro",
+    "italian": "Assicurazione",
+    "german": "Versicherung"
+  },
+  {
+    "english": "Mood",
+    "portuguese": "Humor",
+    "french": "Humeur",
+    "spanish": "Humor",
+    "italian": "Umore",
+    "german": "Stimmung"
+  },
+  {
+    "english": "Advice",
+    "portuguese": "conselho",
+    "french": "conseil",
+    "spanish": "consejo",
+    "italian": "consiglio",
+    "german": "Rat"
+  },
+  {
+    "english": "Blood",
+    "portuguese": "Sangue",
+    "french": "Sang",
+    "spanish": "Sangre",
+    "italian": "Sangue",
+    "german": "Blut"
+  },
+  {
+    "english": "Effort",
+    "portuguese": "Esfor\u00e7o",
+    "french": "Effort",
+    "spanish": "Esfuerzo",
+    "italian": "Sforzo",
+    "german": "Anstrengung"
+  },
+  {
+    "english": "Expression",
+    "portuguese": "Express\u00e3o",
+    "french": "Expression",
+    "spanish": "Expresi\u00f3n",
+    "italian": "Espressione",
+    "german": "Ausdruck"
+  },
+  {
+    "english": "Importance",
+    "portuguese": "Import\u00e2ncia",
+    "french": "Importance",
+    "spanish": "Importancia",
+    "italian": "Importanza",
+    "german": "Wichtigkeit"
+  },
+  {
+    "english": "Opinion",
+    "portuguese": "Opini\u00e3o",
+    "french": "Opinion",
+    "spanish": "Opini\u00f3n",
+    "italian": "Opinione",
+    "german": "Meinung"
+  },
+  {
+    "english": "Payment",
+    "portuguese": "Pagamento",
+    "french": "Paiement",
+    "spanish": "Pago",
+    "italian": "Pagamento",
+    "german": "Zahlung"
+  },
+  {
+    "english": "Reality",
+    "portuguese": "Realidade",
+    "french": "R\u00e9alit\u00e9",
+    "spanish": "Realidad",
+    "italian": "Realt\u00e0",
+    "german": "Realit\u00e4t"
+  },
+  {
+    "english": "Responsibility",
+    "portuguese": "Responsabilidade",
+    "french": "Responsabilit\u00e9",
+    "spanish": "Responsabilidad",
+    "italian": "Responsabilit\u00e0",
+    "german": "Verantwortung"
+  },
+  {
+    "english": "Situation",
+    "portuguese": "Situa\u00e7\u00e3o",
+    "french": "Situation",
+    "spanish": "Situaci\u00f3n",
+    "italian": "Situazione",
+    "german": "Situation"
+  },
+  {
+    "english": "Skill",
+    "portuguese": "habilidade",
+    "french": "comp\u00e9tence",
+    "spanish": "habilidad",
+    "italian": "abilit\u00e0",
+    "german": "Fertigkeit"
+  },
+  {
+    "english": "Statement",
+    "portuguese": "Declara\u00e7\u00e3o",
+    "french": "D\u00e9claration",
+    "spanish": "Declaraci\u00f3n",
+    "italian": "Dichiarazione",
+    "german": "Aussage"
+  },
+  {
+    "english": "Wealth",
+    "portuguese": "Riqueza",
+    "french": "Richesse",
+    "spanish": "Riqueza",
+    "italian": "Bene",
+    "german": "Reichtum"
+  },
+  {
+    "english": "Application",
+    "portuguese": "Aplica\u00e7\u00e3o",
+    "french": "Application",
+    "spanish": "Aplicaci\u00f3n",
+    "italian": "Applicazione",
+    "german": "Anwendung"
+  },
+  {
+    "english": "County",
+    "portuguese": "Condado",
+    "french": "Comt\u00e9",
+    "spanish": "Condado",
+    "italian": "Contea",
+    "german": "Landkreis"
+  },
+  {
+    "english": "Depth",
+    "portuguese": "Profundidade",
+    "french": "Profondeur",
+    "spanish": "Profundidad",
+    "italian": "Profondit\u00e0",
+    "german": "Tiefe"
+  },
+  {
+    "english": "Estate",
+    "portuguese": "Propriedade",
+    "french": "\u00c9tat",
+    "spanish": "Estado",
+    "italian": "Propriet\u00e0",
+    "german": "Besitz"
+  },
+  {
+    "english": "Foundation",
+    "portuguese": "Funda\u00e7\u00e3o",
+    "french": "Fondation",
+    "spanish": "Fundaci\u00f3n",
+    "italian": "Fondazione",
+    "german": "Stiftung"
+  },
+  {
+    "english": "Grandmother",
+    "portuguese": "Av\u00f3",
+    "french": "Grand-m\u00e8re",
+    "spanish": "Abuela",
+    "italian": "Nonna",
+    "german": "Gro\u00dfmutter"
+  },
+  {
+    "english": "Heart",
+    "portuguese": "Cora\u00e7\u00e3o",
+    "french": "C\u0153ur",
+    "spanish": "Coraz\u00f3n",
+    "italian": "Cuore",
+    "german": "Herz"
+  },
+  {
+    "english": "Perspective",
+    "portuguese": "Perspectiva",
+    "french": "Perspective",
+    "spanish": "Perspectiva",
+    "italian": "Prospettiva",
+    "german": "Perspektive"
+  },
+  {
+    "english": "Photo",
+    "portuguese": "Foto",
+    "french": "Photo",
+    "spanish": "Foto",
+    "italian": "Foto",
+    "german": "Foto"
+  },
+  {
+    "english": "Recipe",
+    "portuguese": "Receita",
+    "french": "Recette",
+    "spanish": "Receta",
+    "italian": "Ricetta",
+    "german": "Rezept"
+  },
+  {
+    "english": "Studio",
+    "portuguese": "Est\u00fadio",
+    "french": "Studio",
+    "spanish": "Estudio",
+    "italian": "Studio",
+    "german": "Studio"
+  },
+  {
+    "english": "Topic",
+    "portuguese": "T\u00f3pico",
+    "french": "Sujet",
+    "spanish": "Tema",
+    "italian": "Argomento",
+    "german": "Thema"
+  },
+  {
+    "english": "Collection",
+    "portuguese": "Cole\u00e7\u00e3o",
+    "french": "Collection",
+    "spanish": "Colecci\u00f3n",
+    "italian": "Collezione",
+    "german": "Sammlung"
+  },
+  {
+    "english": "Depression",
+    "portuguese": "Depress\u00e3o",
+    "french": "D\u00e9pression",
+    "spanish": "Depresi\u00f3n",
+    "italian": "Depressione",
+    "german": "Depression"
+  },
+  {
+    "english": "Imagination",
+    "portuguese": "Imagina\u00e7\u00e3o",
+    "french": "Imagination",
+    "spanish": "Imaginaci\u00f3n",
+    "italian": "Immaginazione",
+    "german": "Einbildungskraft"
+  },
+  {
+    "english": "Passion",
+    "portuguese": "Paix\u00e3o",
+    "french": "Passion",
+    "spanish": "Pasi\u00f3n",
+    "italian": "Passione",
+    "german": "Leidenschaft"
+  },
+  {
+    "english": "Percentage",
+    "portuguese": "Porcentagem",
+    "french": "Pourcentage",
+    "spanish": "Porcentaje",
+    "italian": "Percentuale",
+    "german": "Prozent"
+  },
+  {
+    "english": "Resource",
+    "portuguese": "Recurso",
+    "french": "Ressource",
+    "spanish": "Recurso",
+    "italian": "Risorsa",
+    "german": "Ressource"
+  },
+  {
+    "english": "Setting",
+    "portuguese": "Configura\u00e7\u00e3o",
+    "french": "Param\u00e8tre",
+    "spanish": "Configuraci\u00f3n",
+    "italian": "Impostazione",
+    "german": "Einstellung"
+  },
+  {
+    "english": "Ad",
+    "portuguese": "An\u00fancio",
+    "french": "Publicit\u00e9",
+    "spanish": "Anuncio",
+    "italian": "Pubblicit\u00e0",
+    "german": "Anzeige"
+  },
+  {
+    "english": "Agency",
+    "portuguese": "Ag\u00eancia",
+    "french": "Agence",
+    "spanish": "Agencia",
+    "italian": "Agenzia",
+    "german": "Agentur"
+  },
+  {
+    "english": "College",
+    "portuguese": "Universidade",
+    "french": "Coll\u00e8ge",
+    "spanish": "Colegio",
+    "italian": "Collegio",
+    "german": "Hochschule"
+  },
+  {
+    "english": "Connection",
+    "portuguese": "Conex\u00e3o",
+    "french": "Connexion",
+    "spanish": "Conexi\u00f3n",
+    "italian": "Connessione",
+    "german": "Verbindung"
+  },
+  {
+    "english": "Criticism",
+    "portuguese": "Cr\u00edtica",
+    "french": "Critique",
+    "spanish": "Cr\u00edtica",
+    "italian": "Critica",
+    "german": "Kritik"
+  },
+  {
+    "english": "Debt",
+    "portuguese": "D\u00edvida",
+    "french": "Dette",
+    "spanish": "Deuda",
+    "italian": "Debito",
+    "german": "Schuld"
+  },
+  {
+    "english": "Description",
+    "portuguese": "Descri\u00e7\u00e3o",
+    "french": "Description",
+    "spanish": "Descripci\u00f3n",
+    "italian": "Descrizione",
+    "german": "Beschreibung"
+  },
+  {
+    "english": "Memory",
+    "portuguese": "Mem\u00f3ria",
+    "french": "M\u00e9moire",
+    "spanish": "Memoria",
+    "italian": "Memoria",
+    "german": "Erinnerung"
+  },
+  {
+    "english": "Patience",
+    "portuguese": "Paci\u00eancia",
+    "french": "Patience",
+    "spanish": "Paciencia",
+    "italian": "Pazienza",
+    "german": "Geduld"
+  },
+  {
+    "english": "Secretary",
+    "portuguese": "Secret\u00e1ria",
+    "french": "Secr\u00e9taire",
+    "spanish": "Secretaria",
+    "italian": "Segretaria",
+    "german": "Sekret\u00e4rin"
+  },
+  {
+    "english": "Solution",
+    "portuguese": "Solu\u00e7\u00e3o",
+    "french": "Solution",
+    "spanish": "Soluci\u00f3n",
+    "italian": "Soluzione",
+    "german": "L\u00f6sung"
+  },
+  {
+    "english": "Administration",
+    "portuguese": "Administra\u00e7\u00e3o",
+    "french": "Administration",
+    "spanish": "Administraci\u00f3n",
+    "italian": "Amministrazione",
+    "german": "Verwaltung"
+  },
+  {
+    "english": "Aspect",
+    "portuguese": "Aspecto",
+    "french": "Aspect",
+    "spanish": "Aspecto",
+    "italian": "Aspetto",
+    "german": "Aspekt"
+  },
+  {
+    "english": "Attitude",
+    "portuguese": "Atitude",
+    "french": "Attitude",
+    "spanish": "Actitud",
+    "italian": "Atteggiamento",
+    "german": "Einstellung"
+  },
+  {
+    "english": "Director",
+    "portuguese": "Diretor",
+    "french": "Directeur",
+    "spanish": "Director",
+    "italian": "Direttore",
+    "german": "Direktor"
+  },
+  {
+    "english": "Personality",
+    "portuguese": "Personalidade",
+    "french": "Personnalit\u00e9",
+    "spanish": "Personalidad",
+    "italian": "Personalit\u00e0",
+    "german": "Pers\u00f6nlichkeit"
+  },
+  {
+    "english": "Psychology",
+    "portuguese": "Psicologia",
+    "french": "Psychologie",
+    "spanish": "Psicolog\u00eda",
+    "italian": "Psicologia",
+    "german": "Psychologie"
+  },
+  {
+    "english": "Recommendation",
+    "portuguese": "Recomenda\u00e7\u00e3o",
+    "french": "Recommandation",
+    "spanish": "Recomendaci\u00f3n",
+    "italian": "Raccomandazione",
+    "german": "Empfehlung"
+  },
+  {
+    "english": "Response",
+    "portuguese": "Resposta",
+    "french": "R\u00e9ponse",
+    "spanish": "Respuesta",
+    "italian": "Risposta",
+    "german": "Antwort"
+  },
+  {
+    "english": "Expression",
+    "portuguese": "Express\u00e3o",
+    "french": "Expression",
+    "spanish": "Expresi\u00f3n",
+    "italian": "Espressione",
+    "german": "Ausdruck"
+  },
+  {
+    "english": "Importance",
+    "portuguese": "Import\u00e2ncia",
+    "french": "Importance",
+    "spanish": "Importancia",
+    "italian": "Importanza",
+    "german": "Bedeutung"
+  },
+  {
+    "english": "Opinion",
+    "portuguese": "Opini\u00e3o",
+    "french": "Opinion",
+    "spanish": "Opini\u00f3n",
+    "italian": "Opinione",
+    "german": "Meinung"
+  },
+  {
+    "english": "Payment",
+    "portuguese": "Pagamento",
+    "french": "Paiement",
+    "spanish": "Pago",
+    "italian": "Pagamento",
+    "german": "Zahlung"
+  },
+  {
+    "english": "Reality",
+    "portuguese": "Realidade",
+    "french": "R\u00e9alit\u00e9",
+    "spanish": "Realidad",
+    "italian": "Realt\u00e0",
+    "german": "Realit\u00e4t"
+  },
+  {
+    "english": "Responsibility",
+    "portuguese": "Responsabilidade",
+    "french": "Responsabilit\u00e9",
+    "spanish": "Responsabilidad",
+    "italian": "Responsabilit\u00e0",
+    "german": "Verantwortung"
+  },
+  {
+    "english": "Situation",
+    "portuguese": "Situa\u00e7\u00e3o",
+    "french": "Situation",
+    "spanish": "Situaci\u00f3n",
+    "italian": "Situazione",
+    "german": "Situation"
+  },
+  {
+    "english": "Skill",
+    "portuguese": "Habilidade",
+    "french": "Comp\u00e9tence",
+    "spanish": "Habilidad",
+    "italian": "Abilit\u00e0",
+    "german": "Fertigkeit"
+  },
+  {
+    "english": "Statement",
+    "portuguese": "Declara\u00e7\u00e3o",
+    "french": "D\u00e9claration",
+    "spanish": "Declaraci\u00f3n",
+    "italian": "Dichiarazione",
+    "german": "Aussage"
+  },
+  {
+    "english": "Wealth",
+    "portuguese": "Riqueza",
+    "french": "Richesse",
+    "spanish": "Riqueza",
+    "italian": "Ricchezza",
+    "german": "Reichtum"
+  },
+  {
+    "english": "Application",
+    "portuguese": "Aplica\u00e7\u00e3o",
+    "french": "Application",
+    "spanish": "Aplicaci\u00f3n",
+    "italian": "Applicazione",
+    "german": "Anwendung"
+  },
+  {
+    "english": "County",
+    "portuguese": "Condado",
+    "french": "Comt\u00e9",
+    "spanish": "Condado",
+    "italian": "Contea",
+    "german": "Landkreis"
+  },
+  {
+    "english": "Depth",
+    "portuguese": "Profundidade",
+    "french": "Profondeur",
+    "spanish": "Profundidad",
+    "italian": "Profondit\u00e0",
+    "german": "Tiefe"
+  },
+  {
+    "english": "Estate",
+    "portuguese": "Propriedade",
+    "french": "\u00c9tat",
+    "spanish": "Estado",
+    "italian": "Stato",
+    "german": "Anwesen"
+  },
+  {
+    "english": "Foundation",
+    "portuguese": "Funda\u00e7\u00e3o",
+    "french": "Fondation",
+    "spanish": "Fundaci\u00f3n",
+    "italian": "Fondazione",
+    "german": "Stiftung"
+  },
+  {
+    "english": "Grandmother",
+    "portuguese": "Av\u00f3",
+    "french": "Grand-m\u00e8re",
+    "spanish": "Abuela",
+    "italian": "Nonnina",
+    "german": "Oma"
+  },
+  {
+    "english": "Heart",
+    "portuguese": "Cora\u00e7\u00e3o",
+    "french": "C\u0153ur",
+    "spanish": "Coraz\u00f3n",
+    "italian": "Cuore",
+    "german": "Herz"
+  },
+  {
+    "english": "Perspective",
+    "portuguese": "Perspectiva",
+    "french": "Perspective",
+    "spanish": "Perspectiva",
+    "italian": "Prospettiva",
+    "german": "Perspektive"
+  },
+  {
+    "english": "Photo",
+    "portuguese": "Foto",
+    "french": "Photo",
+    "spanish": "Foto",
+    "italian": "Foto",
+    "german": "Foto"
+  },
+  {
+    "english": "Recipe",
+    "portuguese": "Receita",
+    "french": "Recette",
+    "spanish": "Receta",
+    "italian": "Ricetta",
+    "german": "Rezept"
+  },
+  {
+    "english": "Studio",
+    "portuguese": "Est\u00fadio",
+    "french": "Studio",
+    "spanish": "Estudio",
+    "italian": "Studio",
+    "german": "Studio"
+  },
+  {
+    "english": "Topic",
+    "portuguese": "T\u00f3pico",
+    "french": "Sujet",
+    "spanish": "Tema",
+    "italian": "Argomento",
+    "german": "Thema"
+  },
+  {
+    "english": "Collection",
+    "portuguese": "Cole\u00e7\u00e3o",
+    "french": "Collection",
+    "spanish": "Colecci\u00f3n",
+    "italian": "Collezione",
+    "german": "Sammlung"
+  },
+  {
+    "english": "Depression",
+    "portuguese": "Depress\u00e3o",
+    "french": "D\u00e9pression",
+    "spanish": "Depresi\u00f3n",
+    "italian": "Depressione",
+    "german": "Depression"
+  },
+  {
+    "english": "Imagination",
+    "portuguese": "Imagina\u00e7\u00e3o",
+    "french": "Imagination",
+    "spanish": "Imaginaci\u00f3n",
+    "italian": "Immaginazione",
+    "german": "Vorstellungskraft"
+  },
+  {
+    "english": "Passion",
+    "portuguese": "Paix\u00e3o",
+    "french": "Passion",
+    "spanish": "Pasi\u00f3n",
+    "italian": "Passione",
+    "german": "Leidenschaft"
+  },
+  {
+    "english": "Percentage",
+    "portuguese": "Porcentagem",
+    "french": "Pourcentage",
+    "spanish": "Porcentaje",
+    "italian": "Percentuale",
+    "german": "Prozentsatz"
+  },
+  {
+    "english": "Resource",
+    "portuguese": "Recurso",
+    "french": "Ressource",
+    "spanish": "Recurso",
+    "italian": "Risorsa",
+    "german": "Ressource"
+  },
+  {
+    "english": "Setting",
+    "portuguese": "Configura\u00e7\u00e3o",
+    "french": "R\u00e9glage",
+    "spanish": "Configuraci\u00f3n",
+    "italian": "Impostazione",
+    "german": "Einstellung"
+  },
+  {
+    "english": "Ad",
+    "portuguese": "An\u00fancio",
+    "french": "Annonce",
+    "spanish": "Anuncio",
+    "italian": "Annuncio",
+    "german": "Anzeige"
+  },
+  {
+    "english": "Agency",
+    "portuguese": "Ag\u00eancia",
+    "french": "Agence",
+    "spanish": "Agencia",
+    "italian": "Agenzia",
+    "german": "Agentur"
+  },
+  {
+    "english": "College",
+    "portuguese": "Faculdade",
+    "french": "Coll\u00e8ge",
+    "spanish": "Colegio",
+    "italian": "Collegio",
+    "german": "Kolleg"
+  },
+  {
+    "english": "Connection",
+    "portuguese": "Conex\u00e3o",
+    "french": "Connexion",
+    "spanish": "Conexi\u00f3n",
+    "italian": "Connessione",
+    "german": "Verbindung"
+  },
+  {
+    "english": "Criticism",
+    "portuguese": "Cr\u00edtica",
+    "french": "Critique",
+    "spanish": "Cr\u00edtica",
+    "italian": "Critica",
+    "german": "Kritik"
+  },
+  {
+    "english": "Debt",
+    "portuguese": "D\u00edvida",
+    "french": "Dette",
+    "spanish": "Deuda",
+    "italian": "Debito",
+    "german": "Schuld"
+  },
+  {
+    "english": "Description",
+    "portuguese": "Descri\u00e7\u00e3o",
+    "french": "Description",
+    "spanish": "Descripci\u00f3n",
+    "italian": "Descrizione",
+    "german": "Beschreibung"
+  },
+  {
+    "english": "Memory",
+    "portuguese": "Mem\u00f3ria",
+    "french": "M\u00e9moire",
+    "spanish": "Memoria",
+    "italian": "Memoria",
+    "german": "Erinnerung"
+  },
+  {
+    "english": "Patience",
+    "portuguese": "Paci\u00eancia",
+    "french": "Patience",
+    "spanish": "Paciencia",
+    "italian": "Pazienza",
+    "german": "Geduld"
+  },
+  {
+    "english": "Secretary",
+    "portuguese": "Secret\u00e1rio",
+    "french": "Secr\u00e9taire",
+    "spanish": "Secretario",
+    "italian": "Segretario",
+    "german": "Sekret\u00e4r"
+  },
+  {
+    "english": "Solution",
+    "portuguese": "Solu\u00e7\u00e3o",
+    "french": "Solution",
+    "spanish": "Soluci\u00f3n",
+    "italian": "Soluzione",
+    "german": "L\u00f6sung"
+  },
+  {
+    "english": "Administration",
+    "portuguese": "Administra\u00e7\u00e3o",
+    "french": "Administration",
+    "spanish": "Administraci\u00f3n",
+    "italian": "Amministrazione",
+    "german": "Verwaltung"
+  },
+  {
+    "english": "Aspect",
+    "portuguese": "Aspecto",
+    "french": "Aspect",
+    "spanish": "Aspecto",
+    "italian": "Aspetto",
+    "german": "Aspekt"
+  },
+  {
+    "english": "Attitude",
+    "portuguese": "Atitude",
+    "french": "Attitude",
+    "spanish": "Actitud",
+    "italian": "Atteggiamento",
+    "german": "Einstellung"
+  },
+  {
+    "english": "Director",
+    "portuguese": "Diretor",
+    "french": "Directeur",
+    "spanish": "Director",
+    "italian": "Direttore",
+    "german": "Direktor"
+  },
+  {
+    "english": "Personality",
+    "portuguese": "Personalidade",
+    "french": "Personnalit\u00e9",
+    "spanish": "Personalidad",
+    "italian": "Personalit\u00e0",
+    "german": "Pers\u00f6nlichkeit"
+  },
+  {
+    "english": "Psychology",
+    "portuguese": "Psicologia",
+    "french": "Psychologie",
+    "spanish": "Psicolog\u00eda",
+    "italian": "Psicologia",
+    "german": "Psychologie"
+  },
+  {
+    "english": "Recommendation",
+    "portuguese": "Recomenda\u00e7\u00e3o",
+    "french": "Recommandation",
+    "spanish": "Recomendaci\u00f3n",
+    "italian": "Raccomandazione",
+    "german": "Empfehlung"
+  },
+  {
+    "english": "Response",
+    "portuguese": "Resposta",
+    "french": "R\u00e9ponse",
+    "spanish": "Respuesta",
+    "italian": "Risposta",
+    "german": "Antwort"
+  },
+  {
+    "english": "Selection",
+    "portuguese": "Sele\u00e7\u00e3o",
+    "french": "S\u00e9lection",
+    "spanish": "Selecci\u00f3n",
+    "italian": "Selezione",
+    "german": "Auswahl"
+  },
+  {
+    "english": "Storage",
+    "portuguese": "Armazenamento",
+    "french": "Stockage",
+    "spanish": "Almacenamiento",
+    "italian": "Archiviazione",
+    "german": "Speicherung"
+  },
+  {
+    "english": "Version",
+    "portuguese": "Vers\u00e3o",
+    "french": "Version",
+    "spanish": "Versi\u00f3n",
+    "italian": "Versione",
+    "german": "Version"
+  },
+  {
+    "english": "Alcohol",
+    "portuguese": "\u00c1lcool",
+    "french": "Alcool",
+    "spanish": "Alcohol",
+    "italian": "Alcol",
+    "german": "Alkohol"
+  },
+  {
+    "english": "Argument",
+    "portuguese": "Argumento",
+    "french": "Argument",
+    "spanish": "Argumento",
+    "italian": "Argomento",
+    "german": "Argument"
+  },
+  {
+    "english": "Complaint",
+    "portuguese": "Reclama\u00e7\u00e3o",
+    "french": "Plainte",
+    "spanish": "Queja",
+    "italian": "Reclamo",
+    "german": "Beschwerde"
+  },
+  {
+    "english": "Contract",
+    "portuguese": "Contrato",
+    "french": "Contrat",
+    "spanish": "Contrato",
+    "italian": "Contratto",
+    "german": "Vertrag"
+  },
+  {
+    "english": "Emphasis",
+    "portuguese": "\u00canfase",
+    "french": "Emphase",
+    "spanish": "\u00c9nfasis",
+    "italian": "Enfasi",
+    "german": "Betonung"
+  },
+  {
+    "english": "Highway",
+    "portuguese": "Autoestrada",
+    "french": "Autoroute",
+    "spanish": "Autopista",
+    "italian": "Autostrada",
+    "german": "Autobahn"
+  },
+  {
+    "english": "Loss",
+    "portuguese": "Perda",
+    "french": "Perte",
+    "spanish": "P\u00e9rdida",
+    "italian": "Perdita",
+    "german": "Verlust"
+  },
+  {
+    "english": "Membership",
+    "portuguese": "Associa\u00e7\u00e3o",
+    "french": "Adh\u00e9sion",
+    "spanish": "Membres\u00eda",
+    "italian": "Iscrizione",
+    "german": "Mitgliedschaft"
+  },
+  {
+    "english": "Possession",
+    "portuguese": "Posse",
+    "french": "Possession",
+    "spanish": "Posesi\u00f3n",
+    "italian": "Possesso",
+    "german": "Besitz"
+  },
+  {
+    "english": "Preparation",
+    "portuguese": "Prepara\u00e7\u00e3o",
+    "french": "Pr\u00e9paration",
+    "spanish": "Preparaci\u00f3n",
+    "italian": "Preparazione",
+    "german": "Vorbereitung"
+  },
+  {
+    "english": "Steak",
+    "portuguese": "Bife",
+    "french": "Steak",
+    "spanish": "Bistec",
+    "italian": "Bistecca",
+    "german": "Steak"
+  },
+  {
+    "english": "Union",
+    "portuguese": "Uni\u00e3o",
+    "french": "Union",
+    "spanish": "Uni\u00f3n",
+    "italian": "Unione",
+    "german": "Union"
+  },
+  {
+    "english": "Agreement",
+    "portuguese": "Acordo",
+    "french": "Accord",
+    "spanish": "Acuerdo",
+    "italian": "Accordo",
+    "german": "Abkommen"
+  },
+  {
+    "english": "Cancer",
+    "portuguese": "C\u00e2ncer",
+    "french": "Cancer",
+    "spanish": "C\u00e1ncer",
+    "italian": "Cancro",
+    "german": "Krebs"
+  },
+  {
+    "english": "Currency",
+    "portuguese": "Moeda",
+    "french": "Monnaie",
+    "spanish": "Moneda",
+    "italian": "Valuta",
+    "german": "W\u00e4hrung"
+  },
+  {
+    "english": "Employment",
+    "portuguese": "Emprego",
+    "french": "Emploi",
+    "spanish": "Empleo",
+    "italian": "Occupazione",
+    "german": "Besch\u00e4ftigung"
+  },
+  {
+    "english": "Engineering",
+    "portuguese": "Engenharia",
+    "french": "Ing\u00e9nierie",
+    "spanish": "Ingenier\u00eda",
+    "italian": "Ingegneria",
+    "german": "Ingenieurwesen"
+  },
+  {
+    "english": "Entry",
+    "portuguese": "Entrada",
+    "french": "Entr\u00e9e",
+    "spanish": "Entrada",
+    "italian": "Ingresso",
+    "german": "Eintrag"
+  },
+  {
+    "english": "Interaction",
+    "portuguese": "Intera\u00e7\u00e3o",
+    "french": "Interaction",
+    "spanish": "Interacci\u00f3n",
+    "italian": "Interazione",
+    "german": "Interaktion"
+  },
+  {
+    "english": "Mixture",
+    "portuguese": "Mistura",
+    "french": "M\u00e9lange",
+    "spanish": "Mezcla",
+    "italian": "Miscela",
+    "german": "Mischung"
+  },
+  {
+    "english": "Preference",
+    "portuguese": "Prefer\u00eancia",
+    "french": "Pr\u00e9f\u00e9rence",
+    "spanish": "Preferencia",
+    "italian": "Preferenza",
+    "german": "Pr\u00e4ferenz"
+  },
+  {
+    "english": "Region",
+    "portuguese": "Regi\u00e3o",
+    "french": "R\u00e9gion",
+    "spanish": "Regi\u00f3n",
+    "italian": "Regione",
+    "german": "Region"
+  },
+  {
+    "english": "Republic",
+    "portuguese": "Rep\u00fablica",
+    "french": "R\u00e9publique",
+    "spanish": "Rep\u00fablica",
+    "italian": "Repubblica",
+    "german": "Republik"
+  },
+  {
+    "english": "Tradition",
+    "portuguese": "Tradi\u00e7\u00e3o",
+    "french": "Tradition",
+    "spanish": "Tradici\u00f3n",
+    "italian": "Tradizione",
+    "german": "Tradition"
+  },
+  {
+    "english": "Virus",
+    "portuguese": "V\u00edrus",
+    "french": "Virus",
+    "spanish": "Virus",
+    "italian": "Virus",
+    "german": "Virus"
+  },
+  {
+    "english": "Actor",
+    "portuguese": "Ator",
+    "french": "Acteur",
+    "spanish": "Actor",
+    "italian": "Attore",
+    "german": "Schauspieler"
+  },
+  {
+    "english": "Classroom",
+    "portuguese": "Sala de Aula",
+    "french": "Salle de Classe",
+    "spanish": "Aula",
+    "italian": "Aula",
+    "german": "Klasse"
+  },
+  {
+    "english": "Delivery",
+    "portuguese": "Entrega",
+    "french": "Livraison",
+    "spanish": "Entrega",
+    "italian": "Consegna",
+    "german": "Lieferung"
+  },
+  {
+    "english": "Device",
+    "portuguese": "Dispositivo",
+    "french": "Dispositif",
+    "spanish": "Dispositivo",
+    "italian": "Dispositivo",
+    "german": "Ger\u00e4t"
+  },
+  {
+    "english": "Difficulty",
+    "portuguese": "Dificuldade",
+    "french": "Difficult\u00e9",
+    "spanish": "Dificultad",
+    "italian": "Difficolt\u00e0",
+    "german": "Schwierigkeit"
+  },
+  {
+    "english": "Drama",
+    "portuguese": "Drama",
+    "french": "Drame",
+    "spanish": "Drama",
+    "italian": "Dramma",
+    "german": "Drama"
+  },
+  {
+    "english": "Election",
+    "portuguese": "elei\u00e7\u00e3o",
+    "french": "\u00e9lection",
+    "spanish": "elecci\u00f3n",
+    "italian": "elezione",
+    "german": "Wahl"
+  },
+  {
+    "english": "Engine",
+    "portuguese": "Motor",
+    "french": "Moteur",
+    "spanish": "Motor",
+    "italian": "Motore",
+    "german": "Motor"
+  },
+  {
+    "english": "Football",
+    "portuguese": "Futebol",
+    "french": "Football",
+    "spanish": "F\u00fatbol",
+    "italian": "Calcio",
+    "german": "Fu\u00dfball"
+  },
+  {
+    "english": "Guidance",
+    "portuguese": "Orienta\u00e7\u00e3o",
+    "french": "Orientation",
+    "spanish": "Gu\u00eda",
+    "italian": "Guida",
+    "german": "Leitfaden"
+  },
+  {
+    "english": "Hotel",
+    "portuguese": "Hotel",
+    "french": "H\u00f4tel",
+    "spanish": "Hotel",
+    "italian": "Albergo",
+    "german": "Hotel"
+  },
+  {
+    "english": "Owner",
+    "portuguese": "Propriet\u00e1rio",
+    "french": "Propri\u00e9taire",
+    "spanish": "Due\u00f1o/Propietario",
+    "italian": "Proprietario",
+    "german": "Besitzer"
+  },
+  {
+    "english": "Priority",
+    "portuguese": "Prioridade",
+    "french": "Priorit\u00e9",
+    "spanish": "Prioridad",
+    "italian": "Priorit\u00e0",
+    "german": "Priorit\u00e4t"
+  },
+  {
+    "english": "Protection",
+    "portuguese": "Prote\u00e7\u00e3o",
+    "french": "Protection",
+    "spanish": "Protecci\u00f3n",
+    "italian": "Protezione",
+    "german": "Schutz"
+  },
+  {
+    "english": "Suggestion",
+    "portuguese": "Sugest\u00e3o",
+    "french": "Suggestion",
+    "spanish": "Sugerencia",
+    "italian": "Suggerimento",
+    "german": "Vorschlag"
+  },
+  {
+    "english": "Tension",
+    "portuguese": "Tens\u00e3o",
+    "french": "Tension",
+    "spanish": "Tensi\u00f3n",
+    "italian": "Tensione",
+    "german": "Spannung"
+  },
+  {
+    "english": "Variation",
+    "portuguese": "Varia\u00e7\u00e3o",
+    "french": "Variation",
+    "spanish": "Variaci\u00f3n",
+    "italian": "Variazione",
+    "german": "Variation"
+  },
+  {
+    "english": "Anxiety",
+    "portuguese": "Ansiedade",
+    "french": "Anxi\u00e9t\u00e9",
+    "spanish": "Ansiedad",
+    "italian": "Ansia",
+    "german": "Angst"
+  },
+  {
+    "english": "Atmosphere",
+    "portuguese": "Atmosfera",
+    "french": "Atmosph\u00e8re",
+    "spanish": "Atm\u00f3sfera",
+    "italian": "Atmosfera",
+    "german": "Atmosph\u00e4re"
+  },
+  {
+    "english": "Awareness",
+    "portuguese": "Consci\u00eancia",
+    "french": "Conscience",
+    "spanish": "Conciencia",
+    "italian": "Coscienza",
+    "german": "Bewusstsein"
+  },
+  {
+    "english": "Bath",
+    "portuguese": "Banho",
+    "french": "Bain",
+    "spanish": "Ba\u00f1o",
+    "italian": "Bagno",
+    "german": "Bad"
+  },
+  {
+    "english": "Bread",
+    "portuguese": "P\u00e3o",
+    "french": "Pain",
+    "spanish": "Pan",
+    "italian": "Pane",
+    "german": "Brot"
+  },
+  {
+    "english": "Candidate",
+    "portuguese": "Candidato",
+    "french": "Candidat",
+    "spanish": "Candidato",
+    "italian": "Candidato",
+    "german": "Kandidat"
+  },
+  {
+    "english": "Climate",
+    "portuguese": "Clima",
+    "french": "Climat",
+    "spanish": "Clima",
+    "italian": "Clima",
+    "german": "Klima"
+  },
+  {
+    "english": "Comparison",
+    "portuguese": "Compara\u00e7\u00e3o",
+    "french": "Comparaison",
+    "spanish": "Comparaci\u00f3n",
+    "italian": "Comparazione",
+    "german": "Vergleich"
+  },
+  {
+    "english": "Confusion",
+    "portuguese": "Confus\u00e3o",
+    "french": "Confusion",
+    "spanish": "Confusi\u00f3n",
+    "italian": "Confusione",
+    "german": "Verwirrung"
+  },
+  {
+    "english": "Construction",
+    "portuguese": "Constru\u00e7\u00e3o",
+    "french": "Construction",
+    "spanish": "Construcci\u00f3n",
+    "italian": "Costruzione",
+    "german": "Konstruktion"
+  },
+  {
+    "english": "Elevator",
+    "portuguese": "Elevador",
+    "french": "Ascenseur",
+    "spanish": "Ascensor",
+    "italian": "Ascensore",
+    "german": "Aufzug"
+  },
+  {
+    "english": "Emotion",
+    "portuguese": "Emo\u00e7\u00e3o",
+    "french": "\u00c9motion",
+    "spanish": "Emoci\u00f3n",
+    "italian": "Emozione",
+    "german": "Emotion"
+  },
+  {
+    "english": "Employee",
+    "portuguese": "Empregado",
+    "french": "Employ\u00e9",
+    "spanish": "Empleado",
+    "italian": "Dipendente",
+    "german": "Angestellte"
+  },
+  {
+    "english": "Employer",
+    "portuguese": "Empregador",
+    "french": "Employeur",
+    "spanish": "Empleador",
+    "italian": "Datore di lavoro",
+    "german": "Arbeitgeber"
+  },
+  {
+    "english": "Guest",
+    "portuguese": "Convidado",
+    "french": "Invit\u00e9",
+    "spanish": "Invitado",
+    "italian": "Ospite",
+    "german": "Gast"
+  },
+  {
+    "english": "Height",
+    "portuguese": "Altura",
+    "french": "Hauteur",
+    "spanish": "Altura",
+    "italian": "Altezza",
+    "german": "H\u00f6he"
+  },
+  {
+    "english": "Leadership",
+    "portuguese": "Lideran\u00e7a",
+    "french": "Leadership",
+    "spanish": "Liderazgo",
+    "italian": "Leadership",
+    "german": "F\u00fchrung"
+  },
+  {
+    "english": "Mall",
+    "portuguese": "Mall",
+    "french": "Centre commercial",
+    "spanish": "Centro comercial",
+    "italian": "Centro commerciale",
+    "german": "Einkaufszentrum"
+  },
+  {
+    "english": "Manager",
+    "portuguese": "Gerente",
+    "french": "G\u00e9rant",
+    "spanish": "Gerente",
+    "italian": "Gestore",
+    "german": "Manager"
+  },
+  {
+    "english": "Operation",
+    "portuguese": "opera\u00e7\u00e3o",
+    "french": "op\u00e9ration",
+    "spanish": "operaci\u00f3n",
+    "italian": "operazione",
+    "german": "Operation"
+  },
+  {
+    "english": "Recording",
+    "portuguese": "Grava\u00e7\u00e3o",
+    "french": "Enregistrement",
+    "spanish": "Grabaci\u00f3n",
+    "italian": "Registrazione",
+    "german": "Aufnahme"
+  },
+  {
+    "english": "Sample",
+    "portuguese": "Amostra",
+    "french": "\u00c9chantillon",
+    "spanish": "Muestra",
+    "italian": "Campione",
+    "german": "Beispiel"
+  },
+  {
+    "english": "Transportation",
+    "portuguese": "Transporte",
+    "french": "Transport",
+    "spanish": "Transporte",
+    "italian": "Trasporto",
+    "german": "Transport"
+  },
+  {
+    "english": "Charity",
+    "portuguese": "Caridade",
+    "french": "Charit\u00e9",
+    "spanish": "Caridad",
+    "italian": "Carit\u00e0",
+    "german": "Wohlt\u00e4tigkeit"
+  },
+  {
+    "english": "Cousin",
+    "portuguese": "Primo",
+    "french": "Cousin",
+    "spanish": "Primo",
+    "italian": "Cugino",
+    "german": "Vetter"
+  },
+  {
+    "english": "Disaster",
+    "portuguese": "Desastre",
+    "french": "D\u00e9sastre",
+    "spanish": "Desastre",
+    "italian": "Disastro",
+    "german": "Katastrophe"
+  },
+  {
+    "english": "Editor",
+    "portuguese": "Editor",
+    "french": "\u00c9diteur",
+    "spanish": "Editor",
+    "italian": "Editore",
+    "german": "Redakteur"
+  },
+  {
+    "english": "Efficiency",
+    "portuguese": "Efici\u00eancia",
+    "french": "Efficacit\u00e9",
+    "spanish": "Eficiencia",
+    "italian": "Efficienza",
+    "german": "Effizienz"
+  },
+  {
+    "english": "Excitement",
+    "portuguese": "Excita\u00e7\u00e3o",
+    "french": "Excitation",
+    "spanish": "Emoci\u00f3n",
+    "italian": "Eccitazione",
+    "german": "Aufregung"
+  },
+  {
+    "english": "Extent",
+    "portuguese": "Extens\u00e3o",
+    "french": "\u00c9tendue",
+    "spanish": "Extensi\u00f3n",
+    "italian": "Estensione",
+    "german": "Umfang"
+  },
+  {
+    "english": "Feedback",
+    "portuguese": "Retorno",
+    "french": "Feedback",
+    "spanish": "Realimentaci\u00f3n",
+    "italian": "Feedback",
+    "german": "Feedback"
+  },
+  {
+    "english": "Guitar",
+    "portuguese": "Guitarra",
+    "french": "Guitare",
+    "spanish": "Guitarra",
+    "italian": "Chitarra",
+    "german": "Gitarre"
+  },
+  {
+    "english": "Homework",
+    "portuguese": "Tarefa de casa",
+    "french": "Devoirs",
+    "spanish": "Tarea",
+    "italian": "Compiti",
+    "german": "Hausaufgaben"
+  },
+  {
+    "english": "Leader",
+    "portuguese": "L\u00edder",
+    "french": "Leader",
+    "spanish": "L\u00edder",
+    "italian": "Leader",
+    "german": "F\u00fchrer"
+  },
+  {
+    "english": "Mom",
+    "portuguese": "M\u00e3e",
+    "french": "Maman",
+    "spanish": "Mam\u00e1",
+    "italian": "Mamma",
+    "german": "Mutter"
+  },
+  {
+    "english": "Outcome",
+    "portuguese": "Resultado",
+    "french": "R\u00e9sultat",
+    "spanish": "Resultado",
+    "italian": "Esito",
+    "german": "Ergebnis"
+  },
+  {
+    "english": "Permission",
+    "portuguese": "Permiss\u00e3o",
+    "french": "Autorisation",
+    "spanish": "Permiso",
+    "italian": "Permesso",
+    "german": "Erlaubnis"
+  },
+  {
+    "english": "Presentation",
+    "portuguese": "Apresenta\u00e7\u00e3o",
+    "french": "Pr\u00e9sentation",
+    "spanish": "Presentaci\u00f3n",
+    "italian": "Presentazione",
+    "german": "Pr\u00e4sentation"
+  },
+  {
+    "english": "Promotion",
+    "portuguese": "Promo\u00e7\u00e3o",
+    "french": "Promotion",
+    "spanish": "Promoci\u00f3n",
+    "italian": "Promozione",
+    "german": "F\u00f6rderung"
+  },
+  {
+    "english": "Reflection",
+    "portuguese": "Reflex\u00e3o",
+    "french": "R\u00e9flexion",
+    "spanish": "Reflexi\u00f3n",
+    "italian": "Riflessione",
+    "german": "Reflexion"
+  },
+  {
+    "english": "Refrigerator",
+    "portuguese": "Refrigerador",
+    "french": "R\u00e9frig\u00e9rateur",
+    "spanish": "Refrigerador",
+    "italian": "Frigorifero",
+    "german": "K\u00fchlschrank"
+  },
+  {
+    "english": "Resolution",
+    "portuguese": "Resolu\u00e7\u00e3o",
+    "french": "R\u00e9solution",
+    "spanish": "Resoluci\u00f3n",
+    "italian": "Risoluzione",
+    "german": "Aufl\u00f6sung"
+  },
+  {
+    "english": "Revenue",
+    "portuguese": "Receita",
+    "french": "Revenu",
+    "spanish": "Ingresos",
+    "italian": "Reddito",
+    "german": "Einnahme"
+  },
+  {
+    "english": "Session",
+    "portuguese": "Sess\u00e3o",
+    "french": "Session",
+    "spanish": "Sesi\u00f3n",
+    "italian": "Sessione",
+    "german": "Sitzung"
+  },
+  {
+    "english": "Singer",
+    "portuguese": "Cantor",
+    "french": "Chanteur",
+    "spanish": "Cantante",
+    "italian": "Cantante",
+    "german": "S\u00e4nger"
+  },
+  {
+    "english": "Tennis",
+    "portuguese": "T\u00eanis",
+    "french": "Tennis",
+    "spanish": "Tenis",
+    "italian": "Tennis",
+    "german": "Tennis"
+  },
+  {
+    "english": "Basket",
+    "portuguese": "Cesta",
+    "french": "Panier",
+    "spanish": "Cesta",
+    "italian": "Cesto",
+    "german": "Korb"
+  },
+  {
+    "english": "Bonus",
+    "portuguese": "B\u00f4nus",
+    "french": "Bonus",
+    "spanish": "Bono",
+    "italian": "Bonus",
+    "german": "Bonus"
+  },
+  {
+    "english": "Cabinet",
+    "portuguese": "Gabinete",
+    "french": "Cabinet",
+    "spanish": "Gabinete",
+    "italian": "Armadio",
+    "german": "Schrank"
+  },
+  {
+    "english": "Childhood",
+    "portuguese": "Inf\u00e2ncia",
+    "french": "Enfance",
+    "spanish": "Infancia",
+    "italian": "Infanzia",
+    "german": "Kindheit"
+  },
+  {
+    "english": "Church",
+    "portuguese": "igreja",
+    "french": "\u00e9glise",
+    "spanish": "iglesia",
+    "italian": "chiesa",
+    "german": "Kirche"
+  },
+  {
+    "english": "Clothes",
+    "portuguese": "Roupas",
+    "french": "V\u00eatements",
+    "spanish": "Ropa",
+    "italian": "Vestiti",
+    "german": "Kleidung"
+  },
+  {
+    "english": "Coffee",
+    "portuguese": "Caf\u00e9",
+    "french": "Caf\u00e9",
+    "spanish": "Caf\u00e9",
+    "italian": "Caff\u00e8",
+    "german": "Kaffee"
+  },
+  {
+    "english": "Dinner",
+    "portuguese": "Jantar",
+    "french": "D\u00eener",
+    "spanish": "Cena",
+    "italian": "Cena",
+    "german": "Abendessen"
+  },
+  {
+    "english": "Drawing",
+    "portuguese": "Desenho",
+    "french": "Dessin",
+    "spanish": "Dibujo",
+    "italian": "Disegno",
+    "german": "Zeichnung"
+  },
+  {
+    "english": "Hair",
+    "portuguese": "Cabelo",
+    "french": "Cheveux",
+    "spanish": "Pelo",
+    "italian": "Capelli",
+    "german": "Haar"
+  },
+  {
+    "english": "Hearing",
+    "portuguese": "Audi\u00e7\u00e3o",
+    "french": "Audition",
+    "spanish": "Audici\u00f3n",
+    "italian": "Udito",
+    "german": "H\u00f6ren"
+  },
+  {
+    "english": "Initiative",
+    "portuguese": "Iniciativa",
+    "french": "Initiative",
+    "spanish": "Iniciativa",
+    "italian": "Iniziativa",
+    "german": "Initiative"
+  },
+  {
+    "english": "Judgment",
+    "portuguese": "Julgamento",
+    "french": "Jugement",
+    "spanish": "Juicio",
+    "italian": "Giudizio",
+    "german": "Urteil"
+  },
+  {
+    "english": "Lab",
+    "portuguese": "Laborat\u00f3rio",
+    "french": "Laboratoire",
+    "spanish": "Laboratorio",
+    "italian": "Laboratorio",
+    "german": "Labor"
+  },
+  {
+    "english": "Measurement",
+    "portuguese": "Medi\u00e7\u00e3o",
+    "french": "Mesure",
+    "spanish": "Medida",
+    "italian": "Misurazione",
+    "german": "Messung"
+  },
+  {
+    "english": "Mode",
+    "portuguese": "Modo",
+    "french": "Mode",
+    "spanish": "Modo",
+    "italian": "Modo",
+    "german": "Modus"
+  },
+  {
+    "english": "Mud",
+    "portuguese": "Lama",
+    "french": "Boue",
+    "spanish": "Lodo",
+    "italian": "Fango",
+    "german": "Schlamm"
+  },
+  {
+    "english": "Orange",
+    "portuguese": "Laranja",
+    "french": "Orange",
+    "spanish": "Naranja",
+    "italian": "Arancia",
+    "german": "Orange"
+  },
+  {
+    "english": "Poetry",
+    "portuguese": "Poesia",
+    "french": "Po\u00e9sie",
+    "spanish": "Poes\u00eda",
+    "italian": "Poesia",
+    "german": "Poesie"
+  },
+  {
+    "english": "Police",
+    "portuguese": "Pol\u00edcia",
+    "french": "Police",
+    "spanish": "Polic\u00eda",
+    "italian": "Polizia",
+    "german": "Polizei"
+  },
+  {
+    "english": "Possibility",
+    "portuguese": "Possibilidade",
+    "french": "Possibilit\u00e9",
+    "spanish": "Posibilidad",
+    "italian": "Possibilit\u00e0",
+    "german": "M\u00f6glichkeit"
+  },
+  {
+    "english": "Procedure",
+    "portuguese": "procedimento",
+    "french": "proc\u00e9dure",
+    "spanish": "procedimiento",
+    "italian": "procedura",
+    "german": "Verfahren"
+  },
+  {
+    "english": "Queen",
+    "portuguese": "Rainha",
+    "french": "Reine",
+    "spanish": "Reina",
+    "italian": "Regina",
+    "german": "K\u00f6nigin"
+  },
+  {
+    "english": "Ratio",
+    "portuguese": "Raz\u00e3o",
+    "french": "Rapport",
+    "spanish": "Raz\u00f3n",
+    "italian": "Rapporto",
+    "german": "Verh\u00e4ltnis"
+  },
+  {
+    "english": "Relation",
+    "portuguese": "Rela\u00e7\u00e3o",
+    "french": "Relation",
+    "spanish": "Relaci\u00f3n",
+    "italian": "Relazione",
+    "german": "Beziehung"
+  },
+  {
+    "english": "Restaurant",
+    "portuguese": "Restaurante",
+    "french": "Restaurant",
+    "spanish": "Restaurante",
+    "italian": "Ristorante",
+    "german": "Restaurant"
+  },
+  {
+    "english": "Satisfaction",
+    "portuguese": "Satisfa\u00e7\u00e3o",
+    "french": "Satisfaction",
+    "spanish": "Satisfacci\u00f3n",
+    "italian": "Soddisfazione",
+    "german": "Zufriedenheit"
+  },
+  {
+    "english": "Sector",
+    "portuguese": "Setor",
+    "french": "Secteur",
+    "spanish": "Sector",
+    "italian": "Settore",
+    "german": "Sektor"
+  },
+  {
+    "english": "Signature",
+    "portuguese": "Assinatura",
+    "french": "Signature",
+    "spanish": "Firma",
+    "italian": "Firma",
+    "german": "Unterschrift"
+  },
+  {
+    "english": "Significance",
+    "portuguese": "Signific\u00e2ncia",
+    "french": "Signification",
+    "spanish": "Significado",
+    "italian": "Significato",
+    "german": "Bedeutung"
+  },
+  {
+    "english": "Song",
+    "portuguese": "Can\u00e7\u00e3o",
+    "french": "Chanson",
+    "spanish": "Canci\u00f3n",
+    "italian": "Canzone",
+    "german": "Lied"
+  },
+  {
+    "english": "Tooth",
+    "portuguese": "Dente",
+    "french": "Dent",
+    "spanish": "Diente",
+    "italian": "Dente",
+    "german": "Zahn"
+  },
+  {
+    "english": "Town",
+    "portuguese": "Cidade",
+    "french": "Ville",
+    "spanish": "Ciudad",
+    "italian": "Citt\u00e0",
+    "german": "Stadt"
+  },
+  {
+    "english": "Vehicle",
+    "portuguese": "Ve\u00edculo",
+    "french": "V\u00e9hicule",
+    "spanish": "Veh\u00edculo",
+    "italian": "Veicolo",
+    "german": "Fahrzeug"
+  },
+  {
+    "english": "Volume",
+    "portuguese": "Volume",
+    "french": "Volume",
+    "spanish": "Volumen",
+    "italian": "Volume",
+    "german": "Volumen"
+  },
+  {
+    "english": "Wife",
+    "portuguese": "Esposa",
+    "french": "Femme",
+    "spanish": "Esposa",
+    "italian": "Moglie",
+    "german": "Frau"
+  },
+  {
+    "english": "Accident",
+    "portuguese": "Acidente",
+    "french": "Accident",
+    "spanish": "Accidente",
+    "italian": "Incidente",
+    "german": "Unfall"
+  },
+  {
+    "english": "Airport",
+    "portuguese": "Aeroporto",
+    "french": "A\u00e9roport",
+    "spanish": "Aeropuerto",
+    "italian": "Aeroporto",
+    "german": "Flughafen"
+  },
+  {
+    "english": "Appointment",
+    "portuguese": "Compromisso",
+    "french": "Rendez-vous",
+    "spanish": "Cita",
+    "italian": "Appuntamento",
+    "german": "Termin"
+  },
+  {
+    "english": "Arrival",
+    "portuguese": "Chegada",
+    "french": "Arriv\u00e9e",
+    "spanish": "Llegada",
+    "italian": "Arrivo",
+    "german": "Ankunft"
+  }
+]

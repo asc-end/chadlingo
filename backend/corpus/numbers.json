@@ -1,0 +1,250 @@
+[
+  {
+    "english": "One",
+    "portuguese": "Um",
+    "french": "Un",
+    "spanish": "Uno",
+    "italian": "Uno",
+    "german": "Eins"
+  },
+  {
+    "english": "Two",
+    "portuguese": "Dois",
+    "french": "Deux",
+    "spanish": "Dos",
+    "italian": "Due",
+    "german": "Zwei"
+  },
+  {
+    "english": "Three",
+    "portuguese": "Tr\u00eas",
+    "french": "Trois",
+    "spanish": "Tres",
+    "italian": "Tre",
+    "german": "Drei"
+  },
+  {
+    "english": "Four",
+    "portuguese": "Quatro",
+    "french": "Quatre",
+    "spanish": "Cuatro",
+    "italian": "Quattro",
+    "german": "Vier"
+  },
+  {
+    "english": "Five",
+    "portuguese": "Cinco",
+    "french": "Cinq",
+    "spanish": "Cinco",
+    "italian": "Cinque",
+    "german": "F\u00fcnf"
+  },
+  {
+    "english": "Six",
+    "portuguese": "Seis",
+    "french": "Six",
+    "spanish": "Seis",
+    "italian": "Sei",
+    "german": "Sechs"
+  },
+  {
+    "english": "Seven",
+    "portuguese": "Sete",
+    "french": "Sept",
+    "spanish": "Siete",
+    "italian": "Sette",
+    "german": "Sieben"
+  },
+  {
+    "english": "Eight",
+    "portuguese": "Oito",
+    "french": "Huit",
+    "spanish": "Ocho",
+    "italian": "Otto",
+    "german": "Acht"
+  },
+  {
+    "english": "Nine",
+    "portuguese": "Nove",
+    "french": "Neuf",
+    "spanish": "Nueve",
+    "italian": "Nove",
+    "german": "Neun"
+  },
+  {
+    "english": "Ten",
+    "portuguese": "Dez",
+    "french": "Dix",
+    "spanish": "Diez",
+    "italian": "Dieci",
+    "german": "Zehn"
+  },
+  {
+    "english": "Eleven",
+    "portuguese": "Onze",
+    "french": "Onze",
+    "spanish": "Once",
+    "italian": "Undici",
+    "german": "Elf"
+  },
+  {
+    "english": "Twelve",
+    "portuguese": "Doze",
+    "french": "Douze",
+    "spanish": "Doce",
+    "italian": "Dodici",
+    "german": "Zw\u00f6lf"
+  },
+  {
+    "english": "Thirteen",
+    "portuguese": "Treze",
+    "french": "Treize",
+    "spanish": "Trece",
+    "italian": "Tredici",
+    "german": "Dreizehn"
+  },
+  {
+    "english": "Fourteen",
+    "portuguese": "Catorze",
+    "french": "Quatorze",
+    "spanish": "Catorce",
+    "italian": "Quattordici",
+    "german": "Vierzehn"
+  },
+  {
+    "english": "Fifteen",
+    "portuguese": "Quinze",
+    "french": "Quinze",
+    "spanish": "Quince",
+    "italian": "Quindici",
+    "german": "F\u00fcnfzehn"
+  },
+  {
+    "english": "Sixteen",
+    "portuguese": "Dezesseis",
+    "french": "Seize",
+    "spanish": "Diecis\u00e9is",
+    "italian": "Sedici",
+    "german": "Sechzehn"
+  },
+  {
+    "english": "Seventeen",
+    "portuguese": "Dezessete",
+    "french": "Dix-sept",
+    "spanish": "Diecisiete",
+    "italian": "Diciassette",
+    "german": "Siebzehn"
+  },
+  {
+    "english": "Eighteen",
+    "portuguese": "Dezoito",
+    "french": "Dix-huit",
+    "spanish": "Dieciocho",
+    "italian": "Diciotto",
+    "german": "Achtzehn"
+  },
+  {
+    "english": "Nineteen",
+    "portuguese": "Dezenove",
+    "french": "Dix-neuf",
+    "spanish": "Diecinueve",
+    "italian": "Diciannove",
+    "german": "Neunzehn"
+  },
+  {
+    "english": "Twenty",
+    "portuguese": "Vinte",
+    "french": "Vingt",
+    "spanish": "Veinte",
+    "italian": "Venti",
+    "german": "Zwanzig"
+  },
+  {
+    "english": "Thirty",
+    "portuguese": "Trinta",
+    "french": "Trente",
+    "spanish": "Treinta",
+    "italian": "Trenta",
+    "german": "Drei\u00dfig"
+  },
+  {
+    "english": "Fourty",
+    "portuguese": "Quarenta",
+    "french": "Quarante",
+    "spanish": "Cuarenta",
+    "italian": "Quaranta",
+    "german": "Vierzig"
+  },
+  {
+    "english": "Fifty",
+    "portuguese": "cinquenta",
+    "french": "cinquante",
+    "spanish": "cincuenta",
+    "italian": "cinquanta",
+    "german": "f\u00fcnfzig"
+  },
+  {
+    "english": "Sixty",
+    "portuguese": "Sessenta",
+    "french": "Soixante",
+    "spanish": "Sesenta",
+    "italian": "Sessanta",
+    "german": "Sechzig"
+  },
+  {
+    "english": "Seventy",
+    "portuguese": "Setenta",
+    "french": "Soixante-dix",
+    "spanish": "Setenta",
+    "italian": "Settanta",
+    "german": "Siebzig"
+  },
+  {
+    "english": "Heighty",
+    "portuguese": "Alto",
+    "french": "Haut",
+    "spanish": "Altura",
+    "italian": "Altezza",
+    "german": "H\u00f6he"
+  },
+  {
+    "english": "Ninety",
+    "portuguese": "Noventa",
+    "french": "Quatre-vingt-dix",
+    "spanish": "Noventa",
+    "italian": "Novanta",
+    "german": "Neunzig"
+  },
+  {
+    "english": "Hundred",
+    "portuguese": "Cem",
+    "french": "Cent",
+    "spanish": "Cien",
+    "italian": "Cento",
+    "german": "Hundert"
+  },
+  {
+    "english": "Thousand",
+    "portuguese": "Mil",
+    "french": "Mille",
+    "spanish": "Mil",
+    "italian": "Mille",
+    "german": "Tausend"
+  },
+  {
+    "english": "Million",
+    "portuguese": "Milh\u00e3o",
+    "french": "Million",
+    "spanish": "Mill\u00f3n",
+    "italian": "Millione",
+    "german": "Million"
+  },
+  {
+    "english": "Billion",
+    "portuguese": "Bilh\u00e3o",
+    "french": "Milliard",
+    "spanish": "Bill\u00f3n",
+    "italian": "Miliardo",
+    "german": "Milliarde"
+  }
+]

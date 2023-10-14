@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "populateFlashCards.js",
+  "scripts": {
+    "populate": "node ./firebase/populateFlashCards.js",
+    "count": "node ./firebase/countFlashCards.js",
+    "erase": "node ./firebase/eraseDatabase.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "firebase": "^10.3.1"
+  }
+}
