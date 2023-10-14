@@ -73,7 +73,6 @@ export default function App() {
       <SafeAreaView className="h-full">
         <GestureHandlerRootView>
           <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
-            <StatusBar barStyle="dark-content" />
             <View className="h-full">
               {/* <MainButton text="remove account" onPress={() => deleteValueFor("sol-auth")}/> */}
               {/* <AccountProvider> */}
