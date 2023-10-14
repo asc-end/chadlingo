@@ -38,7 +38,6 @@ export default function Play() {
     // activeCard.value = withTiming(activeCard.value + 1, { duration });
     setTimeout(() => {
       if (Math.floor(activeCard.value) == nbCards){
-
       }
     }, duration);
     setSwipable(false);
@@ -46,7 +45,7 @@ export default function Play() {
 
   if(!flashCards) return <Loading/>
   return (
-    <FlingGestureHandler direction={Directions.LEFT} onEnded={onEnd}>
+    <FlingGestureHandler direction={Directions.LEFT}>
       <View className="w-full h-full p-12 flex flex-col items-center justify-center relative">
         <View className="absolute top-3 w-full">
           <ProgressBar percentage={progression} />
