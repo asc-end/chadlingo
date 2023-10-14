@@ -24,12 +24,14 @@ export default function Home() {
   useEffect(() => {
     let interval: any
     async function getCurrentDayIndex() {
+      console.log(0)
       let date = await fetchSecureDate()
       if (!date || !beginDate) return
-
+      console.log(1)
       let beginDay = new Date(beginDate).getUTCDate();
       let currentDay = date.getUTCDate();
       let dayDifference = currentDay - beginDay;
+      console.log(3)
 
       if (nbDone !== undefined && (dayDifference > nbDone)) {
         console.log("looose")
@@ -64,6 +66,7 @@ export default function Home() {
     updateFlow("play")
   }
 
+  console.log(dayState, chrono)
   return (
     <View className="w-full h-full px-4 py-12 flex flex-col items-center justify-center relative">
       <View className="absolute top-0 left-0">

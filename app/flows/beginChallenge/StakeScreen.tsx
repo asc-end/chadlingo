@@ -6,13 +6,11 @@ import useStore from "../../lib/state";
 import setNewChallenge from "../../lib/firebase/setNewChallenge";
 import { LinearGradient } from "expo-linear-gradient";
 
-export default function StakeScreen({ navigation }: { navigation: any }) {
+export default function StakeScreen({ navigation, onFinish }: { navigation: any, onFinish: () => void }) {
   const [amount, setAmount] = useState("");
-  const { updateFlow } = useStore()
 
   function onPress() {
-    setNewChallenge("marie", "portuguese")
-    updateFlow("home")
+    onFinish()
   }
 
   return (

@@ -19,7 +19,7 @@ const nbCards = 2;
 
 export default function Play() {
   const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
-  const { updateFlow } = useStore();
+  const { updateFlow, challenge } = useStore();
   const activeCard = useSharedValue(0);
   const [swipable, setSwipable] = useState(false);
 
@@ -36,10 +36,7 @@ export default function Play() {
     if (!swipable) return;
     activeCard.value = withTiming(activeCard.value + 1, { duration });
     setTimeout(() => {
-      console.log("coucou")
-      console.log("wsh",Math.floor(activeCard.value), nbCards)
       if (Math.floor(activeCard.value) == nbCards){
-        console.log("alors")
 
       }
     }, duration);

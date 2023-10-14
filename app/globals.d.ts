@@ -21,7 +21,7 @@ declare global {
   }
 
   interface Challenge {
-    key: string,
+    key?: string,
     beginDate: number;
     language: string;
     nbDone: number;

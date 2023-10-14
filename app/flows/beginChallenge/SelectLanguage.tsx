@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { View, ScrollView, Text, Pressable, Image } from "react-native";
 import useStore from "../../lib/state";
 import { MainButton } from "../../components/Buttons";
 import { LinearGradient } from "expo-linear-gradient";
+import { getValueFor, save } from "../../lib/secure-store/secureStore";
+import { get } from "http";
 
 const languages = [
   { name: "english", code: "us" },
@@ -40,49 +42,63 @@ function Language({
   );
 }
 
-export default function SelectLanguage({ index, navigation }: { index: 1 | 2, navigation: any }) {
+export default function SelectLanguage({ index, setLanguage, navigation }: { index: 1 | 2, setLanguage?: React.Dispatch<React.SetStateAction<string | undefined>>, navigation: any }) {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   const { updateFlow } = useStore();
-  function selecteLanguage(index: number) {
+  const [nativeLang, setNativeLang] = useState<string | null>()
+  function selectLanguage(index: number) {
     setSelectedLanguage(languages[index]);
   }
 
+  useEffect(() => {
+    async function fetchNativeLang() {
+      await getValueFor("nativeLang").then((_nativeLang) => setNativeLang(_nativeLang))
+    }
+    fetchNativeLang()
+  }, [])
   function onNextPress() {
-    if (index == 1) navigation.navigate("Language2")
-    else navigation.navigate("Stake")
+    if (index == 1) {
+      save("nativeLang", selectedLanguage.name)
+      navigation.navigate("Language2")
+    }
+    else {
+      setLanguage!(selectedLanguage.name)
+      navigation.navigate("Stake")
+    }
   }
-
+  console.log("native language,", nativeLang)
   return (
     <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
 
-    <View className="relative flex flex-col items-center py-12  h-full" style={{ gap: 30 }}>
+      <View className="relative flex flex-col items-center py-12  h-full" style={{ gap: 30 }}>
 
-      <View className="absolute bottom-8 left-8 right-8">
-        <MainButton onPress={onNextPress} text="Next" full />
-      </View>
-      <Text className="text-white text-4xl font-bold text-center w-full">
-        {index == 1 ? "Mother Tongue" : "Ascend Language"}
-      </Text>
-      <Text className="text-white text-lg text-center">
-        {index == 1 ? "Select your native language." : "Choose the language you aspire to master."}
-      </Text>
-      <ScrollView className=" ">
-        <View className="flex flex-col" style={{ gap: 10 }}>
-          {languages.map((e, i) => (
-            <Language
-              language={e.name}
-              code={e.code}
-              key={i}
-              onPress={() => selecteLanguage(i)}
-              selected={selectedLanguage.name == e.name}
-            />
-          ))}
+        <View className="absolute bottom-8 left-8 right-8">
+          <MainButton onPress={onNextPress} text="Next" full />
         </View>
-      </ScrollView>
-      {/* <View className="absolute right-0 bottom-0 flex flex-row items-center p-6 justify-end"> */}
+        <Text className="text-white text-4xl font-bold text-center w-full">
+          {index == 1 ? "Mother Tongue" : "Ascend Language"}
+        </Text>
+        <Text className="text-white text-lg text-center">
+          {index == 1 ? "Select your native language." : "Choose the language you aspire to master."}
+        </Text>
+        <ScrollView className=" ">
+          <View className="flex flex-col" style={{ gap: 10 }}>
+            {languages.map((e, i) => {
+              if (e.name == nativeLang && index == 2) return
+              return <Language
+                language={e.name}
+                code={e.code}
+                key={i}
+                onPress={() => selectLanguage(i)}
+                selected={selectedLanguage.name == e.name}
+              />
+            })}
+          </View>
+        </ScrollView>
+        {/* <View className="absolute right-0 bottom-0 flex flex-row items-center p-6 justify-end"> */}
 
-      {/* </View> */}
-    </View>
+        {/* </View> */}
+      </View>
     </LinearGradient>
   );
 }

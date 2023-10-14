@@ -2,8 +2,9 @@ import { Text, View, Vibration } from "react-native";
 import React, { SetStateAction, useEffect, useState } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import WordInput from "./WordInput";
-import { cards } from "./cards";
 import * as Haptics from "expo-haptics";
+import { getValueFor } from "../../lib/secure-store/secureStore";
+
 import Animated, {
   Extrapolate,
   SharedValue,
@@ -16,11 +17,13 @@ import { hsvToRgb } from "../../lib/colors/hsvToRgb";
 import { l, s } from "../../config/colors";
 import { GestureResponderEvent, NativeSyntheticEvent, TextInputSubmitEditingEventData } from "react-native";
 import useStore from "../../lib/state";
+import updateChallenge from "../../lib/firebase/updateChallenge";
 const duration = 200;
 const maxVisibleItems = 20;
 const cardsGap = 20;
-
 const nbCards = 2;
+
+
 export default function Card({
   data,
   index,
@@ -35,6 +38,7 @@ export default function Card({
     // setAnimQueueBusy?: React.Dispatch<React.SetStateAction<boolean>>;
   }) {
   const { updateFlow, setChallenge, challenge } = useStore();
+  const [languages, setLanguages] = useState<{ nativeLang: string, learningLang: string }>()
 
   const [state, setState] = useState<string>("input");
   const [input, setInput] = useState("");
@@ -42,10 +46,12 @@ export default function Card({
     first: hsvToRgb((index / 20 + 0.1) % 1, s, l + 0.02),
     sec: hsvToRgb((index / 20) % 1, s, l),
   });
+
+
   const styles = useAnimatedStyle(() => {
     return {
       position: "absolute",
-      zIndex: cards.length - index,
+      zIndex: 20 - index,
       transform: [
         {
           translateX: interpolate(activeIndex.value, [index - 1, index, index + 1], [cardsGap, 0, -400 + cardsGap]),
@@ -57,8 +63,19 @@ export default function Card({
     };
   });
 
+
+  useEffect(() => {
+    async function getLanguages() {
+      const nativeLang = await getValueFor("nativeLang")
+      const learningLang = challenge?.language
+      setLanguages({ nativeLang: nativeLang!, learningLang: learningLang! })
+    }
+    getLanguages()
+
+  }, [])
+
   function onSubmit(event: GestureResponderEvent | NativeSyntheticEvent<TextInputSubmitEditingEventData>) {
-    const isValid = input.toLowerCase() == cards[index].portuguese.toLowerCase();
+    const isValid = input.toLowerCase() == (data as any)[languages!.learningLang].toLowerCase();
     console.log(input);
     if (isValid) {
       // setState("valid");
@@ -66,9 +83,10 @@ export default function Card({
       activeIndex.value = withTiming(activeIndex.value + 1, { duration: duration });
       if (Math.floor(activeIndex.value) + 1 == nbCards) {
         //@ts-ignore
-        const newChallenge:Challenge = { ...challenge, nbDone: challenge.nbDone + 1}
+        const newChallenge: Challenge = { ...challenge, nbDone: challenge.nbDone + 1 }
         console.log("NEW CHALLENGE", newChallenge)
         setChallenge(newChallenge)
+        updateChallenge("marie", newChallenge)
         updateFlow("home")
       }
       setState("input");
@@ -80,6 +98,7 @@ export default function Card({
     }
   }
 
+  if (!languages) return
   return (
     <Animated.View className="w-full h-fit absolute" style={[styles]}>
       <LinearGradient
@@ -103,7 +122,7 @@ export default function Card({
         )}
         <View className="w-full h-80 text-center flex items-center justify-center">
           <Text className="text-white font-bold text-6xl ">
-            {state == "valid" || state == "wrong" ? data.portuguese : data.french}
+            {state == "valid" || state == "wrong" ? (data as any)[languages.learningLang] : (data as any)[languages.nativeLang]}
           </Text>
         </View>
         {state == "input" && <WordInput onSubmit={onSubmit} setInput={setInput} input={input} />}
