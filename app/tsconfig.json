@@ -1,0 +1,6 @@
+{
+  "compilerOptions": { "strict": true, "typeRoots": ["./globals.d.ts", "./nativewind.d.ts"] },
+  "extends": "expo/tsconfig.base",
+  "include": ["./"],
+  "exclude": ["node_modules"]
+}
