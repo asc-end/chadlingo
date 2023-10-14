@@ -10,12 +10,13 @@ import { create } from "zustand";
 
 type Store = {
   challenge: Challenge | null;
-  setChallenge: (_challenge: Challenge) => void ;
+  setChallenge: (_challenge: Challenge) => void;
   solanaCreds: Creds | null;
   setSolanaCreds: (newCreds: Creds) => void;
   flow:
-  null |
-     "connectWallet"
+    | null
+    | "connectWallet"
+    | "beginChallenge"
     | "beginChallenge_welcome"
     | "beginChallenge_language1"
     | "beginChallenge_language2"
@@ -23,10 +24,11 @@ type Store = {
     | "home"
     | "play"
     | "finishedChallenge_lose"
-    | "finishedChallenge_win"
+    | "finishedChallenge_win";
   updateFlow: (
     newData:
       | "connectWallet"
+      | "beginChallenge"
       | "beginChallenge_welcome"
       | "beginChallenge_language1"
       | "beginChallenge_language2"
@@ -40,13 +42,14 @@ type Store = {
 
 const useStore = create<Store>()((set) => ({
   challenge: null,
-  setChallenge: (_challenge: Challenge) => set({challenge: _challenge}),
+  setChallenge: (_challenge: Challenge) => set({ challenge: _challenge }),
   solanaCreds: null,
   setSolanaCreds: (newCreds: Creds) => set({ solanaCreds: newCreds }),
   flow: null,
   updateFlow: (
     newData:
       | "connectWallet"
+      | "beginChallenge"
       | "beginChallenge_welcome"
       | "beginChallenge_language1"
       | "beginChallenge_language2"

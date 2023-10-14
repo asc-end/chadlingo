@@ -4,20 +4,24 @@ import { MainButton } from "../../components/Buttons";
 import SolAmountInput from "../../components/solana/SolAmountInput";
 import useStore from "../../lib/state";
 import setNewChallenge from "../../lib/firebase/setNewChallenge";
+import { LinearGradient } from "expo-linear-gradient";
 
-export default function StakeScreen() {
+export default function StakeScreen({ navigation }: { navigation: any }) {
   const [amount, setAmount] = useState("");
-  const {updateFlow} = useStore()
+  const { updateFlow } = useStore()
 
-  function onPress(){
+  function onPress() {
     setNewChallenge("marie", "portuguese")
     updateFlow("home")
   }
 
   return (
-    <View className="h-full flex flex-col items-center justify-center" style={{gap: 16}}>
-      <SolAmountInput amount={amount} setAmount={setAmount}/>
-      <MainButton text="Stake and Begin" onPress={onPress}/>
-    </View>
+    <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
+
+      <View className="h-full flex flex-col items-center justify-center" style={{ gap: 16 }}>
+        <SolAmountInput amount={amount} setAmount={setAmount} />
+        <MainButton text="Stake and Begin" onPress={onPress} />
+      </View>
+    </LinearGradient>
   );
 }

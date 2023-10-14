@@ -2,6 +2,7 @@ import { useState } from "react";
 import { View, ScrollView, Text, Pressable, Image } from "react-native";
 import useStore from "../../lib/state";
 import { MainButton } from "../../components/Buttons";
+import { LinearGradient } from "expo-linear-gradient";
 
 const languages = [
   { name: "english", code: "us" },
@@ -39,7 +40,7 @@ function Language({
   );
 }
 
-export default function SelectLanguage({ index }: { index: 1 | 2 }) {
+export default function SelectLanguage({ index, navigation }: { index: 1 | 2, navigation: any }) {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   const { updateFlow } = useStore();
   function selecteLanguage(index: number) {
@@ -47,15 +48,17 @@ export default function SelectLanguage({ index }: { index: 1 | 2 }) {
   }
 
   function onNextPress() {
-    if (index == 1) updateFlow("beginChallenge_language2");
-    else updateFlow("beginChallenge_stake");
+    if (index == 1) navigation.navigate("Language2")
+    else navigation.navigate("Stake")
   }
 
   return (
+    <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
+
     <View className="relative flex flex-col items-center py-12  h-full" style={{ gap: 30 }}>
 
       <View className="absolute bottom-8 left-8 right-8">
-        <MainButton onPress={onNextPress} text="Next" full/>
+        <MainButton onPress={onNextPress} text="Next" full />
       </View>
       <Text className="text-white text-4xl font-bold text-center w-full">
         {index == 1 ? "Mother Tongue" : "Ascend Language"}
@@ -80,5 +83,6 @@ export default function SelectLanguage({ index }: { index: 1 | 2 }) {
 
       {/* </View> */}
     </View>
+    </LinearGradient>
   );
 }

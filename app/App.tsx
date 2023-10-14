@@ -16,13 +16,13 @@ import { deleteValueFor, getValueFor } from "./lib/secure-store/secureStore";
 import { decryptJSON } from "./lib/secure-store/crypto";
 import getUserChallenge from "./lib/firebase/getUserChallenge";
 
+import { NavigationContainer } from '@react-navigation/native';
+import BeginChallenge from "./flows/beginChallenge/BeginChallenge";
+
 const states = {
   null: null,
   "connectWallet": ConnectWallet,
-  "beginChallenge_welcome": WelcomeScreen,
-  "beginChallenge_language1": () => <SelectLanguage index={1} />,
-  "beginChallenge_language2": () => <SelectLanguage index={2} />,
-  "beginChallenge_stake": StakeScreen,
+  "beginChallenge": BeginChallenge,
   "home": Home,
   "finishedChallenge_lose": Lose,
   "finishedChallenge_win": Win,
@@ -52,7 +52,7 @@ export default function App() {
 
         let challenge: Challenge = await getUserChallenge("marie")
         if (!challenge) {
-          updateFlow("beginChallenge_welcome")
+          updateFlow("beginChallenge")
           return
         }
         setChallenge(challenge)
@@ -67,20 +67,22 @@ export default function App() {
   let FlowToRender = states[flow];
 
   return (
-    <SafeAreaView className="h-full">
-      <GestureHandlerRootView>
-        <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
-          <StatusBar barStyle="dark-content" />
-          <View className="h-full">
-            {/* <MainButton text="remove account" onPress={() => deleteValueFor("sol-auth")}/> */}
-            {/* <AccountProvider> */}
-            {/* <ConnectionProvider> */}
-            {FlowToRender && <FlowToRender />}
-            {/* </ConnectionProvider> */}
-            {/* </AccountProvider> */}
-          </View>
-        </LinearGradient>
-      </GestureHandlerRootView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView className="h-full">
+        <GestureHandlerRootView>
+          <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
+            <StatusBar barStyle="dark-content" />
+            <View className="h-full">
+              {/* <MainButton text="remove account" onPress={() => deleteValueFor("sol-auth")}/> */}
+              {/* <AccountProvider> */}
+              {/* <ConnectionProvider> */}
+              {FlowToRender && <FlowToRender />}
+              {/* </ConnectionProvider> */}
+              {/* </AccountProvider> */}
+            </View>
+          </LinearGradient>
+        </GestureHandlerRootView>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }

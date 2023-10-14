@@ -7,19 +7,22 @@ import { MainButton } from "../../components/Buttons";
 import setNewUser from "../../lib/firebase/setNewUser";
 import getUserKey from "../../lib/firebase/getUserKey";
 
-export default function BeginChallenge() {
+export default function WelcomeScreen({ navigation }: { navigation: any }) {
   const { updateFlow } = useStore();
 
-  useEffect(() => { 
+  useEffect(() => {
     console.log("user", getUserKey("marie"))
   }, [])
 
   return (
-    <View className="w-full h-full px-4 py-12 flex flex-col items-center justify-center">
-      <Text className="font-black text-7xl text-white">30 days</Text>
-      <Text className="font-bold text-4xl text-white">to become a chad</Text>
-      <Text className="italic text-2xl text-white mb-8">stake and hold yourself accountable</Text>
-      <MainButton onPress={() => updateFlow("beginChallenge_language1")} text="Begin" />
-    </View>
+    <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
+
+      <View className="w-full h-full px-4 py-12 flex flex-col items-center justify-center">
+        <Text className="font-black text-7xl text-white">30 days</Text>
+        <Text className="font-bold text-4xl text-white">to become a chad</Text>
+        <Text className="italic text-2xl text-white mb-8">stake and hold yourself accountable</Text>
+        <MainButton onPress={() => navigation.navigate("Language1")} text="Begin" />
+      </View>
+    </LinearGradient>
   );
 }
