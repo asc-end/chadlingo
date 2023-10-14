@@ -18,6 +18,7 @@ import getUserChallenge from "./lib/firebase/getUserChallenge";
 
 import { NavigationContainer } from '@react-navigation/native';
 import BeginChallenge from "./flows/beginChallenge/BeginChallenge";
+import SignEnd from "./flows/play/SignEnd";
 
 const states = {
   null: null,
@@ -27,6 +28,7 @@ const states = {
   "finishedChallenge_lose": Lose,
   "finishedChallenge_win": Win,
   "play": Play,
+  "play_sign": SignEnd,
 };
 
 export default function App() {

@@ -83,16 +83,9 @@ export default function Card({
 
     console.log(activeIndex.value);
     if (isValid) {
-      // setState("valid");
-      // setCardColors({ first: hsvToRgb(0.3, s, l + 0.02), sec: hsvToRgb(0.3, s, l) });
-      progression.value = withTiming(progression.value + (1 /nbCards))
-      if (progression.value == 1 - (1/nbCards)) {
-        //@ts-ignore
-        const newChallenge: Challenge = { ...challenge, nbDone: challenge.nbDone + 1 }
-        console.log("NEW CHALLENGE", newChallenge)
-        setChallenge(newChallenge)
-        updateChallenge("marie", newChallenge)
-        updateFlow("home")
+      progression.value = withTiming(progression.value + (1 / nbCards))
+      if (progression.value == 1 - (1 / nbCards)) {
+        updateFlow("play_sign")
       }
       setState("input");
     } else {

@@ -23,6 +23,7 @@ type Store = {
     | "beginChallenge_stake"
     | "home"
     | "play"
+    | "play_sign"
     | "finishedChallenge_lose"
     | "finishedChallenge_win";
   updateFlow: (
@@ -35,6 +36,7 @@ type Store = {
       | "beginChallenge_stake"
       | "home"
       | "play"
+      | "play_sign"
       | "finishedChallenge_lose"
       | "finishedChallenge_win"
   ) => void;
@@ -56,6 +58,7 @@ const useStore = create<Store>()((set) => ({
       | "beginChallenge_stake"
       | "home"
       | "play"
+      | "play_sign"
       | "finishedChallenge_lose"
       | "finishedChallenge_win"
   ) => set({ flow: newData }),
