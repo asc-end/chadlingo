@@ -28,12 +28,14 @@ export default function Card({
   data,
   index,
   activeIndex,
+  progression,
   setSwipable,
 }: // setAnimQueueBusy,
   {
     data: Flashcard
     index: number;
     activeIndex: SharedValue<number>;
+    progression: SharedValue<number>;
     setSwipable: React.Dispatch<React.SetStateAction<boolean>>;
     // setAnimQueueBusy?: React.Dispatch<React.SetStateAction<boolean>>;
   }) {
@@ -75,13 +77,16 @@ export default function Card({
   }, [])
 
   function onSubmit(event: GestureResponderEvent | NativeSyntheticEvent<TextInputSubmitEditingEventData>) {
+    console.log(input, (data as any)[languages!.learningLang].toLowerCase())
     const isValid = input.toLowerCase() == (data as any)[languages!.learningLang].toLowerCase();
-    console.log(input);
+    activeIndex.value = withTiming(activeIndex.value + 1, { duration: duration });
+
+    console.log(activeIndex.value);
     if (isValid) {
       // setState("valid");
       // setCardColors({ first: hsvToRgb(0.3, s, l + 0.02), sec: hsvToRgb(0.3, s, l) });
-      activeIndex.value = withTiming(activeIndex.value + 1, { duration: duration });
-      if (Math.floor(activeIndex.value) + 1 == nbCards) {
+      progression.value = withTiming(progression.value + (1 /nbCards))
+      if (progression.value == 1 - (1/nbCards)) {
         //@ts-ignore
         const newChallenge: Challenge = { ...challenge, nbDone: challenge.nbDone + 1 }
         console.log("NEW CHALLENGE", newChallenge)

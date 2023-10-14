@@ -21,6 +21,7 @@ export default function Play() {
   const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
   const { updateFlow, challenge } = useStore();
   const activeCard = useSharedValue(0);
+  const progression =  useSharedValue(0)
   const [swipable, setSwipable] = useState(false);
 
   useEffect(() => {
@@ -34,7 +35,7 @@ export default function Play() {
 
   function onEnd() {
     if (!swipable) return;
-    activeCard.value = withTiming(activeCard.value + 1, { duration });
+    // activeCard.value = withTiming(activeCard.value + 1, { duration });
     setTimeout(() => {
       if (Math.floor(activeCard.value) == nbCards){
 
@@ -48,13 +49,13 @@ export default function Play() {
     <FlingGestureHandler direction={Directions.LEFT} onEnded={onEnd}>
       <View className="w-full h-full p-12 flex flex-col items-center justify-center relative">
         <View className="absolute top-3 w-full">
-          <ProgressBar percentage={activeCard} />
+          <ProgressBar percentage={progression} />
         </View>
         <View
           className="w-full overflow-x-visible h-fit flex flex-row items-center justify-start ml-2 order-last"
           pointerEvents="box-none">
           {flashCards !== null && flashCards?.map((e:Flashcard, i:number) => (
-            <Card setSwipable={setSwipable} data={e} index={i} key={i} activeIndex={activeCard} />
+            <Card setSwipable={setSwipable} data={e} index={i} key={i} activeIndex={activeCard} progression={progression}/>
           ))}
         </View>
       </View>

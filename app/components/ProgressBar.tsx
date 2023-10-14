@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React, { useState } from "react";
 import Animated, { useAnimatedStyle, SharedValue} from "react-native-reanimated";
-import { cards } from "../flows/play/cards";
 
 export default function ProgressBar({ percentage }: { percentage: SharedValue<number> }) {
-    console.log(percentage)
+    
+  console.log("PERCENTAGE", percentage)
   const styles = useAnimatedStyle(() => ({
-    width: `${(percentage.value / cards.length) * 100}%`,
+    width: `${(percentage.value) * 100}%`,
   }));
 
   return (
