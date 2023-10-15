@@ -11,6 +11,9 @@ import LanguageFlag from "../../components/languages/LanguageFlag";
 import { languages } from "../../components/languages/languages";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { getValueFor } from "../../lib/secure-store/secureStore";
+import pushCards from "../../lib/firebase/pushCards";
+import { getFlashCards } from "../../lib/firebase/getFlashcards";
+import getFlashCardsByDate from "../../lib/firebase/getFlashCardsByDate";
 // import { LinearGradientDemo } from "../../components/LinearGradient";
 
 export default function Home({ navigation }: { navigation: any }) {
@@ -21,6 +24,8 @@ export default function Home({ navigation }: { navigation: any }) {
   const [dayState, setDayState] = useState<"done" | "not done" | "undefined">("undefined")
   const [time, setTime] = useState<Date>();
   const [chrono, setChrono] = useState<{ hours: string, minutes: string, seconds: string }>()
+  const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
+
   const [nativeLang, setNativeLang] = useState<{ name: string, code: string }>()
   function numberToString(i: number) {
     return i.toString().padStart(2, '0');
@@ -52,6 +57,17 @@ export default function Home({ navigation }: { navigation: any }) {
     }
     getCurrentDayIndex()
 
+    // async function _getFlashCards() {
+    //   const _flashcards = await getFlashCards(5);
+    //   if (_flashcards) {
+    //     setFlashCards(_flashcards)
+    //     pushCards([true, true, true, true, false], _flashcards,
+    //       "english",
+    //       "marie")
+    //   }
+    // };
+
+    // _getFlashCards()
 
 
     return () => clearInterval(interval);

@@ -2,11 +2,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SelectLanguage, StakeScreen, WelcomeScreen } from '.';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import setNewChallenge from '../../lib/firebase/setNewChallenge';
 import { fetchSecureDate } from '../../lib/dates/fetchSecureDate';
 
 import useStore from '../../lib/state';
+import getFlashCardsByDate from '../../lib/firebase/getFlashCardsByDate';
 const Stack = createNativeStackNavigator();
 
 export default function BeginChallenge() {

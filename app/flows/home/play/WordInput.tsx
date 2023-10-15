@@ -3,27 +3,15 @@ import {
   View,
   TextInput,
   Pressable,
-  Text,
-  GestureResponderEvent,
-  TextInputSubmitEditingEventData,
-  NativeSyntheticEvent,
-  Alert,
 } from "react-native";
 import SendIcon from "../../../components/icons/SendIcon";
 
-export default function WordInput({
-  onSubmit,
-  input,
-  setInput
-}: {
-  input: string,
-  setInput: React.Dispatch<React.SetStateAction<string>>
-  onSubmit: (event: GestureResponderEvent | NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void;
-}) {
+export default function WordInput({ onSubmit }: { onSubmit: (input: string) => void }) {
+  const [input, setInput] = useState("");
 
-  function _onSubmit(e:NativeSyntheticEvent<TextInputSubmitEditingEventData> | GestureResponderEvent) {
+  function _onSubmit() {
     if (input !== "") {
-      onSubmit(e);
+      onSubmit(input);
     }
   }
   return (

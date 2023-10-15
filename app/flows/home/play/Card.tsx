@@ -2,30 +2,28 @@ import { Text, View, Vibration } from "react-native";
 import React, { SetStateAction, useEffect, useState } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import WordInput from "./WordInput";
-import * as Haptics from "expo-haptics";
-import { getValueFor } from "../../../lib/secure-store/secureStore";
 
 import Animated, {
-  Extrapolate,
   SharedValue,
   interpolate,
   useAnimatedStyle,
-  withTiming,
-  Easing,
 } from "react-native-reanimated";
+
 import { hsvToRgb } from "../../../lib/colors/hsvToRgb";
 import { l, s } from "../../../config/colors";
-import { GestureResponderEvent, NativeSyntheticEvent, TextInputSubmitEditingEventData } from "react-native";
-import useStore from "../../../lib/state";
-import updateChallenge from "../../../lib/firebase/updateChallenge";
-const duration = 200;
-const maxVisibleItems = 20;
-const cardsGap = 20;
-const nbCards = 2;
+import { duration, nbCards, cardsGap } from "./config";
+
+function interpolateBetween(x: number) {
+  const lowerBound = 0.55;
+  const upperBound = 0.7;
+
+  return lowerBound + x * (upperBound - lowerBound);
+}
+
 
 function createFloatBetweenRange(number: number, min: number, max: number) {
   // Use cosine to get a value between -1 and 1, then scale to the range [0.3, 0.5]
-  const value = (max - min) * 0.5 *  Math.cos(number) + (max - min) * 0.5;
+  const value = (max - min) * 0.5 * Math.cos(number) + (max - min) * 0.5;
 
   // Ensure the value is within the range [0.3, 0.5]
   return Math.max(min, Math.min(max, value));
@@ -35,29 +33,20 @@ export default function Card({
   data,
   index,
   activeIndex,
-  progression,
-  setSwipable,
-  navigation
+  onSubmit,
+  state,
+  languages
 }: // setAnimQueueBusy,
   {
     data: Flashcard
     index: number;
     activeIndex: SharedValue<number>;
-    progression: SharedValue<number>;
-    setSwipable: React.Dispatch<React.SetStateAction<boolean>>;
-    navigation: any
+    onSubmit: (input: string, expect: string) => void;
+    state: "input" | "wrong" | "valid"
+    languages: { nativeLang: string, learningLang: string }
     // setAnimQueueBusy?: React.Dispatch<React.SetStateAction<boolean>>;
   }) {
-  const { updateFlow, setChallenge, challenge } = useStore();
-  const [languages, setLanguages] = useState<{ nativeLang: string, learningLang: string }>()
-
-  const [state, setState] = useState<string>("input");
-  const [input, setInput] = useState("");
-  const h = createFloatBetweenRange(index, 0.6, 1.2)
-  const [cardsColors, setCardColors] = useState({
-    first: hsvToRgb(h, s, l + 0.02),
-    sec: hsvToRgb(h, s, l),
-  });
+  const [cardColors, setCardColors] = useState<{ first: number[], sec: number[] }>();
 
 
   const styles = useAnimatedStyle(() => {
@@ -75,74 +64,40 @@ export default function Card({
     };
   });
 
-
   useEffect(() => {
-    async function getLanguages() {
-      const nativeLang = await getValueFor("nativeLang")
-      const learningLang = challenge?.language
-      setLanguages({ nativeLang: nativeLang!, learningLang: learningLang! })
-    }
-    getLanguages()
-
-  }, [])
-
-  function onSubmit(event: GestureResponderEvent | NativeSyntheticEvent<TextInputSubmitEditingEventData>) {
-    console.log(input, (data as any)[languages!.learningLang].toLowerCase())
-    const isValid = input.toLowerCase() == (data as any)[languages!.learningLang].toLowerCase();
-    activeIndex.value = withTiming(activeIndex.value + 1, { duration: duration });
-
-    console.log(activeIndex.value);
-    if (isValid) {
-      progression.value = withTiming(progression.value + (1 / nbCards), { duration: duration });
-      
-      if (progression.value == 1 - (1 / nbCards)) {
-        setTimeout(() => {
-          navigation.reset({
-            index: 0,
-            routes: [{ name: 'signDay' }],
-          });
-
-        }, (duration + 100));
-        // navigation.reset()
-        // navigation.replace("signDay")
-      }
-      setState("input");
-    } else {
-      setState("wrong");
-      setSwipable(true);
+    if (state === "wrong")
       setCardColors({ first: hsvToRgb(1, s, l + 0.02), sec: hsvToRgb(1, s, l) });
-      Haptics.impactAsync();
+    else {
+      const h = interpolateBetween(index / nbCards)
+      setCardColors({
+        first: hsvToRgb(h, s, l + 0.02),
+        sec: hsvToRgb(h, s, l),
+      })
     }
-  }
+  }, [state])
 
-  if (!languages) return
+
+  if (!languages || !cardColors) return
   return (
     <Animated.View className="w-full h-fit absolute" style={[styles]}>
       <LinearGradient
         className="w-full h-fit rounded-2xl flex items-center justify-between"
         colors={[
-          `#rgba(${cardsColors.first[0]}, ${cardsColors.first[1]}, ${cardsColors.first[2]}, 1.0)`,
-          `#rgba(${cardsColors.sec[0]}, ${cardsColors.sec[1]}, ${cardsColors.sec[2]}, 1.0)`,
-        ]}>
-        {(state == "valid" || state == "wrong") && (
+          `#rgba(${cardColors.first[0]}, ${cardColors.first[1]}, ${cardColors.first[2]}, 1.0)`,
+          `#rgba(${cardColors.sec[0]}, ${cardColors.sec[1]}, ${cardColors.sec[2]}, 1.0)`,
+        ]}
+      >
+        {(state == "wrong") && (
           <View className=" h-[68px]">
-            {state == "valid" ? (
-              <View>
-                <Text>Correct</Text>
-              </View>
-            ) : (
-              <View>
-                <Text>Not correct</Text>
-              </View>
-            )}
+            <Text>Not correct</Text>
           </View>
         )}
         <View className="w-full h-80 text-center flex items-center justify-center">
           <Text className="text-white font-bold text-6xl ">
-            {state == "valid" || state == "wrong" ? (data as any)[languages.learningLang] : (data as any)[languages.nativeLang]}
+            {state == "wrong" ? (data as any)[languages.learningLang] : (data as any)[languages.nativeLang]}
           </Text>
         </View>
-        {state == "input" && <WordInput onSubmit={onSubmit} setInput={setInput} input={input} />}
+        {state == "input" && <WordInput onSubmit={(input) => onSubmit(input, (data as any)[languages.learningLang])} />}
       </LinearGradient>
     </Animated.View>
   );

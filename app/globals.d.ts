@@ -12,6 +12,7 @@ declare global {
     authToken: string | null;
   }
   interface Flashcard {
+    key: string,
     english: string;
     french: string;
     german: string;
