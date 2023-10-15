@@ -24,7 +24,7 @@ export default async function getFlashCardsByDate(nbCards: number, user = "marie
                     let flashcard = await getFlashcard(lang[1].key);
                     flashcards.push(flashcard);
                     if (flashcards.length == nbCards)
-                        return
+                        return flashcards
                 }
                 if (flashcards.length < nbCards) {
                     let newFlashCards = await getFlashCardsExept(flashcards, nbCards - flashcards.length)
