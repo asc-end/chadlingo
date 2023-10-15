@@ -3,8 +3,8 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"
 import { useEffect, useState } from "react";
 import { getValueFor, save } from "../../../lib/secure-store/secureStore";
 
-function SwitchSetting({ title, text, code }: { title: string, text: string, code: string }) {
-    const [isEnabled, setIsEnabled] = useState(false);
+export function SwitchSetting({ title, text, code, disabled=false }: { title: string, text: string, code: string, disabled?: boolean }) {
+    const [isEnabled, setIsEnabled] = useState(!disabled);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
     useEffect(() => {
@@ -37,11 +37,10 @@ function SwitchSetting({ title, text, code }: { title: string, text: string, cod
 
 import { NavigationProp } from "@react-navigation/native";
 import ConnectButton from "../../../components/solana/ConnectButton";
-function LanguageSetting({ navigation }: { navigation: any }) {
+function LanguageSetting({ navigation }: { navigation: any}) {
     const [language, setLanguage] = useState<string | null>(null)
 
     useEffect(() => {
-        console.log("useEffect")
         async function fetchSecureStore() {
             const _language = await getValueFor("nativeLang")
             setLanguage(_language)
@@ -77,7 +76,7 @@ export default function Settings({ navigation }: { navigation: any }) {
                 <LanguageSetting navigation={navigation} />
                 <SwitchSetting title={"Dark mode"} text="Switch to dark mode for a more eye-friendly interface during the night." code="colors" />
                 <SwitchSetting title={"Sound"} text="Switch sound effects on or off for a more personalized experience." code="sound" />
-                <SwitchSetting title={"Notifications"} text="Enable or disable notifications for a more controlled environment." code="notifs" />
+                <SwitchSetting title={"Notifications"} text="If you agree, we can remind you to do your daily tasks!" code="notifs" />
 
             </View>
             <View className="w-full flex flex-col items-center" style={{ gap: 12 }}>

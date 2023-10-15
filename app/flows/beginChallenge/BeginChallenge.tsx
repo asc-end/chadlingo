@@ -8,6 +8,7 @@ import { fetchSecureDate } from '../../lib/dates/fetchSecureDate';
 
 import useStore from '../../lib/state';
 import getFlashCardsByDate from '../../lib/firebase/getFlashCardsByDate';
+import AllowNotifications from './AllowNotifications';
 const Stack = createNativeStackNavigator();
 
 export default function BeginChallenge() {
@@ -35,6 +36,7 @@ export default function BeginChallenge() {
             <Stack.Screen name="Language2" >
                 {(props) => <SelectLanguage {...props} index={2} setLanguage={setLanguage} />}
             </Stack.Screen>
+            <Stack.Screen name="Notifs" component={AllowNotifications}/>
             <Stack.Screen name="Stake">
                 {(props) => <StakeScreen  {...props} onFinish={onFormFinish} />}
             </Stack.Screen>

@@ -12,27 +12,32 @@ import { languages } from "../../components/languages/languages";
 
 
 export default function SelectLanguage({ index, setLanguage, navigation }: { index: 1 | 2, setLanguage?: React.Dispatch<React.SetStateAction<string | undefined>>, navigation: any }) {
-  const { updateFlow } = useStore();
   const [nativeLang, setNativeLang] = useState<string | null>()
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const [selectedLanguage, setSelectedLanguage] = useState<{ name: string, code: string }>();
+
   useEffect(() => {
     async function fetchNativeLang() {
       await getValueFor("nativeLang").then((_nativeLang) => setNativeLang(_nativeLang))
+      setSelectedLanguage(languages.filter((language) => language.name != nativeLang || index == 1)[0])
     }
     fetchNativeLang()
   }, [])
 
+  useEffect(() => {
+    setSelectedLanguage(languages.filter((language) => language.name != nativeLang || index == 1)[0])
+  }, [nativeLang])
+  
   function onNextPress() {
     if (index == 1) {
-      save("nativeLang", selectedLanguage.name)
+      save("nativeLang", selectedLanguage!.name)
       navigation.navigate("Language2")
     }
     else {
-      setLanguage!(selectedLanguage.name)
-      navigation.navigate("Stake")
+      setLanguage!(selectedLanguage?.name)
+      navigation.navigate("Notifs")
     }
   }
-  console.log("native language,", nativeLang)
+  if (!selectedLanguage) return
   return (
     <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
       <View className="relative flex flex-col items-center py-12  h-full" style={{ gap: 30 }}>
@@ -45,7 +50,8 @@ export default function SelectLanguage({ index, setLanguage, navigation }: { ind
         <Text className="text-white text-lg text-center">
           {index == 1 ? "Select your native language." : "Choose the language you aspire to master."}
         </Text>
-        <LanguagesMap selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} exeptions={[index === 2 && nativeLang ? nativeLang : ""]}/>
+
+        <LanguagesMap selectedLanguage={selectedLanguage!} setSelectedLanguage={setSelectedLanguage} exeptions={[index === 2 && nativeLang ? nativeLang : ""]} />
       </View>
     </LinearGradient>
   );
