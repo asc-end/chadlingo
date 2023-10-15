@@ -29,6 +29,6 @@ export default function ConnectButton({ onConnected, text = "Connect Wallet" }: 
   }
 
   return (
-    <MainButton text={text} onPress={onConnect} disabled={connexionState == "Loading"} />
+    <MainButton text={text} onPress={onConnect} disabled={connexionState == "Loading"} full/>
   );
 }
