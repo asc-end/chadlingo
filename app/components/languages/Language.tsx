@@ -1,4 +1,5 @@
 import { Image, Pressable, Text } from "react-native";
+import LanguageFlag from "./LanguageFlag";
 
 export default function Language({
     language,
@@ -17,11 +18,7 @@ export default function Language({
                 }`}
             style={{ gap: 16 }}
             onPress={onPress}>
-            <Image
-                source={{ uri: `https://flagcdn.com/w160/${code}.png` }}
-                alt="Ukraine"
-                className="w-10 h-10 rounded-full"
-            />
+            <LanguageFlag code={code}/>
             <Text className={` w-fit text-lg ${selected ? "text-white" : " text-white/50"}`}>{language.charAt(0).toUpperCase() + language.slice(1)}</Text>
         </Pressable>
     );

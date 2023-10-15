@@ -11,6 +11,8 @@ import Profile from "./profile/ProfileIcon";
 import Settings from "./settings/SettingsIcon";
 import ProfileIcon from "./profile/ProfileIcon";
 import SettingsIcon from "./settings/SettingsIcon";
+import LanguageFlag from "../../components/languages/LanguageFlag";
+import { languages } from "../../components/languages/languages";
 
 export default function Home({ navigation }: { navigation: any }) {
   const { updateFlow, challenge } = useStore()
@@ -69,14 +71,24 @@ export default function Home({ navigation }: { navigation: any }) {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy)
     navigation.navigate("play")
   }
+  const languageIndex = languages.findIndex(lang => lang.name === challenge?.language);
 
   return (
     <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
       <View className="w-full h-full px-4 py-12 flex flex-col items-center justify-center relative">
-        <View className="absolute z-20 top-3 left-3 right-3 justify-end flex flex-row items-center" style={{gap: 10}}>
-          <ProfileIcon onPress={() => navigation.navigate("profileModal")}/>
-          <SettingsIcon onPress={() => navigation.navigate("settingsModal")}/>
+        <View className="absolute z-20 top-3 left-3 right-3 flex flex-row items-center justify-between" >
+          <View className="flex flex-row items-center" style={{gap: 12}}>
+            <LanguageFlag code={languages[languageIndex].code} size="small"/>
+            <Text className="text-white">{challenge?.language.charAt(0).toUpperCase()! + challenge?.language.slice(1)}</Text>
+
+          </View>
+          <View className="flex flex-row" style={{ gap: 12 }}>
+            <ProfileIcon onPress={() => navigation.navigate("profileModal")} />
+            <SettingsIcon onPress={() => navigation.navigate("settingsModal")} />
+
+          </View>
         </View>
+
         <View className="absolute top-0 left-0">
           <CirclesInCircle nbDone={nbDone} current={index} />
         </View>
@@ -92,7 +104,7 @@ export default function Home({ navigation }: { navigation: any }) {
           </Text>
         </View>
         }
-        {dayState == "done" && <Text className="text-white text-4xl  text-center w-48">Come back tomorrow</Text>}
+        {dayState == "done" && <Text className="text-white text-4xl  text-center w-48 font-bold">Come back tomorrow</Text>}
         <View className="absolute bottom-10">
           {dayState == "not done" && (<MainButton text="Begin Day" onPress={onButtonPress} />)}
         </View>
