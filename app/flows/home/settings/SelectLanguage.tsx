@@ -9,7 +9,7 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
 export default function SelectLanguage({ navigation }: { setLanguage?: React.Dispatch<React.SetStateAction<string | undefined>>, navigation: any }) {
   const [nativeLang, setNativeLang] = useState<string | null>()
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const [selectedLanguage, setSelectedLanguage] = useState<{ name: string; code: string; } | undefined>(languages[0]);
 
   useEffect(() => {
     async function fetchNativeLang() {
@@ -23,8 +23,9 @@ export default function SelectLanguage({ navigation }: { setLanguage?: React.Dis
     fetchNativeLang()
   }, [])
 
+
   useEffect(() => {
-    console.log("change language", selectedLanguage.name)
+    if(!selectedLanguage) return
     save("nativeLang", selectedLanguage.name)
   }, [selectedLanguage])
 
@@ -40,7 +41,7 @@ export default function SelectLanguage({ navigation }: { setLanguage?: React.Dis
             Native Language
           </Text>
           <Text className="text-white text-lg text-center">Select your native language.</Text>
-          <LanguagesMap selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} />
+          <LanguagesMap selectedLanguage={selectedLanguage!} setSelectedLanguage={setSelectedLanguage} />
         </View>
       {/* </LinearGradient> */}
     </View>
