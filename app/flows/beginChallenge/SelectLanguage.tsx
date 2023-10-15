@@ -4,58 +4,24 @@ import useStore from "../../lib/state";
 import { MainButton } from "../../components/Buttons";
 import { LinearGradient } from "expo-linear-gradient";
 import { getValueFor, save } from "../../lib/secure-store/secureStore";
+import Language from "../../components/languages/Language";
 import { get } from "http";
+import LanguagesMap from "../../components/languages/LanguagesMap";
+import { languages } from "../../components/languages/languages";
 
-const languages = [
-  { name: "english", code: "us" },
-  { name: "portuguese", code: "pt" },
-  { name: "french", code: "fr" },
-  { name: "spanish", code: "es" },
-  { name: "italian", code: "it" },
-  { name: "german", code: "de" },
-];
 
-function Language({
-  language,
-  code,
-  onPress,
-  selected,
-}: {
-  language: string;
-  code: string;
-  onPress: () => void;
-  selected: boolean;
-}) {
-  return (
-    <Pressable
-      className={`bg-violet-500/20 rounded-md flex flex-row items-center justify-stqrt px-4 py-3 w-72 border ${selected ? " border-gray-400" : ""
-        }`}
-      style={{ gap: 16 }}
-      onPress={onPress}>
-      <Image
-        source={{ uri: `https://flagcdn.com/w160/${code}.png` }}
-        alt="Ukraine"
-        className="w-10 h-10 rounded-full"
-      />
-      <Text className={` w-fit text-lg ${selected ? "text-white" : " text-white/50"}`}>{language.charAt(0).toUpperCase() + language.slice(1)}</Text>
-    </Pressable>
-  );
-}
 
 export default function SelectLanguage({ index, setLanguage, navigation }: { index: 1 | 2, setLanguage?: React.Dispatch<React.SetStateAction<string | undefined>>, navigation: any }) {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   const { updateFlow } = useStore();
   const [nativeLang, setNativeLang] = useState<string | null>()
-  function selectLanguage(index: number) {
-    setSelectedLanguage(languages[index]);
-  }
-
+  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   useEffect(() => {
     async function fetchNativeLang() {
       await getValueFor("nativeLang").then((_nativeLang) => setNativeLang(_nativeLang))
     }
     fetchNativeLang()
   }, [])
+
   function onNextPress() {
     if (index == 1) {
       save("nativeLang", selectedLanguage.name)
@@ -69,9 +35,7 @@ export default function SelectLanguage({ index, setLanguage, navigation }: { ind
   console.log("native language,", nativeLang)
   return (
     <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
-
       <View className="relative flex flex-col items-center py-12  h-full" style={{ gap: 30 }}>
-
         <View className="absolute bottom-8 left-8 right-8">
           <MainButton onPress={onNextPress} text="Next" full />
         </View>
@@ -81,23 +45,7 @@ export default function SelectLanguage({ index, setLanguage, navigation }: { ind
         <Text className="text-white text-lg text-center">
           {index == 1 ? "Select your native language." : "Choose the language you aspire to master."}
         </Text>
-        <ScrollView className=" ">
-          <View className="flex flex-col" style={{ gap: 10 }}>
-            {languages.map((e, i) => {
-              if (e.name == nativeLang && index == 2) return
-              return <Language
-                language={e.name}
-                code={e.code}
-                key={i}
-                onPress={() => selectLanguage(i)}
-                selected={selectedLanguage.name == e.name}
-              />
-            })}
-          </View>
-        </ScrollView>
-        {/* <View className="absolute right-0 bottom-0 flex flex-row items-center p-6 justify-end"> */}
-
-        {/* </View> */}
+        <LanguagesMap selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} exeptions={[index === 2 && nativeLang ? nativeLang : ""]}/>
       </View>
     </LinearGradient>
   );
