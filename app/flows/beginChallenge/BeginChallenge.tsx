@@ -9,6 +9,7 @@ import { fetchSecureDate } from '../../lib/dates/fetchSecureDate';
 import useStore from '../../lib/state';
 import getFlashCardsByDate from '../../lib/firebase/getFlashCardsByDate';
 import AllowNotifications from './AllowNotifications';
+import getUserChallenge from '../../lib/firebase/getUserChallenge';
 const Stack = createNativeStackNavigator();
 
 export default function BeginChallenge() {
@@ -21,8 +22,10 @@ export default function BeginChallenge() {
             const date = await fetchSecureDate();
             if(!date) return
             let challenge:Challenge = { beginDate: date.getTime(), language: language, nbDone: 0, ended: false}
-            setNewChallenge("marie", challenge)
-            setChallenge(challenge)
+            await setNewChallenge("marie", challenge)
+            let _challenge = await getUserChallenge("marie")
+console.log("challenge", _challenge)
+            setChallenge(_challenge)
             updateFlow("home")
         }
     }

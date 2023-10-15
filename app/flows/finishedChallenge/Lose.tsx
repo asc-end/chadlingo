@@ -3,7 +3,7 @@ import React from "react";
 import { MainButton } from "../../components/Buttons";
 import useStore from "../../lib/state";
 import getUserChallenge from "../../lib/firebase/getUserChallenge";
-import setChallengeEnded from "../../lib/firebase/setChallengeEnded";
+import setChallengeEnded from "../../lib/firebase/demos/setChallengeEnd";
 
 
 const gifs = [

@@ -21,8 +21,6 @@ import BeginChallenge from "./flows/beginChallenge/BeginChallenge";
 // import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"
 import HomeRoot from "./flows/home/HomeRoot";
-import Play from "./flows/home/play/Play";
-import SignDay from "./flows/home/signDay/SignDay";
 // const Tab = createBottomTabNavigator();
 
 const states = {
@@ -32,8 +30,6 @@ const states = {
   "home": HomeRoot,
   "finishedChallenge_lose": Lose,
   "finishedChallenge_win": Win,
-  "play": Play,
-  "play_sign": SignDay,
 };
 
 export default function App() {
@@ -70,6 +66,7 @@ export default function App() {
 
     }
   }, []);
+
   //@ts-ignore
   let FlowToRender = states[flow];
   if (!FlowToRender) return

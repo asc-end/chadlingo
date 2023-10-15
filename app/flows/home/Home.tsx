@@ -14,67 +14,75 @@ import { getValueFor } from "../../lib/secure-store/secureStore";
 import pushCards from "../../lib/firebase/pushCards";
 import { getFlashCards } from "../../lib/firebase/getFlashcards";
 import getFlashCardsByDate from "../../lib/firebase/getFlashCardsByDate";
+import getUserChallenge from "../../lib/firebase/getUserChallenge";
 // import { LinearGradientDemo } from "../../components/LinearGradient";
 
 export default function Home({ navigation }: { navigation: any }) {
-  const { updateFlow, challenge } = useStore()
+  const { updateFlow, challenge, setChallenge} = useStore()
   const [beginDate, setBeginDate] = useState(challenge?.beginDate)
   const [nbDone, setNbDone] = useState(challenge?.nbDone)
   const [index, setIndex] = useState<number>()
   const [dayState, setDayState] = useState<"done" | "not done" | "undefined">("undefined")
   const [time, setTime] = useState<Date>();
   const [chrono, setChrono] = useState<{ hours: string, minutes: string, seconds: string }>()
-  const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
-
   const [nativeLang, setNativeLang] = useState<{ name: string, code: string }>()
-  function numberToString(i: number) {
-    return i.toString().padStart(2, '0');
-  }
+  function numberToString(i: number) { return i.toString().padStart(2, '0'); }
+
   let nativLangIndex = languages.findIndex(lang => lang.name === challenge?.language);
   let learningLangIndex = languages.findIndex(lang => lang.name === challenge?.language);
 
   useEffect(() => {
     let interval: any
     async function getCurrentDayIndex() {
-      let date = await fetchSecureDate()
-      if (!date || !beginDate) return
-      let beginDay = new Date(beginDate).getUTCDate();
-      let currentDay = date.getUTCDate();
-      let dayDifference = currentDay - beginDay;
+      console.log("WSH")
+      let challenge: Challenge = await getUserChallenge("marie")
+      if (!challenge) {
+        updateFlow("beginChallenge")
+        return
+      }
+      setChallenge(challenge)
+      setNbDone(challenge?.nbDone)
+      setBeginDate(challenge?.beginDate)
 
-      if (nbDone !== undefined && (dayDifference > nbDone)) {
-        console.log("looose")
+      let date = await fetchSecureDate()
+      if (!date || !challenge?.beginDate) return
+
+      // Convert date strings or objects to Date objects
+      const d1 = new Date(challenge?.beginDate).getTime();
+      const d2 = new Date(date).getTime();
+
+      // Calculate the time difference in milliseconds
+      const timeDiff = Math.abs(d2 - d1);
+
+      // Calculate the number of days
+      const dayDifference = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
+      if (challenge?.nbDone == 30 && dayDifference == 30) {
+        updateFlow("finishedChallenge_win")
+        return
+      }
+      else if (challenge?.nbDone !== undefined && (dayDifference > challenge?.nbDone)) {
         updateFlow("finishedChallenge_lose")
         return
       }
       setIndex(dayDifference);
-      setDayState((nbDone == (dayDifference + 1)) ? "done" : "not done")
+      setDayState((challenge?.nbDone == (dayDifference + 1)) ? "done" : "not done")
 
       if (date) setTime(date);
+      if(interval) clearInterval(interval)
       interval = setInterval(() => {
         setTime(prevTime => { if (prevTime) return new Date(prevTime.getTime() + 1000) });
       }, 1000);
     }
     getCurrentDayIndex()
 
-    // async function _getFlashCards() {
-    //   const _flashcards = await getFlashCards(5);
-    //   if (_flashcards) {
-    //     setFlashCards(_flashcards)
-    //     pushCards([true, true, true, true, false], _flashcards,
-    //       "english",
-    //       "marie")
-    //   }
-    // };
 
-    // _getFlashCards()
-
-
-    return () => clearInterval(interval);
+    const focused = navigation.addListener("focus", () => {
+      getCurrentDayIndex()
+    })
+    return () => { clearInterval(interval); focused };
   }, [])
 
   useEffect(() => {
-    console.log("coucocu")
     async function fetchNativeLang() {
       await getValueFor("nativeLang").then((_nativeLang: string | null) => {
         if (_nativeLang) {

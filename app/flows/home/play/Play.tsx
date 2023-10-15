@@ -24,6 +24,7 @@ import { languages as languagesDict } from "../../../components/languages/langua
 import { getValueFor } from "../../../lib/secure-store/secureStore";
 import pushCards from "../../../lib/firebase/pushCards";
 import getFlashCardsByDate from "../../../lib/firebase/getFlashCardsByDate";
+import setDayDone from "../../../lib/firebase/setDayDone";
 
 export default function Play({ navigation }: { navigation: any }) {
   const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
@@ -103,6 +104,7 @@ export default function Play({ navigation }: { navigation: any }) {
       console.log(progress)
       if (validatedCards.length == nbCards) {
         pushCards(validatedCards, flashCards!, languages!.learningLang, "marie")
+        setDayDone("marie", challenge!)
         setTimeout(() => {
           navigation.reset({ index: 0, routes: [{ name: 'signDay' }] });
         }, (duration + 100));
