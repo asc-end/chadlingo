@@ -14,7 +14,9 @@ export default async function getFlashCardsByDate(nbCards: number, user = "marie
     let resp = await get(addressesRef).then((snapshot) => {
         if (snapshot.exists()) {
             const _lang = snapshot.val()[Object.keys(snapshot.val())[0]].languages[lang]
-            const sortedLang = Object.entries(_lang).sort((a: any, b: any) => a[1].date - b[1].date);
+            const sortedLang = Object.entries(_lang)
+                .filter((entry:any) => new Date(entry[1].date).getDate() <= date.getDate())
+                .sort((a: any, b: any) => a[1].date - b[1].date);
 
             async function fetchFlashCards() {
                 let flashcards: (Flashcard | null)[] = [];
@@ -32,7 +34,7 @@ export default async function getFlashCardsByDate(nbCards: number, user = "marie
                     if (newFlashCards)
                         flashcards = [...flashcards, ...newFlashCards]
                     console.log("AFTER", flashcards.length)
-                    
+
                 }
                 return flashcards
             }
