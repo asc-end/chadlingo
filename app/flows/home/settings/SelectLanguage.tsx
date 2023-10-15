@@ -29,18 +29,20 @@ export default function SelectLanguage({ navigation }: { setLanguage?: React.Dis
   }, [selectedLanguage])
 
   return (
-    <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
-      <Pressable onPress={() => navigation.goBack()} className="p-2 absolute top-3 left-3">
-        <MaterialCommunityIcons name="chevron-left" size={48} color="white" />
-      </Pressable>
+    <View className="bg-black">
+      {/* <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full"> */}
+        <Pressable onPress={() => navigation.goBack()} className="p-2 absolute top-3 left-3">
+          <MaterialCommunityIcons name="chevron-left" size={48} color="white" />
+        </Pressable>
 
-      <View className="relative flex flex-col items-center py-12 pt-24  h-full" style={{ gap: 30 }}>
-        <Text className="text-white text-4xl font-bold text-center w-full">
-          Native Language
-        </Text>
-        <Text className="text-white text-lg text-center">Select your native language.</Text>
-        <LanguagesMap selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} />
-      </View>
-    </LinearGradient>
+        <View className="relative flex flex-col items-center py-12 pt-24  h-full" style={{ gap: 30 }}>
+          <Text className="text-white text-4xl font-bold text-center w-full">
+            Native Language
+          </Text>
+          <Text className="text-white text-lg text-center">Select your native language.</Text>
+          <LanguagesMap selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} />
+        </View>
+      {/* </LinearGradient> */}
+    </View>
   );
 }

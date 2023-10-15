@@ -14,7 +14,7 @@ export default function Language({
 }) {
     return (
         <Pressable
-            className={`bg-violet-500/20 rounded-md flex flex-row items-center justify-stqrt px-4 py-3 w-72 border ${selected ? " border-gray-400" : ""
+            className={` bg-indigo-700/30 rounded-md flex flex-row items-center justify-stqrt px-4 py-3 w-72 border ${selected ? " border-gray-400" : ""
                 }`}
             style={{ gap: 16 }}
             onPress={onPress}>
