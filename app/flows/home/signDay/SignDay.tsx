@@ -13,7 +13,7 @@ export default function SignDay({ navigation }: { navigation: any }) {
         const newChallenge: Challenge = { ...challenge, nbDone: challenge.nbDone + 1 }
         console.log("NEW CHALLENGE", newChallenge)
         setChallenge(newChallenge)
-        updateChallenge("marie", newChallenge)
+        // updateChallenge("marie", newChallenge)
         navigation.reset({
             index: 0,
             routes: [{ name: 'home' }],
@@ -25,7 +25,7 @@ export default function SignDay({ navigation }: { navigation: any }) {
         <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
             <View className="h-full flex flex-col items-center justify-center">
 
-                <Text className="text-white text-3xl font-bold text-center">You've completed the day!</Text>
+                <Text className="text-white text-3xl font-bold text-center">Congrats!</Text>
                 <Text className="text-white text-2xl mb-12">Sign to finish the day</Text>
                 <MainButton text="Sign" onPress={endDay} />
             </View>

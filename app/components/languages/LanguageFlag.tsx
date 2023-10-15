@@ -7,7 +7,7 @@ export default function LanguageFlag({ code, size = "medium" }: { code: string, 
         if (size === "large")
             return 144
         if (size === "medium")
-            return 72
+            return 48
         if (size === "small")
             return 28
     }

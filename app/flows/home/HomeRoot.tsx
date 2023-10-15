@@ -3,7 +3,6 @@ import { View } from "react-native";
 
 import Home from "./Home";
 import Settings from "./settings/Settings";
-import Profile from "./profile/Profile";
 import Play from "./play/Play";
 import SignDay from "./signDay/SignDay";
 import SelectLanguage from "./settings/SelectLanguage";
@@ -22,7 +21,6 @@ export default function HomeRoot() {
             </HomeStack.Group>
             <HomeStack.Group screenOptions={{ presentation: "transparentModal" }}>
                 <HomeStack.Screen name="settingsModal" component={Settings} />
-                <HomeStack.Screen name="profileModal" component={Profile} />
                 <HomeStack.Screen name="setLang" component={SelectLanguage}/>
             </HomeStack.Group>
         </HomeStack.Navigator>

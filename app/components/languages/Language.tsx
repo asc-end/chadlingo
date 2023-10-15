@@ -18,7 +18,7 @@ export default function Language({
                 }`}
             style={{ gap: 16 }}
             onPress={onPress}>
-            <LanguageFlag code={code}/>
+            <LanguageFlag code={code} size="medium"/>
             <Text className={` w-fit text-lg ${selected ? "text-white" : " text-white/50"}`}>{language.charAt(0).toUpperCase() + language.slice(1)}</Text>
         </Pressable>
     );

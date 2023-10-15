@@ -17,7 +17,7 @@ export default function CirclesInCircle({ nbDone = 0, current = 50, percentage =
       key={numCircles}
       cx={centerX}
       cy={centerY}
-      r={radius - 20}
+      r={radius -10 }
       stroke="#0000FF23"
       strokeWidth={40}
     // strokeDasharray={strokeDasharray}
@@ -63,17 +63,17 @@ export default function CirclesInCircle({ nbDone = 0, current = 50, percentage =
   const circumference = 2 * Math.PI * radius;
   const strokeDasharray = `${circumference * percentage / 100} ${circumference}`;
 
-  circles.push(
-    <Circle
-      key={numCircles + 1}
-      cx={centerX}
-      cy={centerY}
-      r={radius - 30}
-      stroke="#0000FFAA"
-      strokeWidth={15}
-      strokeDasharray={strokeDasharray}
-    />
-  );
+  // circles.push(
+  //   <Circle
+  //     key={numCircles + 1}
+  //     cx={centerX}
+  //     cy={centerY}
+  //     r={radius - 20}
+  //     stroke="#0000FFAA"
+  //     strokeWidth={25}
+  //     strokeDasharray={strokeDasharray}
+  //   />
+  // );
 
   return (
     <View className="flex items-center justify-center">

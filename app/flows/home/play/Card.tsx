@@ -23,6 +23,13 @@ const maxVisibleItems = 20;
 const cardsGap = 20;
 const nbCards = 2;
 
+function createFloatBetweenRange(number: number, min: number, max: number) {
+  // Use cosine to get a value between -1 and 1, then scale to the range [0.3, 0.5]
+  const value = (max - min) * 0.5 *  Math.cos(number) + (max - min) * 0.5;
+
+  // Ensure the value is within the range [0.3, 0.5]
+  return Math.max(min, Math.min(max, value));
+}
 
 export default function Card({
   data,
@@ -46,9 +53,10 @@ export default function Card({
 
   const [state, setState] = useState<string>("input");
   const [input, setInput] = useState("");
+  const h = createFloatBetweenRange(index, 0.6, 1.2)
   const [cardsColors, setCardColors] = useState({
-    first: hsvToRgb((index / 20 + 0.1) % 1, s, l + 0.02),
-    sec: hsvToRgb((index / 20) % 1, s, l),
+    first: hsvToRgb(h, s, l + 0.02),
+    sec: hsvToRgb(h, s, l),
   });
 
 
