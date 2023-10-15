@@ -15,6 +15,7 @@ import pushCards from "../../lib/firebase/pushCards";
 import { getFlashCards } from "../../lib/firebase/getFlashcards";
 import getFlashCardsByDate from "../../lib/firebase/getFlashCardsByDate";
 import getUserChallenge from "../../lib/firebase/getUserChallenge";
+import getDayDifference from "../../lib/dates/getDayDifference";
 // import { LinearGradientDemo } from "../../components/LinearGradient";
 
 export default function Home({ navigation }: { navigation: any }) {
@@ -40,22 +41,13 @@ export default function Home({ navigation }: { navigation: any }) {
         updateFlow("beginChallenge")
         return
       }
-      setChallenge(challenge)
-      setNbDone(challenge?.nbDone)
-      setBeginDate(challenge?.beginDate)
+      console.log(challenge)
 
       let date = await fetchSecureDate()
       if (!date || !challenge?.beginDate) return
 
-      // Convert date strings or objects to Date objects
-      const d1 = new Date(challenge?.beginDate).getTime();
-      const d2 = new Date(date).getTime();
-
-      // Calculate the time difference in milliseconds
-      const timeDiff = Math.abs(d2 - d1);
-
-      // Calculate the number of days
-      const dayDifference = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
+      const dayDifference = getDayDifference(challenge.beginDate, date)
+      console.log("WOUHOU", dayDifference, challenge.nbDone)
       if (challenge?.nbDone == 30 && dayDifference == 30) {
         updateFlow("finishedChallenge_win")
         return
@@ -67,6 +59,9 @@ export default function Home({ navigation }: { navigation: any }) {
       setIndex(dayDifference);
       setDayState((challenge?.nbDone == (dayDifference + 1)) ? "done" : "not done")
 
+      setChallenge(challenge)
+      setNbDone(challenge?.nbDone)
+      setBeginDate(challenge?.beginDate)
       if (date) setTime(date);
       if(interval) clearInterval(interval)
       interval = setInterval(() => {

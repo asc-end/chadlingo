@@ -41,6 +41,7 @@ import setChallengeEnd from "../../../lib/firebase/demos/setChallengeEnd";
 import useStore from "../../../lib/state";
 import setChallengeNextDay from "../../../lib/firebase/demos/setChallengeNextDay";
 import { ScrollView } from "react-native-gesture-handler";
+import setDayDone from "../../../lib/firebase/demos/setDayDone";
 function LanguageSetting({ navigation }: { navigation: any }) {
     const [language, setLanguage] = useState<string | null>(null)
 
@@ -85,11 +86,16 @@ export default function Settings({ navigation }: { navigation: any }) {
                     <SwitchSetting title={"Dark mode"} text="Switch to dark mode for a more eye-friendly interface during the night." code="colors" />
                     <SwitchSetting title={"Sound"} text="Switch sound effects on or off for a more personalized experience." code="sound" />
                     <SwitchSetting title={"Notifications"} text="If you agree, we can remind you to do your daily tasks!" code="notifs" />
-                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={() => { setChallengeNextDay("marie", challenge!); navigation.goBack() }}>
+                    
+                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setDayDone("marie", challenge!); navigation.goBack() }}>
+                        <Text className=" text-white text-2xl w-auto">Set Current day done </Text>
+                        <Text className="text-white/50 w-64">Act as if the challenge has been made,&#10;&#13;/!\ developer mode</Text>
+                    </Pressable>
+                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setChallengeNextDay("marie", challenge!); navigation.goBack() }}>
                         <Text className=" text-white text-2xl w-auto">Fast forward one day</Text>
                         <Text className="text-white/50 w-64">Go to the next day,&#10;&#13;/!\ developer mode</Text>
                     </Pressable>
-                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={() => { setChallengeEnd("marie", challenge!); navigation.goBack() }}>
+                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setChallengeEnd("marie", challenge!); navigation.goBack() }}>
                         <Text className=" text-white text-2xl w-auto">Fast forward full </Text>
                         <Text className="text-white/50 w-64">Go to the end of the challenge,&#10;&#13;/!\ developer mode</Text>
                     </Pressable>
