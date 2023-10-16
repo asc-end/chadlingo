@@ -20,16 +20,7 @@ export default function BeginChallenge() {
     const { updateFlow, setChallenge, solanaCreds } = useStore()
 
     async function onFormFinish(amount: number) {
-        (async () => {
-            let pubKey = getPublicKeyFromAddress(solanaCreds?.account?.address!);
-            let balance = await connection.getBalance(pubKey);
-            balance /= LAMPORTS_PER_SOL;
-            console.log(`${balance} SOL`);
-            if (balance < amount) {
-                alert("You don't have any sol on this address");
-            }
-        })();
-
+        console.log("language")
         if (language) {
             const date = await fetchSecureDate();
             if (!date) return

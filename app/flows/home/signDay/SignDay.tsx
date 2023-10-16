@@ -4,6 +4,7 @@ import useStore from "../../../lib/state";
 import updateChallenge from "../../../lib/firebase/updateChallenge";
 import { useEffect } from "react";
 import { LinearGradient } from "expo-linear-gradient";
+import ValidateButton from "../../../components/solana/ValidateButton";
 
 export default function SignDay({ navigation }: { navigation: any }) {
     const { updateFlow, setChallenge, challenge } = useStore();
@@ -27,7 +28,7 @@ export default function SignDay({ navigation }: { navigation: any }) {
 
                 <Text className="text-white text-3xl font-bold text-center">Congrats!</Text>
                 <Text className="text-white text-2xl mb-12">Sign to finish the day</Text>
-                <MainButton text="Sign" onPress={endDay} />
+                <ValidateButton onFinished={endDay}/>
             </View>
         </LinearGradient>)
 }

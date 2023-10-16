@@ -8,8 +8,10 @@ export default async function connectWallet(): Promise<Creds> {
 
     // Perform a transaction using a mobile wallet
     const auth: Creds = await transact(async (mobileWallet) => {
+
+
       const authorization = await mobileWallet.authorize({
-        cluster: "testnet",
+        cluster: "devnet",
         identity: { name: "Ascend" },
       });
 

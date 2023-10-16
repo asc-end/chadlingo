@@ -5,7 +5,12 @@ import { LinearGradient } from "expo-linear-gradient";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { useEffect, useState } from "react";
 import { Account } from "@solana-mobile/mobile-wallet-adapter-protocol";
-
+import { clusterApiUrl } from '@solana/web3.js';
+import 'react-native-get-random-values';
+import 'react-native-url-polyfill/auto';
+import 'text-encoding'
+import { Buffer } from 'buffer';
+global.Buffer = Buffer
 import ConnectWallet from "./flows/connectWallet/ConnectWallet";
 import { WelcomeScreen, SelectLanguage, StakeScreen } from "./flows/beginChallenge";
 import { Lose, Win } from "./flows/finishedChallenge"
@@ -21,6 +26,8 @@ import BeginChallenge from "./flows/beginChallenge/BeginChallenge";
 // import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"
 import HomeRoot from "./flows/home/HomeRoot";
+import { ConnectionProvider } from "./providers/ConnectionProvider";
+import { AuthorizationProvider } from "./providers/AuthorizationProvider";
 // const Tab = createBottomTabNavigator();
 
 const states = {
@@ -69,7 +76,6 @@ export default function App() {
         //   updateFlow("connectWallet")
         //   return
         // }
-
       };
       fetchState()
 
@@ -83,11 +89,14 @@ export default function App() {
     <NavigationContainer>
       <SafeAreaView className="">
         <GestureHandlerRootView>
-          <View className="w-full h-full">
-          <StatusBar hidden />
-          {FlowToRender && <FlowToRender />}
-
-          </View>
+          <ConnectionProvider config={{ commitment: 'processed' }} endpoint={clusterApiUrl("devnet")}>
+            <AuthorizationProvider>
+              <View className="w-full h-full">
+                <StatusBar hidden />
+                {FlowToRender && <FlowToRender />}
+              </View>
+            </AuthorizationProvider>
+          </ConnectionProvider>
         </GestureHandlerRootView>
       </SafeAreaView>
     </NavigationContainer>

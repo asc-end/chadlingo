@@ -4,12 +4,13 @@ import { LinearGradient } from "expo-linear-gradient";
 import { MainButton } from "../../components/Buttons";
 import setChallengeEnded from "../../lib/firebase/setChallengeEnded";
 import useStore from "../../lib/state";
+import WithdrawButton from "../../components/solana/WithdrawButton";
 
 
 export default function Win() {
-    const { challenge, updateFlow, solanaCreds} = useStore()
+    const { challenge, updateFlow, solanaCreds } = useStore()
 
-    function onWidthDraw(){
+    function onWidthDraw() {
         setChallengeEnded(solanaCreds?.account?.address!, challenge!)
         updateFlow("beginChallenge")
     }
@@ -24,8 +25,7 @@ export default function Win() {
                     You can now take back your money
                 </Text>
                 <View className="absolute bottom-3">
-
-                    <MainButton text="Withdraw" full onPress={onWidthDraw } />
+                    <WithdrawButton onFinished={onWidthDraw} />
                 </View>
             </View>
         </LinearGradient>

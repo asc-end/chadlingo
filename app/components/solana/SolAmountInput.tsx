@@ -1,13 +1,19 @@
 import { useState } from "react";
 import { View, TextInput, Pressable, Text } from "react-native";
+import { useConnection } from "../../providers/ConnectionProvider";
+import { getPublicKeyFromAddress } from "../../lib/solana/getPublicKeyFromAddress";
+import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+import useStore from "../../lib/state";
 
 export default function SolAmountInput({amount, setAmount}: {amount: string, setAmount: React.Dispatch<React.SetStateAction<string>>}) {
   const [inputActive, setInputActive] = useState(false);
-
+  const { connection } = useConnection();
+  const {solanaCreds} = useStore()
   const updateAmount = (string: string) => {
-    if (/^[0-9]*(\.[0-9]{0,4})?$/.test(string) || string.length === 0) {
+    string = parseFloat(string).toFixed(7)
+    if (/^[0-9]*(\.[0-9]{0,7})?$/.test(string) || string.length === 0) {
       setAmount(string);
-    }
+    }    
   };
   return (
     <View
@@ -27,13 +33,14 @@ export default function SolAmountInput({amount, setAmount}: {amount: string, set
       <Pressable
         className=" "
         onPress={() => {
-          // (async () => {
-          //   let pubKey = getPublicKeyFromAddress(address);
-          //   let balance = await connection.getBalance(pubKey);
-          //   balance /= LAMPORTS_PER_SOL;
-          //   console.log(`${balance} SOL`);
-          //   if (balance == 0) alert("You don't have any sol on this address");
-          // })();
+          (async () => {
+            let pubKey = getPublicKeyFromAddress(solanaCreds?.account?.address!);
+            let balance = await connection.getBalance(pubKey);
+            balance /= LAMPORTS_PER_SOL;
+            console.log(`${balance} SOL`);
+            if (balance == 0) alert("You don't have any sol on this address");
+            else updateAmount(balance.toString())
+          })();
         }}>
         <Text className="m-2 color-white px-8 py-3 rounded-md font-bold bg-indigo-600">Max</Text>
       </Pressable>
