@@ -33,39 +33,48 @@ const states = {
 };
 
 export default function App() {
-  const { flow, setSolanaCreds, updateFlow, setChallenge } = useStore();
+  const { flow, setSolanaCreds, updateFlow, setChallenge, solanaCreds } = useStore();
   const scrollViewRef = useRef<null | ScrollView>(null);
 
+  console.log("flow")
   useEffect(() => {
     if (!flow) {
       async function fetchState() {
         // await deleteValueFor("sol-auth");
         //see if wallet is connected
+        console.log("fetch state")
         let authStr = await getValueFor("sol-auth");
-        if (authStr) {
+        if (authStr || solanaCreds) {
+          console.log("auth")
           //get first account from previous connections
           let encrypted_acc = await getValueFor("sol-creds");
           let _accounts = decryptJSON(encrypted_acc) as Array<Account>;
 
+          console.log(_accounts[0])
           setSolanaCreds({ account: _accounts[0], authToken: authStr });
+          let challenge: Challenge = await getUserChallenge(_accounts[0].address)
+          if (!challenge) {
+            updateFlow("beginChallenge")
+            return
+          }
+          setChallenge(challenge)
+          updateFlow("home")
 
         } else {
-          // updateFlow("connectWallet");
+          console.log("not auth")
+          updateFlow("connectWallet");
         }
-
-        let challenge: Challenge = await getUserChallenge("marie")
-        if (!challenge) {
-          updateFlow("beginChallenge")
-          return
-        }
-        setChallenge(challenge)
-        updateFlow("home")
+        // if(!solanaCreds  || !solanaCreds.account || !solanaCreds.account.address){
+        //   console.log("test")
+        //   updateFlow("connectWallet")
+        //   return
+        // }
 
       };
       fetchState()
 
     }
-  }, []);
+  }, [flow]);
 
   //@ts-ignore
   let FlowToRender = states[flow];

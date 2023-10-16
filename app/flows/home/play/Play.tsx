@@ -29,7 +29,7 @@ import setDayDone from "../../../lib/firebase/setDayDone";
 export default function Play({ navigation }: { navigation: any }) {
   const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
   const [validatedCards, setValidatedCards] = useState<boolean []>([])
-  const { updateFlow, challenge } = useStore();
+  const { updateFlow, challenge, solanaCreds } = useStore();
   const activeCard = useSharedValue(0);
   const progression = useSharedValue(0)
   const [progress, setProgress] = useState(0)
@@ -104,7 +104,7 @@ export default function Play({ navigation }: { navigation: any }) {
       console.log(progress)
       if (validatedCards.length == nbCards) {
         pushCards(validatedCards, flashCards!, languages!.learningLang, "marie")
-        setDayDone("marie", challenge!)
+        setDayDone(solanaCreds?.account?.address!, challenge!)
         setTimeout(() => {
           navigation.reset({ index: 0, routes: [{ name: 'signDay' }] });
         }, (duration + 100));

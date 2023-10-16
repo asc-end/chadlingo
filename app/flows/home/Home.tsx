@@ -19,7 +19,7 @@ import getDayDifference from "../../lib/dates/getDayDifference";
 // import { LinearGradientDemo } from "../../components/LinearGradient";
 
 export default function Home({ navigation }: { navigation: any }) {
-  const { updateFlow, challenge, setChallenge} = useStore()
+  const { updateFlow, challenge, setChallenge, solanaCreds } = useStore()
   const [beginDate, setBeginDate] = useState(challenge?.beginDate)
   const [nbDone, setNbDone] = useState(challenge?.nbDone)
   const [index, setIndex] = useState<number>()
@@ -36,7 +36,7 @@ export default function Home({ navigation }: { navigation: any }) {
     let interval: any
     async function getCurrentDayIndex() {
       console.log("WSH")
-      let challenge: Challenge = await getUserChallenge("marie")
+      let challenge: Challenge = await getUserChallenge(solanaCreds?.account?.address!)
       if (!challenge) {
         updateFlow("beginChallenge")
         return
@@ -48,7 +48,7 @@ export default function Home({ navigation }: { navigation: any }) {
 
       const dayDifference = getDayDifference(challenge.beginDate, date)
       console.log("WOUHOU", dayDifference, challenge.nbDone)
-      if (challenge?.nbDone == 30 && dayDifference == 30) {
+      if (challenge?.nbDone == 30) {
         updateFlow("finishedChallenge_win")
         return
       }
@@ -62,8 +62,9 @@ export default function Home({ navigation }: { navigation: any }) {
       setChallenge(challenge)
       setNbDone(challenge?.nbDone)
       setBeginDate(challenge?.beginDate)
+
       if (date) setTime(date);
-      if(interval) clearInterval(interval)
+      if (interval) clearInterval(interval)
       interval = setInterval(() => {
         setTime(prevTime => { if (prevTime) return new Date(prevTime.getTime() + 1000) });
       }, 1000);
@@ -94,11 +95,13 @@ export default function Home({ navigation }: { navigation: any }) {
   }, [navigation])
 
   useEffect(() => {
-    if (time) {
+    if (time && challenge?.beginDate) {
+      const tom = new Date(challenge.beginDate).setDate(new Date(challenge.beginDate).getDate() + challenge.nbDone + 1)
+      const timeDifference = tom - time.getTime()
       setChrono({
-        hours: numberToString(23 - time.getUTCHours()),
-        minutes: numberToString(59 - time.getUTCMinutes()),
-        seconds: numberToString(59 - time.getUTCSeconds())
+        hours: numberToString(Math.floor((timeDifference / (1000 * 60 * 60)) % 24)),
+        minutes: numberToString(Math.floor((timeDifference / 1000 / 60) % 60)),
+        seconds: numberToString(Math.floor((timeDifference / 1000) % 60))
       });
     }
   }, [time])

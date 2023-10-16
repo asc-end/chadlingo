@@ -7,10 +7,10 @@ import useStore from "../../lib/state";
 
 
 export default function Win() {
-    const { challenge, updateFlow } = useStore()
+    const { challenge, updateFlow, solanaCreds} = useStore()
 
     function onWidthDraw(){
-        setChallengeEnded("marie", challenge!)
+        setChallengeEnded(solanaCreds?.account?.address!, challenge!)
         updateFlow("beginChallenge")
     }
     return (

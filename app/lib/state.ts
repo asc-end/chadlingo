@@ -28,6 +28,7 @@ type Store = {
     | "finishedChallenge_win";
   updateFlow: (
     newData:
+      | null
       | "connectWallet"
       | "beginChallenge"
       | "beginChallenge_welcome"
@@ -50,6 +51,7 @@ const useStore = create<Store>()((set) => ({
   flow: null,
   updateFlow: (
     newData:
+      | null
       | "connectWallet"
       | "beginChallenge"
       | "beginChallenge_welcome"

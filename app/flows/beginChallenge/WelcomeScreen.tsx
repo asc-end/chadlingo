@@ -8,10 +8,9 @@ import setNewUser from "../../lib/firebase/setNewUser";
 import getUserKey from "../../lib/firebase/getUserKey";
 
 export default function WelcomeScreen({ navigation }: { navigation: any }) {
-  const { updateFlow } = useStore();
+  const { updateFlow, solanaCreds } = useStore();
 
   useEffect(() => {
-    console.log("user", getUserKey("marie"))
   }, [])
 
   return (

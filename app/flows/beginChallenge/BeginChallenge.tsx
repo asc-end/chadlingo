@@ -5,26 +5,38 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useEffect, useState } from 'react';
 import setNewChallenge from '../../lib/firebase/setNewChallenge';
 import { fetchSecureDate } from '../../lib/dates/fetchSecureDate';
+import { Connection, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js";
+const connection = new Connection("https://api.devnet.solana.com");
 
 import useStore from '../../lib/state';
 import getFlashCardsByDate from '../../lib/firebase/getFlashCardsByDate';
 import AllowNotifications from './AllowNotifications';
 import getUserChallenge from '../../lib/firebase/getUserChallenge';
+import { getPublicKeyFromAddress } from '../../lib/solana/getPublicKeyFromAddress';
 const Stack = createNativeStackNavigator();
 
 export default function BeginChallenge() {
     const [language, setLanguage] = useState<string>();
-    const { updateFlow, setChallenge} = useStore()
+    const { updateFlow, setChallenge, solanaCreds } = useStore()
 
-    async function onFormFinish() {
+    async function onFormFinish(amount: number) {
+        (async () => {
+            let pubKey = getPublicKeyFromAddress(solanaCreds?.account?.address!);
+            let balance = await connection.getBalance(pubKey);
+            balance /= LAMPORTS_PER_SOL;
+            console.log(`${balance} SOL`);
+            if (balance < amount) {
+                alert("You don't have any sol on this address");
+            }
+        })();
+
         if (language) {
-            
             const date = await fetchSecureDate();
-            if(!date) return
-            let challenge:Challenge = { beginDate: date.getTime(), language: language, nbDone: 0, ended: false}
-            await setNewChallenge("marie", challenge)
-            let _challenge = await getUserChallenge("marie")
-console.log("challenge", _challenge)
+            if (!date) return
+            let challenge: Challenge = { beginDate: date.getTime(), language: language, nbDone: 0, ended: false }
+            await setNewChallenge(solanaCreds?.account?.address!, challenge)
+            let _challenge = await getUserChallenge(solanaCreds?.account?.address!)
+            console.log("challenge", _challenge)
             setChallenge(_challenge)
             updateFlow("home")
         }
@@ -39,7 +51,7 @@ console.log("challenge", _challenge)
             <Stack.Screen name="Language2" >
                 {(props) => <SelectLanguage {...props} index={2} setLanguage={setLanguage} />}
             </Stack.Screen>
-            <Stack.Screen name="Notifs" component={AllowNotifications}/>
+            <Stack.Screen name="Notifs" component={AllowNotifications} />
             <Stack.Screen name="Stake">
                 {(props) => <StakeScreen  {...props} onFinish={onFormFinish} />}
             </Stack.Screen>

@@ -4,6 +4,7 @@ import { MainButton } from "../../components/Buttons";
 import useStore from "../../lib/state";
 import getUserChallenge from "../../lib/firebase/getUserChallenge";
 import setChallengeEnded from "../../lib/firebase/demos/setChallengeEnd";
+import { LinearGradient } from "expo-linear-gradient";
 
 
 const gifs = [
@@ -12,27 +13,30 @@ const gifs = [
 ]
 
 export default function Lose() {
-    const { updateFlow } = useStore()
+    const { updateFlow, solanaCreds} = useStore()
 
     async function endChallenge() {
-        const challenge = await getUserChallenge("marie")
-        setChallengeEnded("marie", challenge)
+        const challenge = await getUserChallenge(solanaCreds?.account?.address!)
+        setChallengeEnded(solanaCreds?.account?.address!, challenge)
         updateFlow("beginChallenge_welcome")
     }
 
     return (
-        <View className="flex flex-col items-center h-full w-full">
-            <View className="absolute z-30 h-full mt-24">
+        <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
+            <View className="flex flex-col items-center h-full w-full">
+                <View className="absolute z-30 h-full mt-24">
 
-                <Text className="text-white text-5xl font-bold">
-                    You lost
-                </Text>
+                    <Text className="text-white text-5xl font-bold">
+                        You lost
+                    </Text>
+                </View>
+                <View className="absolute z-40 bottom-24">
+                    <MainButton text="Try again" onPress={endChallenge} />
+                </View>
+                <Image className="w-96 h-full absolute " source={{ uri: gifs[Math.floor(Math.random() * gifs.length)] }} />
             </View>
-            <View className="absolute z-40 bottom-24">
-                <MainButton text="Try again" onPress={endChallenge} />
-            </View>
-            <Image className="w-96 h-full absolute " source={{ uri: gifs[Math.floor(Math.random() * gifs.length)] }} />
-        </View>
+        </LinearGradient>
+
     )
 }
 

@@ -6,11 +6,11 @@ import useStore from "../../lib/state";
 import setNewChallenge from "../../lib/firebase/setNewChallenge";
 import { LinearGradient } from "expo-linear-gradient";
 
-export default function StakeScreen({ navigation, onFinish }: { navigation: any, onFinish: () => void }) {
+export default function StakeScreen({ navigation, onFinish }: { navigation: any, onFinish: (amount:number) => void }) {
   const [amount, setAmount] = useState("");
 
   function onPress() {
-    onFinish()
+    onFinish(parseInt(amount))
   }
 
   return (
