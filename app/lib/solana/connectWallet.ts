@@ -1,7 +1,6 @@
 import { transact, Account } from "@solana-mobile/mobile-wallet-adapter-protocol";
 import { save } from "../secure-store/secureStore";
 import { encryptJSON } from "../secure-store/crypto";
-
 export default async function connectWallet(): Promise<Creds> {
   try {
     console.log("transact");
@@ -12,7 +11,7 @@ export default async function connectWallet(): Promise<Creds> {
 
       const authorization = await mobileWallet.authorize({
         cluster: "devnet",
-        identity: { name: "Ascend" },
+        identity: { name: "Ascend", icon:"chad-icon.jpg" },
       });
 
       console.log(authorization)
