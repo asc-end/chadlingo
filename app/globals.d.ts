@@ -8,11 +8,12 @@ declare module "@env" {
 
 declare global {
   interface Creds {
-    account: Account | null;
-    authToken: string | null;
+    accounts: Account[];
+    auth_token: string;
+    wallet_uri_base: string;
   }
   interface Flashcard {
-    key: string,
+    key: string;
     english: string;
     french: string;
     german: string;
@@ -22,10 +23,32 @@ declare global {
   }
 
   interface Challenge {
-    key?: string,
+    key?: string;
     beginDate: number;
-    language: string;
+    type: ChallengeType;
     nbDone: number;
-    ended: boolean;
+    state: "during" | "pending" | "won" | "lost" | "archived";
+    solStaked: number;
   }
+
+  interface LanguageChallenge extends Challenge {
+    languageFrom: LanguageType;
+    languageTo: LanguageType;
+  }
+
+  interface MeditationChallenge extends Challenge {
+    duration: "5mn" | "2mn" | "10mn";
+  }
+
+  interface CodeChallenge extends Challenge {
+    user: string;
+    repo: string;
+  }
+
+  interface SocialsChallenge extends Challenge {
+    user: string;
+  }
+
+  type ChallengeType = "Language" | "Meditation" | "Code" | "Socials";
+  type LanguageType = "english" | "portuguese" | "french" | "spanish" | "italian" | "german";
 }

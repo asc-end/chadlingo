@@ -1,8 +1,8 @@
-export const languages = [
-    { name: "english", code: "us" },
-    { name: "portuguese", code: "pt" },
-    { name: "french", code: "fr" },
-    { name: "spanish", code: "es" },
-    { name: "italian", code: "it" },
-    { name: "german", code: "de" },
-  ];
+export const languages = {
+  english: "us",
+  portuguese: "pt",
+  french: "fr",
+  spanish: "es",
+  italian: "it",
+  german: "de",
+};

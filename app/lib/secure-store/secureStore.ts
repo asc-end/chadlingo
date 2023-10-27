@@ -1,4 +1,5 @@
 import * as SecureStore from "expo-secure-store";
+import { decryptJSON } from "./crypto";
 
 /**
  * Save item to the expo secure store
@@ -34,6 +35,15 @@ export async function getValueFor(key: string) : Promise<string | null>{
   } else {
     return null;
   }
+}
+
+export async function getEncryptedValueFor(key: string): Promise<string | object | null>{
+  let result = await getValueFor(key)
+  let decryptedResult = decryptJSON(result)
+  if(decryptedResult)
+    return decryptedResult;
+  else
+    return null
 }
 
 /**

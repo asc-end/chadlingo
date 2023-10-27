@@ -9,7 +9,7 @@ export default function LanguageFlag({ code, size = "medium" }: { code: string, 
         if (size === "medium")
             return 48
         if (size === "small")
-            return 28
+            return 20
     }
     const [width, setWidth] = useState(initializeWidth())
 

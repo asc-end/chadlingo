@@ -1,9 +1,9 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, Image } from "react-native";
 import React, { useEffect, useState } from "react";
 import CirclesInCircle from "../../components/CirclesInCircle";
 import { MainButton } from "../../components/Buttons";
 import useStore from "../../lib/state";
-import * as Haptics from 'expo-haptics';
+import * as Haptics from "expo-haptics";
 import { fetchSecureDate } from "../../lib/dates/fetchSecureDate";
 import { LinearGradient } from "expo-linear-gradient";
 import SettingsIcon from "./settings/SettingsIcon";
@@ -11,142 +11,198 @@ import LanguageFlag from "../../components/languages/LanguageFlag";
 import { languages } from "../../components/languages/languages";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { getValueFor } from "../../lib/secure-store/secureStore";
-import pushCards from "../../lib/firebase/pushCards";
-import { getFlashCards } from "../../lib/firebase/getFlashcards";
-import getFlashCardsByDate from "../../lib/firebase/getFlashCardsByDate";
 import getUserChallenge from "../../lib/firebase/getUserChallenge";
 import getDayDifference from "../../lib/dates/getDayDifference";
-// import { LinearGradientDemo } from "../../components/LinearGradient";
+import { Svg } from "react-native-svg";
+import CircleProgress from "../../components/CircleProgress";
+import HomeHeader from "./HomeHeader";
+import Challenge from "../../components/challenges/Challenge";
+import { ScrollView } from "react-native-gesture-handler";
+import getUserChallenges from "../../lib/firebase/getUserChallenge";
+import Loading from "./play/language/Loading";
+import updateChallenge from "../../lib/firebase/updateChallenge";
+
+const challengesState = [
+  {
+    name: "to-do",
+    children: ["Language", "Meditation", "Meditation", "Code", "Code", "Code", "Code"],
+  },
+  {
+    name: "done",
+    children: ["Meditation", "Meditation", "Code"],
+  },
+  {
+    name: "pending",
+    children: ["Code"],
+  },
+];
 
 export default function Home({ navigation }: { navigation: any }) {
-  const { updateFlow, challenge, setChallenge, solanaCreds } = useStore()
-  const [beginDate, setBeginDate] = useState(challenge?.beginDate)
-  const [nbDone, setNbDone] = useState(challenge?.nbDone)
-  const [index, setIndex] = useState<number>()
-  const [dayState, setDayState] = useState<"done" | "not done" | "undefined">("undefined")
+  const { updateFlow, challenge, setChallenge, solanaCreds } = useStore();
+  // const [beginDate, setBeginDate] = useState(challenge?.beginDate);
+  // const [nbDone, setNbDone] = useState(challenge?.nbDone);
+  // const [index, setIndex] = useState<number>();
+  const [dayState, setDayState] = useState<"done" | "not done" | "undefined">("undefined");
   const [time, setTime] = useState<Date>();
-  const [chrono, setChrono] = useState<{ hours: string, minutes: string, seconds: string }>()
-  const [nativeLang, setNativeLang] = useState<{ name: string, code: string }>()
-  function numberToString(i: number) { return i.toString().padStart(2, '0'); }
-
-  let nativLangIndex = languages.findIndex(lang => lang.name === challenge?.language);
-  let learningLangIndex = languages.findIndex(lang => lang.name === challenge?.language);
+  const [chrono, setChrono] = useState<{ hours: string; minutes: string; seconds: string }>();
+  // const [nativeLang, setNativeLang] = useState<{ name: string; code: string }>();
+  function numberToString(i: number) {
+    return i.toString().padStart(2, "0");
+  }
+  const [challenges, setChallenges] = useState<Challenge[] | undefined>(undefined);
 
   useEffect(() => {
-    let interval: any
+    let interval: any;
     async function getCurrentDayIndex() {
-      console.log("WSH")
-      let challenge: Challenge = await getUserChallenge(solanaCreds?.account?.address!)
-      if (!challenge) {
-        updateFlow("beginChallenge")
-        return
-      }
-      console.log(challenge)
+      // let challenge: Challenge = await getUserChallenge(solanaCreds?.accounts[0].address!);
+      // if (!challenge) {
+      //   updateFlow("beginChallenge");
+      //   return;
+      // }
+      // console.log(challenge);
 
-      let date = await fetchSecureDate()
-      if (!date || !challenge?.beginDate) return
+      let date = await fetchSecureDate();
+      if (!date) return;
 
-      const dayDifference = getDayDifference(challenge.beginDate, date)
-      console.log("WOUHOU", dayDifference, challenge.nbDone)
-      if (challenge?.nbDone == 30) {
-        updateFlow("finishedChallenge_win")
-        return
-      }
-      else if (challenge?.nbDone !== undefined && (dayDifference > challenge?.nbDone)) {
-        updateFlow("finishedChallenge_lose")
-        return
-      }
-      setIndex(dayDifference);
-      setDayState((challenge?.nbDone == (dayDifference + 1)) ? "done" : "not done")
+      let _challenges = await getUserChallenges(solanaCreds?.accounts[0].address!);
+      console.log(_challenges);
+      _challenges = _challenges?.filter((challenge) => {
+        if (challenge.state == "lost" || challenge.state == "won") return true;
+        if (challenge.state == "archived") return false;
+        
+        const timeDifference = new Date(date!.getTime() - challenge.beginDate).getTime();
+        const daysDifference = timeDifference / (1000 * 60 * 60 * 24);
 
-      setChallenge(challenge)
-      setNbDone(challenge?.nbDone)
-      setBeginDate(challenge?.beginDate)
+        const floor = Math.floor(daysDifference);
+        const top = floor + 1;
+        if (challenge.nbDone < floor) {
+          let _challenge = challenge;
+          _challenge.state = challenge.nbDone == 30 ? "won" : "lost";
+          updateChallenge(solanaCreds?.accounts[0].address!, _challenge);
+        }
+        return challenge.nbDone == floor;
+      });
+
+      setChallenges(_challenges);
 
       if (date) setTime(date);
-      if (interval) clearInterval(interval)
+      if (interval) clearInterval(interval);
       interval = setInterval(() => {
-        setTime(prevTime => { if (prevTime) return new Date(prevTime.getTime() + 1000) });
+        setTime((prevTime) => {
+          if (prevTime) return new Date(prevTime.getTime() + 1000);
+        });
       }, 1000);
     }
-    getCurrentDayIndex()
-
+    getCurrentDayIndex();
 
     const focused = navigation.addListener("focus", () => {
-      getCurrentDayIndex()
-    })
-    return () => { clearInterval(interval); focused };
-  }, [])
+      getCurrentDayIndex();
+    });
+    return () => {
+      clearInterval(interval);
+      focused;
+    };
+  }, []);
 
   useEffect(() => {
-    async function fetchNativeLang() {
-      await getValueFor("nativeLang").then((_nativeLang: string | null) => {
-        if (_nativeLang) {
-          nativLangIndex = languages.findIndex(lang => lang.name === _nativeLang);
-          setNativeLang(languages[nativLangIndex])
-        }
-      })
-    }
-    fetchNativeLang()
-    const focused = navigation.addListener("focus", () => {
-      fetchNativeLang()
-    })
-    return focused
-  }, [navigation])
+    const focused = navigation.addListener("focus", () => {});
+    return focused;
+  }, [navigation]);
 
   useEffect(() => {
-    if (time && challenge?.beginDate) {
-      const tom = new Date(challenge.beginDate).setDate(new Date(challenge.beginDate).getDate() + challenge.nbDone + 1)
-      const timeDifference = tom - time.getTime()
+    // if (time && challenge?.beginDate) {
+    //   const tom = new Date(challenge.beginDate).setDate(new Date(challenge.beginDate).getDate() + challenge.nbDone + 1);
+    //   const timeDifference = tom - time.getTime();
+    //   setChrono({
+    //     hours: numberToString(Math.floor((timeDifference / (1000 * 60 * 60)) % 24)),
+    //     minutes: numberToString(Math.floor((timeDifference / 1000 / 60) % 60)),
+    //     seconds: numberToString(Math.floor((timeDifference / 1000) % 60)),
+    //   });
+    // }
+    if (time) {
+      let tom = new Date(time.getTime()).setDate(time.getDate() + 1);
+      tom = new Date(tom).setHours(0);
+      tom = new Date(tom).setMinutes(0);
+      tom = new Date(tom).setSeconds(0);
+      const timeDifference = tom - time.getTime();
+
       setChrono({
         hours: numberToString(Math.floor((timeDifference / (1000 * 60 * 60)) % 24)),
         minutes: numberToString(Math.floor((timeDifference / 1000 / 60) % 60)),
-        seconds: numberToString(Math.floor((timeDifference / 1000) % 60))
+        seconds: numberToString(Math.floor((timeDifference / 1000) % 60)),
       });
     }
-  }, [time])
+  }, [time]);
 
-  function onButtonPress() {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy)
-    navigation.navigate("play")
+  function onChallengePlay(challenge: Challenge) {
+    if (challenge.state == "won") {
+      navigation.navigate("win", { challenge: challenge });
+      return;
+    } else if (challenge.state == "lost") {
+      navigation.navigate("lose", { challenge: challenge });
+      return;
+    }
+    switch (challenge.type) {
+      case "Language":
+        navigation.navigate("playLanguage", { challenge: challenge });
+        break;
+      case "Code":
+        break;
+      case "Meditation":
+        break;
+      case "Socials":
+        break;
+    }
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
   }
-
+  if (!challenges) return <Loading />;
+  // const [selected, setSelected] = useState(0);
   return (
-    <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
-      <View className="w-full h-full px-4 py-12 flex flex-col items-center justify-center relative">
-        <View className="absolute z-20 top-3 left-3 right-3 flex flex-row items-center justify-between" >
-          <View className="flex flex-row items-center" style={{ gap: 6 }}>
-            <Pressable onPress={() => navigation.navigate("setLang")}>
-              {nativeLang && <LanguageFlag code={nativeLang.code} size="small" />}
-            </Pressable>
-            <MaterialCommunityIcons name="chevron-right" color="white" size={36} />
-            <LanguageFlag code={languages[learningLangIndex].code} size="small" />
+    <LinearGradient colors={["#00001e", "rgba(0,0,20,1)"]} className="h-full w-full">
+      <ScrollView className="">
+        <View
+          className="w-full h-full px-4 py-24 flex flex-col items-center justify-start relative"
+          style={{ gap: 48 }}>
+          <CircleProgress chrono={challenges && challenges!.length > 0 ? chrono : null} />
+          <MainButton text="New Challenge" onPress={() => navigation.navigate("BeginChallenge")} full />
+          <View className="flex flex-col w-full" style={{ gap: 8 }}>
+            {/* <View className="flex flex-row w-full justify-between bg-neon-blue/20 rounded-md">
+              <Pressable
+                className={` sticky flex-1 py-2 rounded-md ${selected == 0 ? "bg-neon-blue" : ""}`}
+                onPress={() => setSelected(0)}>
+                <Text className="font-bold text-white text-lg text-center">To do</Text>
+              </Pressable>
+              <Pressable
+                className={` sticky flex-1 py-2 rounded-md  ${selected == 1 ? "bg-neon-blue" : ""}`}
+                onPress={() => setSelected(1)}>
+                <Text className="font-bold text-white text-lg text-center">Done</Text>
+              </Pressable>
+              <Pressable
+                className={` sticky flex-1 py-2 rounded-md ${selected == 2 ? "bg-neon-blue" : ""}`}
+                onPress={() => setSelected(2)}>
+                <Text className="font-bold text-white text-lg text-center">Pending</Text>
+              </Pressable>
+            </View> */}
+            <View className="w-full flex flex-col" style={{ gap: 12 }}>
+              {challenges?.map((el: any, i) => (
+                <Challenge
+                  challengeData={el}
+                  type={el.type as ChallengeType}
+                  alone={true}
+                  onPress={(challenge: Challenge) => onChallengePlay(challenge)}
+                  key={i}
+                  percentage={(el.nbDone / 30) * 100}
+                  solStaked={el.solStaked}
+                />
+              ))}
+              {(!challenges || challenges === undefined || challenges.length === 0) && (
+                <Text className="text-white/50 text-3xl text-center font-bold">Come back tomorrow</Text>
+              )}
+            </View>
           </View>
-          <View className="flex flex-row" style={{ gap: 12 }}>
-            <SettingsIcon onPress={() => navigation.navigate("settingsModal")} />
-          </View>
         </View>
-        {/* <LinearGradientDemo /> */}
-        <View className="absolute top-0 left-0">
-          <CirclesInCircle nbDone={nbDone} current={index} />
-        </View>
-        {dayState == "not done" && chrono && <View className="flex flex-row">
-          <Text className="text-white text-5xl font-bold mt-15 w-18">
-            {`${chrono.hours}:`}
-          </Text>
-          <Text className="text-white text-5xl font-bold mt-15 w-18">
-            {`${chrono.minutes}:`}
-          </Text>
-          <Text className="text-white text-5xl font-bold mt-15 w-14">
-            {`${chrono.seconds}`}
-          </Text>
-        </View>
-        }
-        {dayState == "done" && <Text className="text-white text-4xl  text-center w-48 font-bold">Come back tomorrow</Text>}
-        <View className="absolute bottom-10">
-          {dayState == "not done" && (<MainButton text="Begin Day" onPress={onButtonPress} />)}
-        </View>
-      </View>
+      </ScrollView>
+      <View className="w-full"></View>
     </LinearGradient>
   );
 }

@@ -21,7 +21,6 @@ const firebaseConfig = {
   measurementId: EXPO_MEASUREMENT_ID,
 };
 
-console.log(EXPO_AUTH_DOMAIN)
 const app = initializeApp(firebaseConfig);
 export const database = getDatabase(app);
 

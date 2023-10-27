@@ -4,7 +4,7 @@ import {
   TextInput,
   Pressable,
 } from "react-native";
-import SendIcon from "../../../components/icons/SendIcon";
+import SendIcon from "../../../../components/icons/SendIcon";
 
 export default function WordInput({ onSubmit }: { onSubmit: (input: string) => void }) {
   const [input, setInput] = useState("");

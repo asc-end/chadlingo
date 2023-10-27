@@ -1,26 +1,34 @@
-import { View } from "react-native"
-import { ScrollView } from "react-native-gesture-handler"
-import { languages } from "./languages"
-import Language from "./Language"
+import { View } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
+import { languages } from "./languages";
+import Language from "./Language";
 
-
-export default function LanguagesMap({ selectedLanguage, setSelectedLanguage, exeptions }: { selectedLanguage: { name: string, code: string }, setSelectedLanguage: React.Dispatch<React.SetStateAction<{ name: string, code: string } | undefined>>, exeptions?: string[] }) {
-
-    console.log("COUCOU", selectedLanguage)
-    return (
-        <ScrollView className=" ">
-            <View className="flex flex-col" style={{ gap: 10 }}>
-                {languages.map((e, i) => {
-                    if (exeptions?.includes(e.name)) return
-                    return <Language
-                        language={e.name}
-                        code={e.code}
-                        key={i}
-                        onPress={() => setSelectedLanguage(languages[i])}
-                        selected={selectedLanguage.name == e.name}
-                    />
-                })}
-            </View>
-        </ScrollView>
-    )
+export default function LanguagesMap({
+  selectedLanguage,
+  setSelectedLanguage,
+  exeptions,
+}: {
+  selectedLanguage: string;
+  setSelectedLanguage: React.Dispatch<React.SetStateAction<string | undefined>>;
+  exeptions?: string[];
+}) {
+  return (
+    <ScrollView className=" ">
+      <View className="flex flex-col" style={{ gap: 10 }}>
+        {Object.keys(languages).map((e: string, i) => {
+          if (exeptions?.includes(e)) return;
+          console.log(e);
+          return (
+            <Language
+              language={e}
+              code={languages[e as keyof typeof languages]}
+              key={i}
+              onPress={() => setSelectedLanguage(e)}
+              selected={selectedLanguage == e}
+            />
+          );
+        })}
+      </View>
+    </ScrollView>
+  );
 }

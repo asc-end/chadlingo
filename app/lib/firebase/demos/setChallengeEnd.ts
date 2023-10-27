@@ -20,7 +20,7 @@ export default async function setChallengeEnd(user: string, challenge: Challenge
     new Date(challenge.beginDate).getDate() - (30 - challenge.nbDone + minus)
   );
 
-  challenge.nbDone = 30;
+  // challenge.nbDone = 30;
   console.log(new Date(challenge.beginDate), challenge.key);
   console.log(challenge);
   const dayDifference1 = getDayDifference(challenge.beginDate, date)

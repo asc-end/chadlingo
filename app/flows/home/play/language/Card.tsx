@@ -9,8 +9,8 @@ import Animated, {
   useAnimatedStyle,
 } from "react-native-reanimated";
 
-import { hsvToRgb } from "../../../lib/colors/hsvToRgb";
-import { l, s } from "../../../config/colors";
+import { hsvToRgb } from "../../../../lib/colors/hsvToRgb";
+import { l, s } from "../../../../config/colors";
 import { duration, nbCards, cardsGap } from "./config";
 
 function interpolateBetween(x: number) {

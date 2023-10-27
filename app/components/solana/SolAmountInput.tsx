@@ -34,7 +34,7 @@ export default function SolAmountInput({amount, setAmount}: {amount: string, set
         className=" "
         onPress={() => {
           (async () => {
-            let pubKey = getPublicKeyFromAddress(solanaCreds?.account?.address!);
+            let pubKey = getPublicKeyFromAddress(solanaCreds?.accounts[0].address!);
             let balance = await connection.getBalance(pubKey);
             balance /= LAMPORTS_PER_SOL;
             console.log(`${balance} SOL`);

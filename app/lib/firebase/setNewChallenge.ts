@@ -3,7 +3,7 @@ import { database } from "./config";
 import getUserKey from "./getUserKey";
 import { fetchSecureDate } from "../dates/fetchSecureDate";
 
-export default async function setNewChallenge(user: string, challenge: Challenge) {
+export default async function setNewChallenge(user: string, challenge: LanguageChallenge | MeditationChallenge) {
   const userKey = await getUserKey(user);
   const date = await fetchSecureDate();
   if (!userKey) return;

@@ -1,9 +1,9 @@
 import { View, Text, Pressable, Switch } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { MainButton } from "../../components/Buttons";
+import { MainButton } from "../../../components/Buttons";
 import { useEffect, useState } from "react";
 import Slider from '@react-native-community/slider';
-import { getValueFor, save } from "../../lib/secure-store/secureStore";
+import { getValueFor, save } from "../../../lib/secure-store/secureStore";
 import * as Notifications from 'expo-notifications';
 
 Notifications.setNotificationHandler({

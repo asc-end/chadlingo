@@ -4,34 +4,37 @@ import connectWallet from "../../lib/solana/connectWallet";
 import useStore from "../../lib/state";
 import { Text, View } from "react-native";
 
-export default function ConnectButton({ onConnected, text = "Connect Wallet" }: { onConnected: (address: string) => void, text?: string }) {
-
+export default function ConnectButton({
+  onConnected,
+  text = "Connect Wallet",
+}: {
+  onConnected: (address: string) => void;
+  text?: string;
+}) {
   const [connexionState, setConnexionState] = useState<"Not connected" | "Loading" | "Connected">("Not connected");
   const [resp, setResp] = useState<Creds>();
+  const { solanaCreds, setSolanaCreds } = useStore();
 
   function onConnect() {
     async function _connect() {
       try {
         if (connexionState == "Loading") return;
-        setConnexionState("Loading")
-        const resp = await connectWallet();
+        setConnexionState("Loading");
+        const resp = await connectWallet(setSolanaCreds);
         if (resp) {
           setResp(resp);
-          onConnected(resp.account?.address!)
+          onConnected(resp.accounts[0].address);
         }
-        
       } catch (err: any) {
         console.log(err);
       } finally {
-        setConnexionState("Connected")
+        setConnexionState("Connected");
       }
     }
     _connect();
   }
 
-  return (
-    <MainButton text={text} onPress={onConnect} disabled={connexionState == "Loading"} full/>
-  );
+  return <MainButton text={text} onPress={onConnect} disabled={connexionState == "Loading"} full />;
 }
 
 // import React, { useCallback, useState } from "react";
@@ -61,7 +64,7 @@ export default function ConnectButton({ onConnected, text = "Connect Wallet" }: 
 //         });
 //         save("sol-auth", selectedAccount?.publicKey,)
 //         onConnected(selectedAccount?.address!)
-        
+
 //     } catch (err: any) {
 //         console.log(err)
 //     } finally {
@@ -73,4 +76,3 @@ export default function ConnectButton({ onConnected, text = "Connect Wallet" }: 
 //     <MainButton text={text} onPress={handleConnectPress} disabled={authorizationInProgress} full/>
 //   );
 // }
-

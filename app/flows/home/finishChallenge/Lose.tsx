@@ -1,24 +1,22 @@
 import { Image, Text, View } from "react-native"
 import React from "react";
-import { MainButton } from "../../components/Buttons";
-import useStore from "../../lib/state";
-import getUserChallenge from "../../lib/firebase/getUserChallenge";
-import setChallengeEnded from "../../lib/firebase/demos/setChallengeEnd";
+import { MainButton } from "../../../components/Buttons";
+import useStore from "../../../lib/state";
 import { LinearGradient } from "expo-linear-gradient";
-
+import setChallengeEnded from "../../../lib/firebase/setChallengeEnded";
 
 const gifs = [
     "https://media.tenor.com/W5SYj30r3JkAAAAC/american-psycho.gif",
     "https://i.gifer.com/UTJb.gif"
 ]
 
-export default function Lose() {
-    const { updateFlow, solanaCreds} = useStore()
+export default function Lose({navigation, route}: {navigation:any, route: any}) {
+    const {  solanaCreds} = useStore()
 
     async function endChallenge() {
-        const challenge = await getUserChallenge(solanaCreds?.account?.address!)
-        setChallengeEnded(solanaCreds?.account?.address!, challenge)
-        updateFlow("beginChallenge_welcome")
+        await setChallengeEnded(solanaCreds?.accounts[0].address!, route.params.challenge);
+        console.log("home")
+        navigation.navigate("home")
     }
 
     return (

@@ -41,7 +41,7 @@ export default function ValidateButton({ onFinished }: { onFinished: () => void 
       { connection },
     );
     
-    const pubKey = getPublicKeyFromAddress(solanaCreds?.account?.address!)
+    const pubKey = getPublicKeyFromAddress(solanaCreds?.accounts[0].address!)
     const validateInstructions = await prog.methods
       .validate()
       .accounts({
@@ -59,8 +59,8 @@ export default function ValidateButton({ onFinished }: { onFinished: () => void 
 
     const resp = await transact(async (mobileWallet) => {
       console.log("-------------------------")
-      if (solanaCreds?.authToken)
-        await mobileWallet.reauthorize({ auth_token: solanaCreds?.authToken!, identity: { name: "Ascend" } })
+      if (solanaCreds?.auth_token)
+        await mobileWallet.reauthorize({ auth_token: solanaCreds?.auth_token, identity: { name: "Ascend" } })
 
       else {
         const authorization = await mobileWallet.authorize({
@@ -80,7 +80,7 @@ export default function ValidateButton({ onFinished }: { onFinished: () => void 
 
   return (
     <MainButton text={"Validate"} onPress={async () => {
-      if (signingInProgress || !solanaCreds?.account?.address) {
+      if (signingInProgress || !solanaCreds?.accounts[0].address) {
         return;
       }
       setSigningInProgress(true);

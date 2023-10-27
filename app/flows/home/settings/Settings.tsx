@@ -2,6 +2,14 @@ import { View, Text, Pressable, Switch } from "react-native";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"
 import { useEffect, useState } from "react";
 import { getValueFor, save } from "../../../lib/secure-store/secureStore";
+import { NavigationProp } from "@react-navigation/native";
+import ConnectButton from "../../../components/solana/ConnectButton";
+import setChallengeEnd from "../../../lib/firebase/demos/setChallengeEnd";
+import useStore from "../../../lib/state";
+import setChallengeNextDay from "../../../lib/firebase/demos/setChallengeNextDay";
+import { ScrollView } from "react-native-gesture-handler";
+import setDayDone from "../../../lib/firebase/demos/setDayDone";
+import { getPublicKeyFromAddress } from "../../../lib/solana/getPublicKeyFromAddress";
 
 export function SwitchSetting({ title, text, code, disabled = false }: { title: string, text: string, code: string, disabled?: boolean }) {
     const [isEnabled, setIsEnabled] = useState(!disabled);
@@ -34,14 +42,6 @@ export function SwitchSetting({ title, text, code, disabled = false }: { title: 
         </Pressable>)
 }
 
-
-import { NavigationProp } from "@react-navigation/native";
-import ConnectButton from "../../../components/solana/ConnectButton";
-import setChallengeEnd from "../../../lib/firebase/demos/setChallengeEnd";
-import useStore from "../../../lib/state";
-import setChallengeNextDay from "../../../lib/firebase/demos/setChallengeNextDay";
-import { ScrollView } from "react-native-gesture-handler";
-import setDayDone from "../../../lib/firebase/demos/setDayDone";
 function LanguageSetting({ navigation }: { navigation: any }) {
     const [language, setLanguage] = useState<string | null>(null)
 
@@ -82,20 +82,20 @@ export default function Settings({ navigation }: { navigation: any }) {
             </Pressable>
             <ScrollView className="w-full h-full">
                 <View className="flex flex-col w-full" style={{ gap: 12 }}>
-                    <LanguageSetting navigation={navigation} />
+                    {/* <LanguageSetting navigation={navigation} /> */}
                     <SwitchSetting title={"Dark mode"} text="Switch to dark mode for a more eye-friendly interface during the night." code="colors" />
                     <SwitchSetting title={"Sound"} text="Switch sound effects on or off for a more personalized experience." code="sound" />
                     <SwitchSetting title={"Notifications"} text="If you agree, we can remind you to do your daily tasks!" code="notifs" />
                     
-                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setDayDone(solanaCreds?.account?.address!, challenge!); navigation.goBack() }}>
+                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setDayDone(solanaCreds?.accounts[0].address!, challenge!); navigation.goBack() }}>
                         <Text className=" text-white text-2xl w-auto">Set Current day done </Text>
                         <Text className="text-white/50 w-64">Act as if the challenge has been made,&#10;&#13;/!\ developer mode</Text>
                     </Pressable>
-                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setChallengeNextDay(solanaCreds?.account?.address!, challenge!); navigation.goBack() }}>
+                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setChallengeNextDay(solanaCreds?.accounts[0].address!, challenge!); navigation.goBack() }}>
                         <Text className=" text-white text-2xl w-auto">Fast forward one day</Text>
                         <Text className="text-white/50 w-64">Go to the next day,&#10;&#13;/!\ developer mode</Text>
                     </Pressable>
-                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setChallengeEnd(solanaCreds?.account?.address!, challenge!); navigation.goBack() }}>
+                    <Pressable className="flex flex-col py-4 px-6 bg-white/5 w-full rounded-md" onPress={async () => { await setChallengeEnd(solanaCreds?.accounts[0].address!, challenge!); navigation.goBack() }}>
                         <Text className=" text-white text-2xl w-auto">Fast forward full </Text>
                         <Text className="text-white/50 w-64">Go to the end of the challenge,&#10;&#13;/!\ developer mode</Text>
                     </Pressable>
@@ -103,9 +103,8 @@ export default function Settings({ navigation }: { navigation: any }) {
                 </View>
             </ScrollView>
             <View className="w-full h-fit flex flex-col items-center" style={{ gap: 12 }}>
-                <Text className="text-white text-lg">Connected as : 0x454545</Text>
+                <Text className="text-white text-lg">{`Connected as : ${getPublicKeyFromAddress(solanaCreds?.accounts[0].address!)}`}</Text>
                 <ConnectButton text="Change Wallet" onConnected={() => { }} />
-
             </View>
 
         </View>
