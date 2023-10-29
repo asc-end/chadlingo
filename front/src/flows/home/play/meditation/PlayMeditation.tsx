@@ -6,8 +6,8 @@ import { useSharedValue, withTiming } from "react-native-reanimated";
 import { AppState } from "react-native";
 import { Audio } from "expo-av"
 import { Asset, useAssets } from 'expo-asset';
-const mp3Asset = Asset.fromModule(require('../../../../assets/meditation.mp3'));
-mp3Asset.downloadAsync()
+// const mp3Asset = Asset.fromModule(require('../../../../assets/meditation.mp3'));
+// mp3Asset.downloadAsync()
 
 export default function PlayMeditation({ navigation, route }: { navigation: any; route: any }) {
     const challenge: MeditationChallenge = route.params.challenge;
