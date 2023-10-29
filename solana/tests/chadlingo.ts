@@ -56,9 +56,8 @@ async function validate(owner: anchor.web3.Keypair, vault_pda_pk: PublicKey) {
     .rpc({commitment: "confirmed"})
 }
 
-describe("chadlingo", async () => {
-
-  it("Create Vault", async () => {
+describe("Create Vault", async () => {
+  it("base case works", async () => {
     const owner = anchor.web3.Keypair.generate();
     const [vault_pda_pk, ] = getProgramDerivedAddress("vault", owner.publicKey, program.programId);
  
@@ -72,8 +71,10 @@ describe("chadlingo", async () => {
     assert.strictEqual(vault_data.challengeLength.toString(), challengeLength.toString());
     assert.strictEqual(vault_data.challengeStake.toString(), challengeStake.toString());
   })
+});
 
-  it("Deposit in Vault", async () => {
+describe("Deposit in Vault", async () => {
+  it("base case works", async () => {
     const owner = anchor.web3.Keypair.generate();
     const [vault_pda_pk, ] = getProgramDerivedAddress("vault", owner.publicKey, program.programId);
 
@@ -89,8 +90,10 @@ describe("chadlingo", async () => {
     assert.strictEqual(vault_address_balance_before, vault_address_balance_after - 1 * LAMPORTS_PER_SOL);
     assert.strictEqual(vault_data.balance.toString(), (1 * LAMPORTS_PER_SOL).toString());
   })
+});
 
-  it("Withdraw from Vault", async () => {
+describe("Withdraw from Vault", async () => {
+  it("", async () => {
     const owner = anchor.web3.Keypair.generate();
     const [vault_pda_pk, ] = getProgramDerivedAddress("vault", owner.publicKey, program.programId);
 
@@ -103,8 +106,10 @@ describe("chadlingo", async () => {
 
     assert.strictEqual(intial_owner_balance, owner_balance_after);
   })
+});
 
-  it("Validate day", async () => {
+describe("Validate day", async () => {
+  it("base case works", async () => {
     const owner = anchor.web3.Keypair.generate();
     const [vault_pda_pk, ] = getProgramDerivedAddress("vault", owner.publicKey, program.programId);
 
