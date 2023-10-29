@@ -1,6 +1,9 @@
+const nativewind = require("nativewind/tailwind/css")
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: ["./App.{js,jsx,ts,tsx}", "./flows/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/App.{js,jsx,ts,tsx}", "./src/flows/**/*.{js,jsx,ts,tsx,css}", "./src/components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -14,5 +17,5 @@ module.exports = {
       "clock": "Consolas"
     }
   },
-  plugins: [],
+  plugins: [require('nativewind/tailwind/css')],
 };

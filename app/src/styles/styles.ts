@@ -1,0 +1,1 @@
+export const elementWrapper = "flex flex-row items-center py-4 px-6 bg-white/10 w-full rounded-md justify-between border border-transparent"

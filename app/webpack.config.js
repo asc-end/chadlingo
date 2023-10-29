@@ -14,7 +14,10 @@ module.exports = async function (env, argv) {
 
   config.module.rules.push({
     test: /\.css$/i,
-    use: ["postcss-loader"],
+    use: [
+      "style-loader",
+      "css-loader",
+    ],
   });
 
   config.module.rules.push({
