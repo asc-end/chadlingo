@@ -13,7 +13,7 @@ export default function Challenge({
   onPress,
   solStaked,
 }: {
-  challengeData: LanguageChallenge;
+  challengeData: LanguageChallenge | MeditationChallenge;
   type: ChallengeType;
   percentage?: number;
   alone: boolean;
@@ -47,10 +47,10 @@ export default function Challenge({
         <View className="flex flex-col flex-1 h-full" style={{ gap: 6 }}>
           <Text className="text-white font-bold text-lg">{type}</Text>
           {type == "Language" && (
-            <FromTo codeFrom={languages[challengeData.languageFrom]} codeTo={languages[challengeData.languageTo]} />
+            <FromTo codeFrom={languages[(challengeData as LanguageChallenge).languageFrom]} codeTo={languages[(challengeData as LanguageChallenge).languageTo]} />
           )}
           {type == "Code" && <Text className="text-white/70">as mgavillo</Text>}
-          {type == "Meditation" && <Text className="text-white/70">for 5 minutes</Text>}
+          {challengeData.type == "Meditation" && <Text className="text-white/70">{`for ${(challengeData as MeditationChallenge).duration} minutes`}</Text>}
           {type == "Socials" && <Text className="text-white/70">as swaggyMarie</Text>}
         </View>
         {!alone && <MaterialCommunityIcons name="account-multiple" size={32} color={`hsla(${hue}, 100%, 50%, 0.602)`} />}

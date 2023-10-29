@@ -149,6 +149,8 @@ export default function Home({ navigation }: { navigation: any }) {
       case "Code":
         break;
       case "Meditation":
+        navigation.navigate("playMeditation", { challenge: challenge });
+
         break;
       case "Socials":
         break;

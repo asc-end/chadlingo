@@ -39,7 +39,7 @@ export default function PlayLanguage({ navigation, route }: { navigation: any; r
   const [firstCardState, setFirstCardState] = useState<"input" | "wrong" | "valid">("input");
   const [languages, setLanguages] = useState<{ nativeLang: string; learningLang: string }>();
   // console.log("CHALLENGE", route.params.challenge)
-  const challenge = route.params.challenge;
+  const challenge:LanguageChallenge = route.params.challenge;
 
   useEffect(() => {
     async function _getFlashCards() {

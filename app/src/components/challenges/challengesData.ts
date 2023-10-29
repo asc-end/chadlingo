@@ -9,7 +9,7 @@ export const challengesData = [
       name: "Meditation",
       iconName: "meditation",
       description: "Find your inner peace with 5 minutes of daily meditation.",
-      state: "Coming Soon",
+      state: "Available",
     },
     {
       name: "Code",

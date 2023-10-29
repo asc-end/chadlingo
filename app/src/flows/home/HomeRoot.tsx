@@ -7,6 +7,8 @@ import SignDay from "./play/signDay/SignDay";
 import { AllowNotifications, SelectChallenge, Stake, SelectLanguage } from "./beginChallenge";
 import { useState } from "react";
 import { Lose, Win } from "./finishChallenge";
+import SelectDuration from "./beginChallenge/meditation/SelectDuration";
+import PlayMeditation from "./play/meditation/PlayMeditation";
 
 
 const HomeStack = createNativeStackNavigator();
@@ -16,10 +18,11 @@ export default function HomeRoot() {
     type?: ChallengeType;
     languageFrom?: LanguageType;
     languageTo?: LanguageType;
+    duration?: number
   }>();
 
   return (
-    <HomeStack.Navigator initialRouteName="home" screenOptions={{ headerShown: false, animation: "none"}}>
+    <HomeStack.Navigator initialRouteName="home" screenOptions={{ headerShown: false, animation: "none" }}>
       <HomeStack.Group>
         <HomeStack.Screen name="home" component={Home} />
       </HomeStack.Group>
@@ -31,6 +34,17 @@ export default function HomeRoot() {
             <SelectChallenge
               {...props}
               setType={(type: ChallengeType) => setNewChallengeState({ ...newChallengeState, type: type })}
+            />
+          )}
+        </HomeStack.Screen>
+
+        <HomeStack.Screen name="SelectDuration">
+          {(props) => (
+            <SelectDuration
+              {...props}
+              setDuration={(duration: number) =>
+                setNewChallengeState({ ...newChallengeState, duration: duration })
+              }
             />
           )}
         </HomeStack.Screen>
@@ -66,6 +80,7 @@ export default function HomeRoot() {
       {/* Play flow */}
       <HomeStack.Group screenOptions={{ headerShown: false }}>
         <HomeStack.Screen name="playLanguage" component={PlayLanguage} />
+        <HomeStack.Screen name="playMeditation" component={PlayMeditation}/>
         <HomeStack.Screen name="signDay" component={SignDay} />
       </HomeStack.Group>
 
@@ -76,7 +91,7 @@ export default function HomeRoot() {
       </HomeStack.Group>
 
       {/* Settings flow */}
-      <HomeStack.Group screenOptions={{ presentation: "modal"}}>
+      <HomeStack.Group screenOptions={{ presentation: "modal" }}>
         <HomeStack.Screen name="settingsModal" component={Settings} />
         {/* <HomeStack.Screen name="setLang" component={SelectLanguage} /> */}
       </HomeStack.Group>

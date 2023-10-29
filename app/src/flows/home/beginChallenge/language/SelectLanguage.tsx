@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { View, ScrollView, Text, Pressable, Image } from "react-native";
-import useStore from "../../../lib/state";
-import { MainButton } from "../../../components/Buttons";
+import useStore from "../../../../lib/state";
+import { MainButton } from "../../../../components/Buttons";
 import { LinearGradient } from "expo-linear-gradient";
-import { getValueFor, save } from "../../../lib/secure-store/secureStore";
-import LanguagesMap from "../../../components/languages/LanguagesMap";
-import { languages } from "../../../components/languages/languages";
-import ExitHeader from "../../../components/headers/ExitHeader";
+import { getValueFor, save } from "../../../../lib/secure-store/secureStore";
+import LanguagesMap from "../../../../components/languages/LanguagesMap";
+import { languages } from "../../../../components/languages/languages";
+import ExitHeader from "../../../../components/headers/ExitHeader";
 
 export default function SelectLanguage({
   index,
