@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply w-full h-fit bg-dark-turquoise/20 border  rounded-2xl flex items-center justify-between
+}

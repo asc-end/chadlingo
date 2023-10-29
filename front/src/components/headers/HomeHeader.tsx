@@ -1,7 +1,7 @@
 import { Text, View } from "react-native";
 import SettingsIcon from "../../flows/home/settings/SettingsIcon"
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { MainButton, SecondaryButton } from "../../components/Buttons";
+import { MainButton, SecondaryButton } from "../Buttons";
 
 export default function HomeHeader({ navigation }: { navigation: any }) {
     return (
