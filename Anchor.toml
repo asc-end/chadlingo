@@ -2,13 +2,13 @@
 seeds = false
 skip-lint = false
 [programs.localnet]
-chadlingo = "4hbWdGHR64ppsFyfqFNmR4FuUndAX9cHJvPqcqePWKpJ"
+chadlingo = "4nNtVknm1ohyRyW7tSfHDZ3jFnbbFt2jc1az8fjUsmPp"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "localnet"
 wallet = "/Users/nico/.config/solana/id.json"
 
 [scripts]
