@@ -11,7 +11,7 @@ import { Asset, useAssets } from 'expo-asset';
 
 export default function PlayMeditation({ navigation, route }: { navigation: any; route: any }) {
     const challenge: MeditationChallenge = route.params.challenge;
-    const [assets, error] = useAssets([require("../../../../assets/meditation.mp3")])
+    // const [assets, error] = useAssets([require("../../../../assets/meditation.mp3")])
 
     const progression = useSharedValue(0);
     useEffect(() => {
@@ -31,7 +31,7 @@ export default function PlayMeditation({ navigation, route }: { navigation: any;
         })
 
         async function playSound() {
-            console.log(error, assets)
+            // console.log(error, assets)
             // Audio.setAudioModeAsync({
                 
             // })
