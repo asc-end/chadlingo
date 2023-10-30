@@ -11,7 +11,7 @@ import { MainButton } from '../Buttons';
 import { useAuthorization } from '../../providers/AuthorizationProvider';
 import { useConnection } from '../../providers/ConnectionProvider';
 import { progId } from '../../hooks/useChadlingoProgram';
-import { Chadlingo } from './target/types/chadlingo';
+import { Chadlingo } from './idl/chadlingo';
 import { Program } from '@coral-xyz/anchor';
 import { getPublicKeyFromAddress } from '../../lib/solana/getPublicKeyFromAddress';
 // import { struct, u32, ns64 } from "@solana/buffer-layout"
@@ -37,7 +37,7 @@ export default function WithdrawButton({ onFinished }: { onFinished: () => void 
 
 
     async function createVault() {
-        
+
         console.log("coucou")
         const prog = new Program<Chadlingo>(
             idl as Chadlingo,
@@ -55,7 +55,7 @@ export default function WithdrawButton({ onFinished }: { onFinished: () => void 
             })
             .instruction();
 
-            console.log(connection)
+        console.log(connection)
         const latestBlock = await connection.getLatestBlockhash()
         const incrementTransaction = new Transaction({ ...latestBlock, feePayer: pubKey })
             .add(withdrawInstructions)

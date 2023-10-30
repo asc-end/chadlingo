@@ -24,7 +24,7 @@ export default function Challenge({
   if (!challenge) return;
   function initHue() {
     let hue;
-    if (challengeData.state == "during") hue = 280;
+    if (challengeData.state == "during") hue = 260;
     else if (challengeData.state == "lost") hue = 0;
     else if (challengeData.state == "won") hue = 500;
 

@@ -25,7 +25,6 @@ export function MainButton({
     setShadow("shadow-[0_10px_0px_0px_rgba(0,0,255,1)]");
   }
 
-  console.log("DISABLED, ", disabled)
   return (
     <Pressable onPressIn={onPressIn} onPressOut={onPressOut} className={`${full ? "w-full" : "w-fit"}`} disabled={disabled}>
       <Animated.View className={` px-6 py-3 rounded-xl w-full ${shadow} flex items-center justify-center ${disabled ? "bg-indigo-600/20": "bg-indigo-600"} disabled:bg-indigo-600/70 disabled:opacity-30`}>

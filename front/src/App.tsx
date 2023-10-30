@@ -100,7 +100,7 @@ function App() {
       <SafeAreaView className="">
         <GestureHandlerRootView>
           <ConnectionProvider config={{ commitment: "processed" }} endpoint={clusterApiUrl("devnet")}>
-            {/* <AuthorizationProvider> */}
+            <AuthorizationProvider>
             <LinearGradient colors={["#00001e", "rgba(0,0,20,1)"]} className="h-full w-full">
               <StatusBar />
               <View className="w-full h-full pt-10" onLayout={onLayoutRootView}>
@@ -110,7 +110,7 @@ function App() {
 
               </View>
             </LinearGradient>
-            {/* </AuthorizationProvider> */}
+            </AuthorizationProvider>
           </ConnectionProvider>
         </GestureHandlerRootView>
       </SafeAreaView>

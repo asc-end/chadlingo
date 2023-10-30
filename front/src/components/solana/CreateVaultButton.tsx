@@ -3,6 +3,7 @@ import { Button } from "react-native";
 import { fromUint8Array } from "js-base64";
 import { transact, Web3MobileWallet } from "@solana-mobile/mobile-wallet-adapter-protocol-web3js";
 import {
+  Keypair,
   LAMPORTS_PER_SOL,
   PublicKey,
   SystemProgram,
@@ -15,7 +16,7 @@ import { MainButton } from "../Buttons";
 import { useAuthorization } from "../../providers/AuthorizationProvider";
 import { useConnection } from "../../providers/ConnectionProvider";
 import { progId } from "../../hooks/useChadlingoProgram";
-import { Chadlingo } from "./target/types/chadlingo";
+import { Chadlingo } from "./idl/chadlingo";
 import { Program } from "@coral-xyz/anchor";
 import { getPublicKeyFromAddress } from "../../lib/solana/getPublicKeyFromAddress";
 // import { struct, u32, ns64 } from "@solana/buffer-layout"
@@ -23,10 +24,7 @@ import * as anchor from "@coral-xyz/anchor";
 import idl from "./idl/chadlingo.json";
 import { authorize } from "../../lib/solana/authorize";
 
-export default function CreateVaultButton({ onFinished, disabled }: { onFinished: () => void, disabled: boolean }) {
-  //   const {connection} = useConnection();
-  const { authorizeSession } = useAuthorization();
-
+export default function CreateVaultButton({ onFinished, disabled }: { onFinished?: () => void, disabled: boolean }) {
   const { solanaCreds, setSolanaCreds } = useStore();
   const [signingInProgress, setSigningInProgress] = useState(false);
   const { connection } = useConnection();
@@ -65,15 +63,24 @@ export default function CreateVaultButton({ onFinished, disabled }: { onFinished
       })
       .instruction();
 
+    const keypair = Keypair.generate();
+
+    console.log(solanaCreds?.accounts[0].address)
     const latestBlock = await connection.getLatestBlockhash();
     const incrementTransaction = new Transaction({ ...latestBlock, feePayer: pubKey })
-      .add(createInstructions)
-      .add(depositInstructions);
-    console.log("cocco");
+      .add(SystemProgram.transfer({
+        fromPubkey: getPublicKeyFromAddress(solanaCreds?.accounts[0].address!),
+        toPubkey: keypair.publicKey,
+        lamports: 1_000,
+      }))
+    // .add(createInstructions)
+    // .add(depositInstructions);
 
     const resp = await transact(async (mobileWallet) => {
       await authorize(mobileWallet, solanaCreds!, setSolanaCreds)
+      console.log(latestBlock)
       const signedTransactions = await mobileWallet.signTransactions({ transactions: [incrementTransaction] });
+      console.log(signedTransactions)
 
       return signedTransactions
     });
@@ -96,7 +103,7 @@ export default function CreateVaultButton({ onFinished, disabled }: { onFinished
           setSigningInProgress(false);
         }
       }}
-      disabled={signingInProgress || disabled}
+      disabled={signingInProgress || disabled}
       full
     />
   );

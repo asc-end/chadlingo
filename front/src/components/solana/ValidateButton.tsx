@@ -11,7 +11,7 @@ import { MainButton } from '../Buttons';
 import { useAuthorization } from '../../providers/AuthorizationProvider';
 import { useConnection } from '../../providers/ConnectionProvider';
 import { progId } from '../../hooks/useChadlingoProgram';
-import { Chadlingo } from './target/types/chadlingo';
+import { Chadlingo } from './idl/chadlingo';
 import { Program } from '@coral-xyz/anchor';
 import { getPublicKeyFromAddress } from '../../lib/solana/getPublicKeyFromAddress';
 // import { struct, u32, ns64 } from "@solana/buffer-layout"

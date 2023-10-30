@@ -106,15 +106,15 @@ export default function Settings({ navigation }: { navigation: any }) {
                     </View>
                 </ScrollView>
             </View>
-            <View className="w-full h-fit flex flex-row items-center p-6 border-t border-indigo-600/40 " style={{ gap: 24, backgroundColor: "#0a022f" }}>
-                <View className="flex flex-col">
-                    <Text className="text-white">Connected as :</Text>
-                    <Text className="text-white text-xl">{`${pubKey.slice(0, 4)}...${pubKey.slice(-3)}`}</Text>
-                </View>
-                <View className="flex-1">
+            <View className="w-full h-fit flex flex-col items-center p-6 border-t border-indigo-600/40 " style={{ gap: 8, backgroundColor: "#0a022f" }}>
+                {/* <View className="flex flex-row"> */}
+                    {/* <Text className="text-white">Connected as :</Text> */}
+                    <Text className="text-white">{`${pubKey.slice(0, 6)}...${pubKey.slice(-6)}`}</Text>
+                {/* </View> */}
+                {/* <View className=""> */}
 
                 <ConnectButton text="Change Wallet" onConnected={() => { }} />
-                </View>
+                {/* </View> */}
                 {/* <Text className="text-white text-lg text-center">{`Connected as :\n ${pubKey.slice(0, 6)}...${pubKey.slice(-3)}`}</Text> */}
             </View>
         </LinearGradient>

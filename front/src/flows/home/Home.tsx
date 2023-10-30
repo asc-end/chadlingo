@@ -21,6 +21,8 @@ import { ScrollView } from "react-native-gesture-handler";
 import getUserChallenges from "../../lib/firebase/getUserChallenge";
 import Loading from "./play/language/Loading";
 import updateChallenge from "../../lib/firebase/updateChallenge";
+import CreateVaultButton from "../../components/solana/CreateVaultButton";
+import SignTransactionButton from "../../components/solana/TestTransaction";
 
 const challengesState = [
   {
@@ -105,7 +107,7 @@ export default function Home({ navigation }: { navigation: any }) {
   }, []);
 
   useEffect(() => {
-    const focused = navigation.addListener("focus", () => {});
+    const focused = navigation.addListener("focus", () => { });
     return focused;
   }, [navigation]);
 
@@ -161,11 +163,12 @@ export default function Home({ navigation }: { navigation: any }) {
   // const [selected, setSelected] = useState(0);
   return (
     <LinearGradient colors={["#00001e", "rgba(0,0,20,1)"]} className="h-full w-full relative">
-      <HomeHeader navigation={navigation}/>
+      <HomeHeader navigation={navigation} />
       <ScrollView className="">
         <View
-          className="w-full h-full px-4 py-24 flex flex-col items-center justify-start relative"
+          className="w-full h-full px-4 py-24 pt-32 flex flex-col items-center justify-start relative"
           style={{ gap: 48 }}>
+          {/* <SignTransactionButton/> */}
           <CircleProgress chrono={challenges && challenges!.length > 0 ? chrono : null} />
           <View className="flex flex-col w-full" style={{ gap: 8 }}>
             <View className="w-full flex flex-col" style={{ gap: 12 }}>

@@ -12,6 +12,12 @@ export const challengesData = [
       state: "Available",
     },
     {
+      name: "Workout",
+      iconName: "dumbbell",
+      description: "Improve strength, endurance, and vitality with daily workouts.",
+      state: "Coming Soon",
+    },
+    {
       name: "Code",
       iconName: "github",
       description: "Commit to GitHub daily and shape your programming skills.",
