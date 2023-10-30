@@ -21,12 +21,13 @@ import { getPublicKeyFromAddress } from "../../lib/solana/getPublicKeyFromAddres
 // import { struct, u32, ns64 } from "@solana/buffer-layout"
 import * as anchor from "@coral-xyz/anchor";
 import idl from "./idl/chadlingo.json";
+import { authorize } from "../../lib/solana/authorize";
 
 export default function CreateVaultButton({ onFinished, disabled }: { onFinished: () => void, disabled: boolean }) {
   //   const {connection} = useConnection();
   const { authorizeSession } = useAuthorization();
 
-  const { solanaCreds } = useStore();
+  const { solanaCreds, setSolanaCreds } = useStore();
   const [signingInProgress, setSigningInProgress] = useState(false);
   const { connection } = useConnection();
   // const { chadlingoProgram } = useChadlingoProgram(connection, { address: solanaCreds?.account?.address!, });
@@ -71,31 +72,9 @@ export default function CreateVaultButton({ onFinished, disabled }: { onFinished
     console.log("cocco");
 
     const resp = await transact(async (mobileWallet) => {
-      console.log("-------------------------");
-      console.log(solanaCreds?.auth_token);
-
-      try {
-        const authorizationResult = await (solanaCreds?.auth_token
-          ? mobileWallet.reauthorize({
-            auth_token: solanaCreds.auth_token,
-            identity: { name: "Ascend" },
-          })
-          : mobileWallet.authorize({
-            cluster: "devnet",
-            identity: { name: "Ascend" },
-          }));
-
-        console.log("auth", authorizationResult)
-      } catch (err) {
-        mobileWallet.authorize({
-          cluster: "devnet",
-          identity: { name: "Ascend" },
-        })
-        console.log(err)
-      }
+      await authorize(mobileWallet, solanaCreds!, setSolanaCreds)
       const signedTransactions = await mobileWallet.signTransactions({ transactions: [incrementTransaction] });
 
-      console.log(signedTransactions);
       return signedTransactions
     });
     if (onFinished) onFinished();

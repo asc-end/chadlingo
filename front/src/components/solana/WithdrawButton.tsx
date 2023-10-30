@@ -17,12 +17,15 @@ import { getPublicKeyFromAddress } from '../../lib/solana/getPublicKeyFromAddres
 // import { struct, u32, ns64 } from "@solana/buffer-layout"
 import * as anchor from '@coral-xyz/anchor';
 import idl from "./idl/chadlingo.json"
+import { encryptJSON } from '../../lib/secure-store/crypto';
+import { save } from '../../lib/secure-store/secureStore';
+import { authorize } from '../../lib/solana/authorize';
 
 export default function WithdrawButton({ onFinished }: { onFinished: () => void }) {
     //   const {connection} = useConnection();
     const { authorizeSession } = useAuthorization();
 
-    const { solanaCreds } = useStore()
+    const { solanaCreds, setSolanaCreds } = useStore()
     const [signingInProgress, setSigningInProgress] = useState(false);
     const { connection } = useConnection();
     // const { chadlingoProgram } = useChadlingoProgram(connection, { address: solanaCreds?.account?.address!, });
@@ -34,6 +37,7 @@ export default function WithdrawButton({ onFinished }: { onFinished: () => void 
 
 
     async function createVault() {
+        
         console.log("coucou")
         const prog = new Program<Chadlingo>(
             idl as Chadlingo,
@@ -59,19 +63,8 @@ export default function WithdrawButton({ onFinished }: { onFinished: () => void 
 
 
         const resp = await transact(async (mobileWallet) => {
-            console.log("-------------------------")
-            if (solanaCreds?.auth_token)
-                await mobileWallet.reauthorize({ auth_token: solanaCreds?.auth_token, identity: { name: "Ascend" } })
-
-            else {
-                const authorization = await mobileWallet.authorize({
-                    cluster: "devnet",
-                    identity: { name: "Ascend" },
-                });
-            }
-            console.log("coucou")
+            await authorize(mobileWallet, solanaCreds!, setSolanaCreds)
             const signedTransactions = await mobileWallet.signTransactions({ transactions: [incrementTransaction] })
-            console.log(signedTransactions)
         })
         if (onFinished) onFinished()
 
