@@ -1,5 +1,5 @@
-import { equalTo, query, ref, get } from "firebase/database";
-import { database, flashCardsFolderRef } from "./config";
+import { ref, get } from "firebase/database";
+import { database } from "./config";
 
 export default async function getFlashcard(key: string): Promise< Flashcard | null> {
   const flashcardRef = ref(database, "/FlashCards/" + key);

@@ -9,7 +9,7 @@
       "channel": "development"
     },
     "preview": {
-      "developmentClient": false,
+      "developmentClient": true,
       "distribution": "internal",
       "channel": "preview"
     },

@@ -2,9 +2,8 @@ import { query, ref, get, limitToFirst, orderByChild, orderByValue, equalTo } fr
 import { fetchSecureDate } from "../dates/fetchSecureDate";
 import getUserKey from "./getUserKey";
 import { database, usersFolderRef } from "./config";
-import getFlashcard from "./getFlashCard";
 import getFlashCardsExept from "./getFlashCardsExept";
-import { getFlashCards } from "./getFlashcards";
+import getFlashCards from "./getFlashCards";
 
 export default async function getFlashCardsByDate(nbCards: number, user = "marie", lang = "english") {
     const addressesRef = query(usersFolderRef, ...[orderByChild('address'), equalTo(user)]);

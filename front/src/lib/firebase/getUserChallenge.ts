@@ -11,16 +11,12 @@ export default async function getUserChallenges(user: string): Promise<Challenge
   const resp = get(_query).then((snapshot) => {
     if (snapshot.exists()) {
       const challenges = snapshot.val();
-      let maxBeginDate = 0;
       let _challenges:Challenge[] = [];
       for (let challenge in challenges) {
-        if (!challenges[challenge].ended) {
-          maxBeginDate = challenges[challenge].beginDate;
           _challenges.push({
             ...challenges[challenge],
             key: challenge,
-          });
-        }
+          })
       }
       return _challenges;
     }

@@ -29,6 +29,7 @@ declare global {
     nbDone: number;
     state: "during" | "pending" | "won" | "lost" | "archived";
     solStaked: number;
+    friends: string []
   }
 
   interface LanguageChallenge extends Challenge {
@@ -37,7 +38,7 @@ declare global {
   }
 
   interface MeditationChallenge extends Challenge {
-    duration: "5mn" | "2mn" | "10mn";
+    duration: number;
   }
 
   interface CodeChallenge extends Challenge {
