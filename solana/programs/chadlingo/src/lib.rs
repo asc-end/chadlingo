@@ -13,11 +13,11 @@ declare_id!("4nNtVknm1ohyRyW7tSfHDZ3jFnbbFt2jc1az8fjUsmPp");
 pub mod chadlingo {
     use super::*;
 
-    pub fn create(ctx: Context<Create>, challenge_stake: u64, challenge_length: u64) -> ProgramResult {
-        create_(ctx, challenge_stake, challenge_length)
+    pub fn create(ctx: Context<Create>, challenge_id: String, challenge_stake: u64, challenge_length: u64) -> ProgramResult {
+        create_(ctx, challenge_id, challenge_stake, challenge_length)
     }
 
-    pub fn deposit(ctx: Context<Deposit>, amount: u64) -> ProgramResult {
+    pub fn deposit(ctx: Context<Deposit>, amount: u64) -> Result<()> {
         deposit_(ctx, amount)
     }
 
@@ -25,7 +25,7 @@ pub mod chadlingo {
         withdraw_(ctx)
     }
     
-    pub fn validate(ctx: Context<Validate>) -> ProgramResult {
+    pub fn validate(ctx: Context<Validate>) -> Result<()> {
        validate_(ctx)
     }
 }

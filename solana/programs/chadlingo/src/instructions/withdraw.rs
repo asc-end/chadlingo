@@ -15,8 +15,8 @@ pub fn withdraw_(ctx: Context<Withdraw>) -> ProgramResult {
         return Err(ProgramError::Custom(1));
     }
 
-    **vault.to_account_info().try_borrow_mut_lamports()? -= vault.balance;
-    **owner.to_account_info().try_borrow_mut_lamports()? += vault.balance;
+    vault.sub_lamports(vault.balance)?;
+    owner.add_lamports(vault.balance)?;
     Ok(())
 }
 

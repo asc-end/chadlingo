@@ -38,3 +38,6 @@ android/
 *.tsbuildinfo
 
 ios
+
+src/components/solana/target/
+yarn.lock
