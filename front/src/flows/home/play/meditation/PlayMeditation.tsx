@@ -11,7 +11,7 @@ import { Asset, useAssets } from 'expo-asset';
 
 export default function PlayMeditation({ navigation, route }: { navigation: any; route: any }) {
     const challenge: MeditationChallenge = route.params.challenge;
-    const [assets, error] = useAssets([require("../../../../assets/meditation.mp3")])
+    // const [assets, error] = useAssets([require("../../../../assets/meditation.mp3")])
 
     const progression = useSharedValue(0);
     useEffect(() => {
@@ -20,7 +20,6 @@ export default function PlayMeditation({ navigation, route }: { navigation: any;
             timer += 1
             if (timer == challenge.duration * 60)
                 navigation.navigate("signDay", { challenge: challenge })
-            console.log(timer, challenge.duration * 60)
             progression.value = withTiming(timer / (challenge.duration * 60))
 
         }, 1000)
@@ -31,9 +30,9 @@ export default function PlayMeditation({ navigation, route }: { navigation: any;
         })
 
         async function playSound() {
-            console.log(error, assets)
+            // console.log(error, assets)
             // Audio.setAudioModeAsync({
-                
+
             // })
             // if(!assets) return
             // let sound = await Audio.Sound.createAsync({uri: "https://cdn.discordapp.com/attachments/735519649277673572/1168331263464181870/mixkit-relax-beat-292.mp3?ex=65516047&is=653eeb47&hm=4ff9fd30fcbff57a92440ad83a42e83a8344fa0760aab4737af2bf7254053532&"})
