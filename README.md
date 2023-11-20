@@ -22,3 +22,7 @@ Next steps are:
 - improve the interface & make language & meditation challenge more complete (not overkill but could improve some stuff)
 - add new challenges (github, twitter etc ...)
 - launch a discord and rally a small community around the chad meme energy
+
+Demo Video:
+
+Put playback speed 2x to save time: https://youtu.be/LSU78kGwkVs
