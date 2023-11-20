@@ -9,7 +9,7 @@ import CircleProgress from "../components/CircleProgress";
 import HomeHeader from "../components/headers/Home";
 import Challenge from "../components/challenges/Challenge";
 import { ScrollView } from "react-native-gesture-handler";
-import getUserChallenges from "../lib/firebase/getUserChallenge";
+import getUserChallenges from "../lib/firebase/getUserChallenges";
 import Loading from "./play/language/Loading";
 import updateChallenge from "../lib/firebase/updateChallenge";
 import demo_fastForward from "../lib/firebase/demos/demo_fastForward";

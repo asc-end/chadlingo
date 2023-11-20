@@ -7,7 +7,7 @@ import { useSolana } from "../../../providers/SolanaProvider";
 
 export default function SignDay({ navigation, route }: { navigation: any, route: any }) {
     const { solanaCreds } = useSolana();
-    const challenge = route.params.challenge
+    const challenge:Challenge = route.params.challenge
 
 
     function endDay() {
@@ -20,13 +20,15 @@ export default function SignDay({ navigation, route }: { navigation: any, route:
         });
     }
 
+    console.log(challenge.id)
+
     return (
 
         <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full px-4">
             <View className="h-full flex flex-col items-center justify-center">
                 <Text className="text-white text-3xl font-bold text-center">Congrats!</Text>
                 <Text className="text-white text-2xl mb-12">Sign to finish the day</Text>
-                <TransactWithContractButton text="Validate" onFinished={endDay} getInstructions={validateDay} />
+                <TransactWithContractButton text="Validate" onFinished={endDay} getInstructions={validateDay} challengeId={challenge.id}/>
             </View>
         </LinearGradient>)
 }

@@ -2,14 +2,14 @@ import { Text, View } from "react-native";
 import React, { useRef } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import setChallengeEnded from "../../lib/firebase/setChallengeEnded";
-import useStore from "../../lib/state";
 import SolanaIcon from "../../components/solana/SolanaIcon";
 import TransactWithContractButton from "../../components/solana/TransactWithContractButton";
 import { withdraw } from "../../lib/solana/instructions/withdraw";
+import { useSolana } from "../../providers/SolanaProvider";
 
 
 export default function Win({ navigation, route }: { navigation: any, route: any }) {
-  const { solanaCreds } = useSolana();
+  const { solanaCreds } = useSolana()
   const animation = useRef(null);
   const challenge: Challenge = route.params.challenge
 
@@ -29,7 +29,7 @@ export default function Win({ navigation, route }: { navigation: any, route: any
           <SolanaIcon size={40} />
         </View>
         <View className="w-full">
-          <TransactWithContractButton text="Withdraw" onFinished={onWidthDraw} getInstructions={withdraw} />
+          <TransactWithContractButton text="Withdraw" onFinished={onWidthDraw} getInstructions={withdraw} challengeId={challenge.id}/>
         </View>
       </LinearGradient >
     </View>

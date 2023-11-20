@@ -1,5 +1,5 @@
 import { fetchSecureDate } from "../../dates/fetchSecureDate";
-import getUserChallenges from "../getUserChallenge";
+import getUserChallenges from "../getUserChallenges";
 import updateAllChallenges from "../updateAllChallenges";
 
 export default async function demo_fastForward(nb: number, user: string) {

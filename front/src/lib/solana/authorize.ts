@@ -4,8 +4,7 @@ import { save } from "../secure-store/secureStore";
 import { AppIdentity, AuthorizationResult} from "@solana-mobile/mobile-wallet-adapter-protocol";
 
 export const APP_IDENTITY: AppIdentity = {
-  name: "Ascend",
-  uri: "https://yourdapp.com",
+  name: "Chadlingo",
   icon: "./favicon.ico",
 };
 

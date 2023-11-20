@@ -2,11 +2,8 @@ import { View, Alert, Pressable } from "react-native";
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import { Directions, FlingGestureHandler } from "react-native-gesture-handler";
-
 import * as Haptics from "expo-haptics";
-
 import { useSharedValue, withTiming } from "react-native-reanimated";
-import useStore from "../../../lib/state";
 import Loading from "./Loading";
 import { LinearGradient } from "expo-linear-gradient";
 import { nbCards, duration, part } from "./config";
@@ -17,7 +14,7 @@ import PlayHeader from "../PlayHeader";
 import { useSolana } from "../../../providers/SolanaProvider";
 
 export default function PlayLanguage({ navigation, route }: { navigation: any; route: any }) {
-  const [flashCards, setFlashCards] = useState<Flashcard[] | null>(null);
+  const [flashCards, setFlashCards] = useState<Flashcard[] | null | undefined>();
   const [validatedCards, setValidatedCards] = useState<boolean[]>([]);
   const { solanaCreds } = useSolana()
   const activeCard = useSharedValue(0);
@@ -31,8 +28,13 @@ export default function PlayLanguage({ navigation, route }: { navigation: any; r
 
   useEffect(() => {
     async function _getFlashCards() {
-      const _flashcards = await getFlashCardsByDate(nbCards);
-      if (_flashcards) setFlashCards(_flashcards as Flashcard[]);
+      const _flashcards = await getFlashCardsByDate(nbCards, solanaCreds?.accounts[0].address!);
+
+      if (_flashcards)
+        setFlashCards( _flashcards as Flashcard[])
+      else
+        navigation.navigate("home")
+      console.log("_flashcards, ", _flashcards)
     }
     _getFlashCards();
 
@@ -72,13 +74,18 @@ export default function PlayLanguage({ navigation, route }: { navigation: any; r
     if (!swipable) return;
     activeCard.value = withTiming(activeCard.value + 1, { duration });
     setTimeout(() => {
-      if (Math.floor(activeCard.value) == nbCards) {
+      if (validatedCards.length == nbCards) {
+        pushCards(validatedCards, flashCards!, languages!.learningLang, "marie");
+        setDayDone(solanaCreds?.accounts[0].address!, challenge!);
+        setTimeout(() => {
+          // navigation.reset({ index: 0, routes: [{ name: "signDay" }] });
+          navigation.navigate("signDay", { challenge: challenge })
+        }, duration + 100);
       }
     }, duration);
     setSwipable(false);
   }
 
-  flashCards?.map((flashcard, i) => console.log("flashcard", i, flashcard.english));
   function onCardSubmit(input: string, expect: string) {
     const isValid = input.toLowerCase() == expect.toLowerCase();
 
@@ -104,8 +111,8 @@ export default function PlayLanguage({ navigation, route }: { navigation: any; r
     }
   }
 
-  if (!flashCards || !languages || !challenge) return <Loading />;
-
+  console.log("flashcards", flashCards)
+  if (flashCards == undefined || !languages || !challenge) return <Loading />;
   return (
     <FlingGestureHandler direction={Directions.LEFT} onEnded={onWrongCardSwiped}>
       <LinearGradient colors={["rgba(0,0,30,1)", "rgba(0,0,20,1)"]} className="h-full w-full">
@@ -114,18 +121,18 @@ export default function PlayLanguage({ navigation, route }: { navigation: any; r
           <View
             className="w-full overflow-x-visible h-fit flex flex-row items-center justify-start ml-2 order-last"
             pointerEvents="box-none">
-            {flashCards !== null &&
-              flashCards?.map((e: Flashcard, i: number) => (
-                <Card
-                  data={e}
-                  index={i}
-                  key={i}
-                  activeIndex={activeCard}
-                  onSubmit={onCardSubmit}
-                  state={i == activeCard.value ? firstCardState : "input"}
-                  languages={languages}
-                />
-              ))}
+
+            {flashCards?.map((e: Flashcard, i: number) => (
+              <Card
+                data={e}
+                index={i}
+                key={i}
+                activeIndex={activeCard}
+                onSubmit={onCardSubmit}
+                state={i == activeCard.value ? firstCardState : "input"}
+                languages={languages}
+              />
+            ))}
           </View>
         </View>
       </LinearGradient>

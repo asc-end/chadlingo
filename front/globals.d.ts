@@ -23,6 +23,7 @@ declare global {
   }
 
   interface Challenge {
+    id: string;
     key?: string;
     beginDate: number;
     type: ChallengeType;
