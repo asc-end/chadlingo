@@ -23,6 +23,7 @@ Next steps are:
 - add new challenges (github, twitter etc ...)
 - launch a discord and rally a small community around the chad meme energy
 
-Demo Video:
+Links:
 
-Put playback speed 2x to save time: https://youtu.be/LSU78kGwkVs
+App demo video (put playback speed 2x to save time): https://youtu.be/LSU78kGwkVs
+Explorer link for program (deployed on devnet): https://explorer.solana.com/address/5uuL3s2tWFk3paG9p4E4tRE1LxWjsWftfrYgUwYBh7jN/anchor-program?cluster=devnet
