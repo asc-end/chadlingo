@@ -7,7 +7,7 @@ pub mod errors;
 pub mod instructions;
 pub mod states;
 
-declare_id!("4nNtVknm1ohyRyW7tSfHDZ3jFnbbFt2jc1az8fjUsmPp");
+declare_id!("5uuL3s2tWFk3paG9p4E4tRE1LxWjsWftfrYgUwYBh7jN");
 
 #[program]
 pub mod chadlingo {
