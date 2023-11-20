@@ -1,5 +1,5 @@
 import { limitToFirst, query, get, ref, DataSnapshot } from "firebase/database";
-import { database, flashCardsFolderRef } from "./config";
+import { flashCardsFolderRef } from "./config";
 import getFlashcard from "./getFlashCard";
 
 async function flashCardRefs_To_flashCardArray(snapshot: DataSnapshot) {
@@ -14,8 +14,7 @@ async function flashCardRefs_To_flashCardArray(snapshot: DataSnapshot) {
   return dataArray;
 }
 
-export function getFlashCards(nbCards: number): Promise<Flashcard[] | null> | null {
-  console.log("getFlashCards");
+export default function getFlashCards(nbCards: number): Promise<Flashcard[] | null> | null {
   const flashcardsRef = query(flashCardsFolderRef, limitToFirst(nbCards));
   
   const resp = get(flashcardsRef)

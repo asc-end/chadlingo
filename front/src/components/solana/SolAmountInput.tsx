@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { View, TextInput, Pressable, Text } from "react-native";
-import { useConnection } from "../../providers/ConnectionProvider";
 import { getPublicKeyFromAddress } from "../../lib/solana/getPublicKeyFromAddress";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-import useStore from "../../lib/state";
+import { useSolana } from "../../providers/SolanaProvider";
 
 export default function SolAmountInput({amount, setAmount}: {amount: string, setAmount: React.Dispatch<React.SetStateAction<string>>}) {
   const [inputActive, setInputActive] = useState(false);
   const [fetchingMax, setFetchingMax] = useState(false);
-  const { connection } = useConnection();
-  const {solanaCreds} = useStore()
+  const { connection, solanaCreds } = useSolana()
   
   const updateAmount = (string: string) => {
     console.log(string, /^(\d*\.?\d*|\.\d*)$/.test(string))

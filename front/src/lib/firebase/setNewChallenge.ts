@@ -2,6 +2,7 @@ import { ref, push } from "firebase/database";
 import { database } from "./config";
 import getUserKey from "./getUserKey";
 import { fetchSecureDate } from "../dates/fetchSecureDate";
+import { throws } from "assert";
 
 export default async function setNewChallenge(user: string, challenge: LanguageChallenge | MeditationChallenge) {
   const userKey = await getUserKey(user);
@@ -9,5 +10,6 @@ export default async function setNewChallenge(user: string, challenge: LanguageC
   if (!userKey) return;
 
   const userChallengesRef = ref(database, "/Users/" + userKey + "/challenges");
-  push(userChallengesRef, challenge);
+  let resp = await push(userChallengesRef, challenge).then((resp) => resp)
+  return resp
 }

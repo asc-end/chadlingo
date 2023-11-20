@@ -23,6 +23,10 @@
       ],
       "args": [
         {
+          "name": "challengeId",
+          "type": "string"
+        },
+        {
           "name": "challengeStake",
           "type": "u64"
         },
@@ -120,6 +124,10 @@
             "type": "u64"
           },
           {
+            "name": "challengeId",
+            "type": "string"
+          },
+          {
             "name": "challengeStake",
             "type": "u64"
           },
@@ -133,6 +141,57 @@
           }
         ]
       }
+    }
+  ],
+  "types": [
+    {
+      "name": "DepositError",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "AmountTooLow"
+          },
+          {
+            "name": "AmountTooHigh"
+          },
+          {
+            "name": "InsufficientFunds"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValidateError",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "IncorrectOwner"
+          },
+          {
+            "name": "InvalidTime"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WithdrawError",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "ErrorWithdraw"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "ErrorCreate",
+      "msg": ""
     }
   ]
 }
